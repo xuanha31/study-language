@@ -31,8 +31,10 @@
 | E1-7 | Sinh HSK 3 (298), HSK 4 (598), HSK 5 (1298), HSK 6 (2500) | ☑ DONE · 🔍 REVIEW |
 | E1-8 | Ghi công + license nguồn ([../content/CREDITS.md](../content/CREDITS.md)) | ☑ DONE |
 | E1-9 | **Rà soát** HSK 3→6 (meaning_vi AI-dịch, hanviet chọn âm tự động) | ☐ TODO |
+| E1-9b | Sửa pipeline chọn nhầm form chữ đa âm + làm sạch nghĩa + per-char + audio HSK1/2 | ☑ DONE |
 | E1-10 | Soạn hội thoại (`type:dialogue`) — tự viết, tránh bản quyền | ☐ TODO |
 | E1-11 | Xử lý ràng buộc CC-BY-SA 4.0 của `meaning_vi` (ghi công trong app / cân nhắc nguồn) | ☐ TODO |
+| E1-12 | Bổ sung ~2 từ/level thiếu so chuẩn (HSK3/4/5: 298/598/1298 vs 300/600/1300) | ☐ TODO |
 
 ## E2 — Khung dự án Flutter
 

@@ -3,11 +3,11 @@
   "title_vi": "HSK 3",
   "version": 1,
   "lessonSize": 20,
-  "_warning": "Sinh tu nguon mo (HSK list MIT + CVDICT CC-BY-SA-4.0 + Unihan kVietnamese). verified=false. meaning_vi do AI dich (CVDICT), hanviet lay am dau tien Unihan - CAN ra soat.",
+  "_warning": "Sinh tu nguon mo. verified=false. meaning_vi (CVDICT, AI dich) + hanviet (chon theo pinyin) CAN ra soat. Xem CREDITS.md.",
   "_sources": {
     "wordlist": "drkameleon/complete-hsk-vocabulary (MIT)",
     "meaning_vi": "CVDICT - Phong Phan (CC-BY-SA 4.0)",
-    "hanviet": "Unihan kVietnamese (Unicode)"
+    "hanviet": "ph0ngp/hanviet-pinyin-wordlist (MIT) + Unihan kVietnamese"
   },
   "cards": [
     {
@@ -27,11 +27,15 @@
       "chars": [
         {
           "char": "阿",
-          "hanviet": "a"
+          "reading": "ā",
+          "hanviet": "a",
+          "meaning_vi": "tiền tố dùng trước tên đơn âm"
         },
         {
           "char": "姨",
-          "hanviet": "di"
+          "reading": "yí",
+          "hanviet": "di",
+          "meaning_vi": "chị em của mẹ"
         }
       ]
     },
@@ -82,11 +86,15 @@
       "chars": [
         {
           "char": "爱",
-          "hanviet": "ái"
+          "reading": "ài",
+          "hanviet": "ái",
+          "meaning_vi": "yêu"
         },
         {
           "char": "好",
-          "hanviet": "hiếu"
+          "reading": "hào",
+          "hanviet": "hiếu",
+          "meaning_vi": "thích"
         }
       ]
     },
@@ -107,11 +115,15 @@
       "chars": [
         {
           "char": "安",
-          "hanviet": "an"
+          "reading": "ān",
+          "hanviet": "an",
+          "meaning_vi": "(hình thức kết hợp) yên lặng"
         },
         {
           "char": "静",
-          "hanviet": "tĩnh"
+          "reading": "jìng",
+          "hanviet": "tĩnh",
+          "meaning_vi": "yên"
         }
       ]
     },
@@ -124,8 +136,8 @@
       "verified": false,
       "target": "把",
       "reading": "bǎ",
-      "meaning_vi": "cầm; nắm; đỡ em bé để đi tiểu hoặc đại tiện; tay cầm; lượng từ: nắm, bó, chùm; lượng từ cho vật có cán; (dùng để đưa tân ngữ lên trước động từ: 把[ba3] + {danh từ} + {động từ})",
-      "meaning_en": "to hold; to grasp; to hold a baby in position to help it urinate or defecate; handlebar; classifier: handful, bundle, bunch; classifier for things with handles; (used to put the object before the verb: 把 + {noun} + {verb})",
+      "meaning_vi": "cầm; nắm; đỡ em bé để đi tiểu hoặc đại tiện; tay cầm; (dùng để đưa tân ngữ lên trước động từ: + {danh từ} + {động từ})",
+      "meaning_en": "to hold; to grasp; to hold a baby in position to help it urinate or defecate; handlebar; classifier: handful, bundle, bunch; classifier for things with handles",
       "hanviet": "bả",
       "distractor_group": "preposition",
       "audio": "hsk3/hsk3-0006.mp3"
@@ -138,9 +150,9 @@
       "version": 1,
       "verified": false,
       "target": "班",
-      "reading": "Bān",
-      "meaning_vi": "nhóm; lớp; khối; (quân sự) tiểu đội; ca làm việc; lượng từ cho nhóm người và các phương tiện giao thông theo lịch trình",
-      "meaning_en": "surname Ban",
+      "reading": "bān",
+      "meaning_vi": "nhóm; lớp; khối; (quân sự) tiểu đội; ca làm việc",
+      "meaning_en": "team; class; grade; (military) squad; work shift; classifier for groups of people and scheduled transport vehicles",
       "hanviet": "ban",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0007.mp3"
@@ -177,11 +189,15 @@
       "chars": [
         {
           "char": "办",
-          "hanviet": "biện"
+          "reading": "bàn",
+          "hanviet": "biện",
+          "meaning_vi": "làm"
         },
         {
           "char": "法",
-          "hanviet": "pháp"
+          "reading": "fǎ",
+          "hanviet": "pháp",
+          "meaning_vi": "pháp luật"
         }
       ]
     },
@@ -202,15 +218,21 @@
       "chars": [
         {
           "char": "办",
-          "hanviet": "biện"
+          "reading": "bàn",
+          "hanviet": "biện",
+          "meaning_vi": "làm"
         },
         {
           "char": "公",
-          "hanviet": "công"
+          "reading": "gōng",
+          "hanviet": "công",
+          "meaning_vi": "công cộng"
         },
         {
           "char": "室",
-          "hanviet": "thất"
+          "reading": "shì",
+          "hanviet": "thất",
+          "meaning_vi": "phòng"
         }
       ]
     },
@@ -246,11 +268,15 @@
       "chars": [
         {
           "char": "帮",
-          "hanviet": "bang"
+          "reading": "bāng",
+          "hanviet": "bang",
+          "meaning_vi": "giúp"
         },
         {
           "char": "忙",
-          "hanviet": "mang"
+          "reading": "máng",
+          "hanviet": "mang",
+          "meaning_vi": "bận"
         }
       ]
     },
@@ -262,9 +288,9 @@
       "version": 1,
       "verified": false,
       "target": "包",
-      "reading": "Bāo",
-      "meaning_vi": "che phủ; gói; cầm; nắm bao gồm; phụ trách; hợp đồng (làm hoặc cho); bọc; đựng; túi; ôm hoặc ôm chặt; bó",
-      "meaning_en": "surname Bao",
+      "reading": "bāo",
+      "meaning_vi": "che phủ; gói; cầm; nắm bao gồm; phụ trách",
+      "meaning_en": "to cover; to wrap; to hold; to include; to take charge of",
       "hanviet": "bao",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0013.mp3"
@@ -301,11 +327,15 @@
       "chars": [
         {
           "char": "北",
-          "hanviet": "bắc"
+          "reading": "běi",
+          "hanviet": "bắc",
+          "meaning_vi": "phía bắc"
         },
         {
           "char": "方",
-          "hanviet": "phương"
+          "reading": "fāng",
+          "hanviet": "phương",
+          "meaning_vi": "vuông"
         }
       ]
     },
@@ -341,11 +371,15 @@
       "chars": [
         {
           "char": "鼻",
-          "hanviet": "tỵ"
+          "reading": "bí",
+          "hanviet": "tỵ",
+          "meaning_vi": "mũi"
         },
         {
           "char": "子",
-          "hanviet": "tử"
+          "reading": "zi",
+          "hanviet": "tử",
+          "meaning_vi": "(hậu tố danh từ)"
         }
       ]
     },
@@ -358,19 +392,23 @@
       "verified": false,
       "target": "比较",
       "reading": "bǐ jiào",
-      "meaning_vi": "so sánh; đối chiếu; tương đối; khá; phân tích so sánh; sự so sánh",
-      "meaning_en": "to compare; to contrast; comparatively; relatively; quite; comparison",
+      "meaning_vi": "so sánh; đối chiếu; tương đối; khá; phân tích so sánh",
+      "meaning_en": "to compare; to contrast; comparatively; relatively; quite",
       "hanviet": "bi giảo",
       "distractor_group": "adverb",
       "audio": "hsk3/hsk3-0018.mp3",
       "chars": [
         {
           "char": "比",
-          "hanviet": "bi"
+          "reading": "bǐ",
+          "hanviet": "bi",
+          "meaning_vi": "so sánh"
         },
         {
           "char": "较",
-          "hanviet": "giảo"
+          "reading": "jiào",
+          "hanviet": "giảo",
+          "meaning_vi": "(hình thức ràng buộc) so sánh"
         }
       ]
     },
@@ -391,11 +429,15 @@
       "chars": [
         {
           "char": "比",
-          "hanviet": "bi"
+          "reading": "bǐ",
+          "hanviet": "bi",
+          "meaning_vi": "so sánh"
         },
         {
           "char": "赛",
-          "hanviet": "tái"
+          "reading": "sài",
+          "hanviet": "tái",
+          "meaning_vi": "thi đấu"
         }
       ]
     },
@@ -416,11 +458,15 @@
       "chars": [
         {
           "char": "必",
-          "hanviet": "tất"
+          "reading": "bì",
+          "hanviet": "tất",
+          "meaning_vi": "nhất định"
         },
         {
           "char": "须",
-          "hanviet": "tu"
+          "reading": "xū",
+          "hanviet": "tu",
+          "meaning_vi": "râu"
         }
       ]
     },
@@ -441,11 +487,15 @@
       "chars": [
         {
           "char": "变",
-          "hanviet": "biến"
+          "reading": "biàn",
+          "hanviet": "biến",
+          "meaning_vi": "thay đổi"
         },
         {
           "char": "化",
-          "hanviet": "hoá"
+          "reading": "huà",
+          "hanviet": "hoá",
+          "meaning_vi": "làm thành"
         }
       ]
     },
@@ -459,18 +509,22 @@
       "target": "表示",
       "reading": "biǎo shì",
       "meaning_vi": "(về ai đó) bày tỏ; phát biểu; cho thấy; (về điều gì đó) biểu thị; có nghĩa; cho thấy; sự biểu đạt; sự thể hiện",
-      "meaning_en": "to express; to show; to say; to state; to indicate; to mean",
+      "meaning_en": "to express; to show; to say; to state; to indicate",
       "hanviet": "biểu thị",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0022.mp3",
       "chars": [
         {
           "char": "表",
-          "hanviet": "biểu"
+          "reading": "biǎo",
+          "hanviet": "biểu",
+          "meaning_vi": "đồng hồ (dụng cụ đo thời gian)"
         },
         {
           "char": "示",
-          "hanviet": "thị"
+          "reading": "shì",
+          "hanviet": "thị",
+          "meaning_vi": "cho thấy"
         }
       ]
     },
@@ -483,19 +537,23 @@
       "verified": false,
       "target": "表演",
       "reading": "biǎo yǎn",
-      "meaning_vi": "vở kịch; buổi biểu diễn; trình diễn; biểu diễn; diễn xuất; minh họa",
-      "meaning_en": "play; show; performance; exhibition; to perform; to act; to demonstrate",
+      "meaning_vi": "vở kịch; buổi biểu diễn; trình diễn; biểu diễn; diễn xuất",
+      "meaning_en": "play; show; performance; exhibition; to perform",
       "hanviet": "biểu diễn",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0023.mp3",
       "chars": [
         {
           "char": "表",
-          "hanviet": "biểu"
+          "reading": "biǎo",
+          "hanviet": "biểu",
+          "meaning_vi": "đồng hồ (dụng cụ đo thời gian)"
         },
         {
           "char": "演",
-          "hanviet": "diễn"
+          "reading": "yǎn",
+          "hanviet": "diễn",
+          "meaning_vi": "biểu diễn (vở kịch"
         }
       ]
     },
@@ -516,11 +574,15 @@
       "chars": [
         {
           "char": "别",
-          "hanviet": "biệt"
+          "reading": "bié",
+          "hanviet": "biệt",
+          "meaning_vi": "rời khỏi"
         },
         {
           "char": "人",
-          "hanviet": "nhân"
+          "reading": "ren",
+          "hanviet": "nhân",
+          "meaning_vi": "người"
         }
       ]
     },
@@ -541,11 +603,15 @@
       "chars": [
         {
           "char": "宾",
-          "hanviet": "tân"
+          "reading": "bīn",
+          "hanviet": "tân",
+          "meaning_vi": "khách mời"
         },
         {
           "char": "馆",
-          "hanviet": "quán"
+          "reading": "guǎn",
+          "hanviet": "quán",
+          "meaning_vi": "toà nhà"
         }
       ]
     },
@@ -566,11 +632,15 @@
       "chars": [
         {
           "char": "冰",
-          "hanviet": "băng"
+          "reading": "bīng",
+          "hanviet": "băng",
+          "meaning_vi": "băng"
         },
         {
           "char": "箱",
-          "hanviet": "rương"
+          "reading": "xiāng",
+          "hanviet": "rương",
+          "meaning_vi": "hộp"
         }
       ]
     },
@@ -583,8 +653,8 @@
       "verified": false,
       "target": "才",
       "reading": "cái",
-      "meaning_vi": "(biến thể của 才[cai2]) vừa mới; (biến thể của 才[cai2]) (trước một biểu thức chỉ số lượng) chỉ",
-      "meaning_en": "ability; talent; sb of a certain type; a capable individual; then and only then; just now; (before an expression of quantity) only",
+      "meaning_vi": "vừa mới; (trước một biểu thức chỉ số lượng) chỉ",
+      "meaning_en": "ability; talent; sb of a certain type; a capable individual; then and only then; just now",
       "hanviet": "tài",
       "distractor_group": "adverb",
       "audio": "hsk3/hsk3-0027.mp3"
@@ -606,11 +676,15 @@
       "chars": [
         {
           "char": "菜",
-          "hanviet": "thái"
+          "reading": "cài",
+          "hanviet": "thái",
+          "meaning_vi": "rau (LT:)"
         },
         {
           "char": "单",
-          "hanviet": "đơn"
+          "reading": "dān",
+          "hanviet": "đơn",
+          "meaning_vi": "hóa đơn"
         }
       ]
     },
@@ -631,11 +705,15 @@
       "chars": [
         {
           "char": "参",
-          "hanviet": "tham"
+          "reading": "cān",
+          "hanviet": "tham",
+          "meaning_vi": "tham gia"
         },
         {
           "char": "加",
-          "hanviet": "gia"
+          "reading": "jiā",
+          "hanviet": "gia",
+          "meaning_vi": "thêm"
         }
       ]
     },
@@ -648,8 +726,8 @@
       "verified": false,
       "target": "草",
       "reading": "cǎo",
-      "meaning_vi": "cỏ; rơm; bản thảo; phác thảo (một văn kiện); cẩu thả; sơ sài",
-      "meaning_en": "variant of 草",
+      "meaning_vi": "cỏ; rơm; bản thảo; phác thảo (một văn kiện); cẩu thả",
+      "meaning_en": "grass; straw; manuscript; draft (of a document); careless",
       "hanviet": "thảo",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0030.mp3"
@@ -677,9 +755,9 @@
       "version": 1,
       "verified": false,
       "target": "差",
-      "reading": "chā",
-      "meaning_vi": "sự khác biệt; không nhất quán; (toán) hiệu số (lượng còn lại sau phép trừ); (văn học) một chút; hơi; hơi hơi",
-      "meaning_en": "difference; discrepancy; (math.) difference (amount remaining after a subtraction); (literary) a little; somewhat; slightly",
+      "reading": "chà",
+      "meaning_vi": "khác; sai; nhầm; thiếu; không đạt tiêu chuẩn; kém",
+      "meaning_en": "different; wrong; mistaken; to fall short; to lack; not up to standard; inferior; Taiwan pr. [chā]",
       "hanviet": "sai",
       "distractor_group": "adj",
       "audio": "hsk3/hsk3-0032.mp3"
@@ -701,11 +779,15 @@
       "chars": [
         {
           "char": "超",
-          "hanviet": "siêu"
+          "reading": "chāo",
+          "hanviet": "siêu",
+          "meaning_vi": "vượt quá"
         },
         {
           "char": "市",
-          "hanviet": "thị"
+          "reading": "shì",
+          "hanviet": "thị",
+          "meaning_vi": "chợ"
         }
       ]
     },
@@ -726,11 +808,15 @@
       "chars": [
         {
           "char": "衬",
-          "hanviet": "sấn"
+          "reading": "chèn",
+          "hanviet": "sấn",
+          "meaning_vi": "(của quần áo) sát da"
         },
         {
           "char": "衫",
-          "hanviet": "sam"
+          "reading": "shān",
+          "hanviet": "sam",
+          "meaning_vi": "áo"
         }
       ]
     },
@@ -751,11 +837,15 @@
       "chars": [
         {
           "char": "成",
-          "hanviet": "thành"
+          "reading": "chéng",
+          "hanviet": "thành",
+          "meaning_vi": "thành công"
         },
         {
           "char": "绩",
-          "hanviet": "tích"
+          "reading": "jì",
+          "hanviet": "tích",
+          "meaning_vi": "xe sợi (gai"
         }
       ]
     },
@@ -776,11 +866,15 @@
       "chars": [
         {
           "char": "城",
-          "hanviet": "thành"
+          "reading": "chéng",
+          "hanviet": "thành",
+          "meaning_vi": "tường thành"
         },
         {
           "char": "市",
-          "hanviet": "thị"
+          "reading": "shì",
+          "hanviet": "thị",
+          "meaning_vi": "chợ"
         }
       ]
     },
@@ -801,11 +895,15 @@
       "chars": [
         {
           "char": "迟",
-          "hanviet": "trì"
+          "reading": "chí",
+          "hanviet": "trì",
+          "meaning_vi": "muộn"
         },
         {
           "char": "到",
-          "hanviet": "đáo"
+          "reading": "dào",
+          "hanviet": "đáo",
+          "meaning_vi": "đến"
         }
       ]
     },
@@ -826,11 +924,15 @@
       "chars": [
         {
           "char": "出",
-          "hanviet": "xuất"
+          "reading": "chū",
+          "hanviet": "xuất",
+          "meaning_vi": "đi ra"
         },
         {
           "char": "现",
-          "hanviet": "hiện"
+          "reading": "xiàn",
+          "hanviet": "hiện",
+          "meaning_vi": "xuất hiện"
         }
       ]
     },
@@ -851,11 +953,15 @@
       "chars": [
         {
           "char": "除",
-          "hanviet": "trừ"
+          "reading": "chú",
+          "hanviet": "trừ",
+          "meaning_vi": "loại bỏ"
         },
         {
           "char": "了",
-          "hanviet": "liễu"
+          "reading": "le",
+          "hanviet": "liễu",
+          "meaning_vi": "(trợ từ chỉ hành động đã hoàn thành)"
         }
       ]
     },
@@ -876,11 +982,15 @@
       "chars": [
         {
           "char": "厨",
-          "hanviet": "trù"
+          "reading": "chú",
+          "hanviet": "trù",
+          "meaning_vi": "nhà bếp"
         },
         {
           "char": "房",
-          "hanviet": "phòng"
+          "reading": "fáng",
+          "hanviet": "phòng",
+          "meaning_vi": "nhà"
         }
       ]
     },
@@ -893,8 +1003,8 @@
       "verified": false,
       "target": "春",
       "reading": "chūn",
-      "meaning_vi": "mùa xuân; vui tươi; hân hoan; trẻ trung; tình yêu; dục vọng; sự sống",
-      "meaning_en": "old variant of 春",
+      "meaning_vi": "mùa xuân; vui tươi; hân hoan; trẻ trung; tình yêu",
+      "meaning_en": "spring (season); gay; joyful; youthful; love",
       "hanviet": "xuân",
       "distractor_group": "time",
       "audio": "hsk3/hsk3-0041.mp3"
@@ -916,11 +1026,15 @@
       "chars": [
         {
           "char": "词",
-          "hanviet": "từ"
+          "reading": "cí",
+          "hanviet": "từ",
+          "meaning_vi": "từ"
         },
         {
           "char": "语",
-          "hanviet": "ngữ"
+          "reading": "yǔ",
+          "hanviet": "ngữ",
+          "meaning_vi": "phương ngữ"
         }
       ]
     },
@@ -941,11 +1055,15 @@
       "chars": [
         {
           "char": "聪",
-          "hanviet": "thông"
+          "reading": "cōng",
+          "hanviet": "thông",
+          "meaning_vi": "(văn học) thính (nghe)"
         },
         {
           "char": "明",
-          "hanviet": "minh"
+          "reading": "ming",
+          "hanviet": "minh",
+          "meaning_vi": "Triều Minh (1368-1644)"
         }
       ]
     },
@@ -966,11 +1084,15 @@
       "chars": [
         {
           "char": "打",
-          "hanviet": "đả"
+          "reading": "dǎ",
+          "hanviet": "đả",
+          "meaning_vi": "đánh"
         },
         {
           "char": "扫",
-          "hanviet": "tảo"
+          "reading": "sǎo",
+          "hanviet": "tảo",
+          "meaning_vi": "quét (bằng chổi hoặc chổi quét)"
         }
       ]
     },
@@ -984,18 +1106,22 @@
       "target": "打算",
       "reading": "dǎ suàn",
       "meaning_vi": "dự định; dự tính; tính toán; kế hoạch",
-      "meaning_en": "to plan; to intend; to calculate; plan; intention; calculation",
+      "meaning_en": "to plan; to intend; to calculate; plan; intention",
       "hanviet": "đả toán",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0045.mp3",
       "chars": [
         {
           "char": "打",
-          "hanviet": "đả"
+          "reading": "dǎ",
+          "hanviet": "đả",
+          "meaning_vi": "đánh"
         },
         {
           "char": "算",
-          "hanviet": "toán"
+          "reading": "suàn",
+          "hanviet": "toán",
+          "meaning_vi": "coi như"
         }
       ]
     },
@@ -1008,8 +1134,8 @@
       "verified": false,
       "target": "带",
       "reading": "dài",
-      "meaning_vi": "dải; thắt lưng; ruy băng; lốp; vùng; khu vực; khu; đeo; mang; dẫn theo; chịu; có; dẫn; dắt; chăm sóc; nuôi dưỡng",
-      "meaning_en": "band; belt; girdle; ribbon; tire; area; zone; region; to wear; to carry; to take along; to bear (i.e. to have); to lead; to bring; to look after; to raise",
+      "meaning_vi": "dải; thắt lưng; ruy băng; lốp; vùng",
+      "meaning_en": "band; belt; girdle; ribbon; tire",
       "hanviet": "đới",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0046.mp3"
@@ -1031,11 +1157,15 @@
       "chars": [
         {
           "char": "担",
-          "hanviet": "dứt"
+          "reading": "dān",
+          "hanviet": "dứt",
+          "meaning_vi": "đảm nhận"
         },
         {
           "char": "心",
-          "hanviet": "tâm"
+          "reading": "xīn",
+          "hanviet": "tâm",
+          "meaning_vi": "tim"
         }
       ]
     },
@@ -1056,11 +1186,15 @@
       "chars": [
         {
           "char": "蛋",
-          "hanviet": "đản"
+          "reading": "dàn",
+          "hanviet": "đản",
+          "meaning_vi": "trứng"
         },
         {
           "char": "糕",
-          "hanviet": "cao"
+          "reading": "gāo",
+          "hanviet": "cao",
+          "meaning_vi": "bánh"
         }
       ]
     },
@@ -1081,11 +1215,15 @@
       "chars": [
         {
           "char": "当",
-          "hanviet": "đáng"
+          "reading": "dāng",
+          "hanviet": "đáng",
+          "meaning_vi": "làm"
         },
         {
           "char": "然",
-          "hanviet": "nhiên"
+          "reading": "rán",
+          "hanviet": "nhiên",
+          "meaning_vi": "đúng"
         }
       ]
     },
@@ -1121,11 +1259,15 @@
       "chars": [
         {
           "char": "地",
-          "hanviet": "địa"
+          "reading": "dì",
+          "hanviet": "địa",
+          "meaning_vi": "đất"
         },
         {
           "char": "方",
-          "hanviet": "phương"
+          "reading": "fāng",
+          "hanviet": "phương",
+          "meaning_vi": "vuông"
         }
       ]
     },
@@ -1146,11 +1288,15 @@
       "chars": [
         {
           "char": "地",
-          "hanviet": "địa"
+          "reading": "dì",
+          "hanviet": "địa",
+          "meaning_vi": "đất"
         },
         {
           "char": "铁",
-          "hanviet": "thiết"
+          "reading": "tiě",
+          "hanviet": "thiết",
+          "meaning_vi": "sắt (kim loại)"
         }
       ]
     },
@@ -1171,11 +1317,15 @@
       "chars": [
         {
           "char": "地",
-          "hanviet": "địa"
+          "reading": "dì",
+          "hanviet": "địa",
+          "meaning_vi": "đất"
         },
         {
           "char": "图",
-          "hanviet": "đồ"
+          "reading": "tú",
+          "hanviet": "đồ",
+          "meaning_vi": "sơ đồ"
         }
       ]
     },
@@ -1203,8 +1353,8 @@
       "verified": false,
       "target": "低",
       "reading": "dī",
-      "meaning_vi": "thấp; bên dưới; cúi (đầu); để rũ xuống; treo xuống; nghiêng",
-      "meaning_en": "low; beneath; to lower (one's head); to let droop; to hang down; to incline",
+      "meaning_vi": "thấp; bên dưới; cúi (đầu); để rũ xuống; treo xuống",
+      "meaning_en": "low; beneath; to lower (one's head); to let droop; to hang down",
       "hanviet": "đê",
       "distractor_group": "adj",
       "audio": "hsk3/hsk3-0055.mp3"
@@ -1226,11 +1376,15 @@
       "chars": [
         {
           "char": "电",
-          "hanviet": "điện"
+          "reading": "diàn",
+          "hanviet": "điện",
+          "meaning_vi": "sét"
         },
         {
           "char": "梯",
-          "hanviet": "thê"
+          "reading": "tī",
+          "hanviet": "thê",
+          "meaning_vi": "thang"
         }
       ]
     },
@@ -1251,11 +1405,15 @@
       "chars": [
         {
           "char": "电",
-          "hanviet": "điện"
+          "reading": "diàn",
+          "hanviet": "điện",
+          "meaning_vi": "sét"
         },
         {
           "char": "子",
-          "hanviet": "tử"
+          "reading": "zǐ",
+          "hanviet": "tử",
+          "meaning_vi": "con trai"
         }
       ]
     },
@@ -1267,9 +1425,9 @@
       "version": 1,
       "verified": false,
       "target": "东",
-      "reading": "Dōng",
+      "reading": "dōng",
       "meaning_vi": "phía đông; chủ nhà (tức là ngồi phía đông của khách); địa chủ",
-      "meaning_en": "surname Dong",
+      "meaning_en": "east; host (i.e. sitting on east side of guest); landlord",
       "hanviet": "đông",
       "distractor_group": "other",
       "audio": "hsk3/hsk3-0058.mp3"
@@ -1306,11 +1464,15 @@
       "chars": [
         {
           "char": "动",
-          "hanviet": "động"
+          "reading": "dòng",
+          "hanviet": "động",
+          "meaning_vi": "(cái gì đó) di chuyển"
         },
         {
           "char": "物",
-          "hanviet": "vật"
+          "reading": "wù",
+          "hanviet": "vật",
+          "meaning_vi": "(hình thức kết hợp) vật"
         }
       ]
     },
@@ -1337,9 +1499,9 @@
       "version": 1,
       "verified": false,
       "target": "段",
-      "reading": "Duàn",
-      "meaning_vi": "đoạn; phần; mẩu; giai đoạn (của một quá trình); lượng từ cho câu chuyện, khoảng thời gian, độ dài sợi chỉ, v.v.",
-      "meaning_en": "surname Duan",
+      "reading": "duàn",
+      "meaning_vi": "đoạn; phần; mẩu; giai đoạn (của một quá trình)",
+      "meaning_en": "paragraph; section; segment; stage (of a process); classifier for stories, periods of time, lengths of thread etc",
       "hanviet": "đoạn",
       "distractor_group": "measure",
       "audio": "hsk3/hsk3-0062.mp3"
@@ -1353,19 +1515,23 @@
       "verified": false,
       "target": "锻炼",
       "reading": "duàn liàn",
-      "meaning_vi": "rèn luyện; rèn giũa; tập thể dục; tập luyện; (bóng) phát triển kỹ năng; tự đào tạo",
-      "meaning_en": "to toughen; to temper; to engage in physical exercise; to work out; (fig.) to develop one's skills; to train oneself",
+      "meaning_vi": "rèn luyện; rèn giũa; tập thể dục; tập luyện; (bóng) phát triển kỹ năng",
+      "meaning_en": "to toughen; to temper; to engage in physical exercise; to work out; (fig.) to develop one's skills",
       "hanviet": "đoán luyện",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0063.mp3",
       "chars": [
         {
           "char": "锻",
-          "hanviet": "đoán"
+          "reading": "duàn",
+          "hanviet": "đoán",
+          "meaning_vi": "rèn luyện"
         },
         {
           "char": "炼",
-          "hanviet": "luyện"
+          "reading": "liàn",
+          "hanviet": "luyện",
+          "meaning_vi": "luyện"
         }
       ]
     },
@@ -1386,11 +1552,15 @@
       "chars": [
         {
           "char": "多",
-          "hanviet": "đa"
+          "reading": "duō",
+          "hanviet": "đa",
+          "meaning_vi": "nhiều"
         },
         {
           "char": "么",
-          "hanviet": "ma"
+          "reading": "me",
+          "hanviet": "ma",
+          "meaning_vi": "hậu tố"
         }
       ]
     },
@@ -1426,11 +1596,15 @@
       "chars": [
         {
           "char": "而",
-          "hanviet": "nhi"
+          "reading": "ér",
+          "hanviet": "nhi",
+          "meaning_vi": "và"
         },
         {
           "char": "且",
-          "hanviet": "thả"
+          "reading": "qiě",
+          "hanviet": "thả",
+          "meaning_vi": "và"
         }
       ]
     },
@@ -1451,11 +1625,15 @@
       "chars": [
         {
           "char": "耳",
-          "hanviet": "nhĩ"
+          "reading": "ěr",
+          "hanviet": "nhĩ",
+          "meaning_vi": "tai"
         },
         {
           "char": "朵",
-          "hanviet": "đoá"
+          "reading": "duo",
+          "hanviet": "đoá",
+          "meaning_vi": "bông hoa"
         }
       ]
     },
@@ -1476,11 +1654,15 @@
       "chars": [
         {
           "char": "发",
-          "hanviet": "phát"
+          "reading": "fā",
+          "hanviet": "phát",
+          "meaning_vi": "gửi đi"
         },
         {
           "char": "烧",
-          "hanviet": "thiêu"
+          "reading": "shāo",
+          "hanviet": "thiêu",
+          "meaning_vi": "đốt"
         }
       ]
     },
@@ -1501,11 +1683,15 @@
       "chars": [
         {
           "char": "发",
-          "hanviet": "phát"
+          "reading": "fā",
+          "hanviet": "phát",
+          "meaning_vi": "gửi đi"
         },
         {
           "char": "现",
-          "hanviet": "hiện"
+          "reading": "xiàn",
+          "hanviet": "hiện",
+          "meaning_vi": "xuất hiện"
         }
       ]
     },
@@ -1519,18 +1705,22 @@
       "target": "方便",
       "reading": "fāng biàn",
       "meaning_vi": "tiện lợi; thích hợp; tạo điều kiện; làm cho dễ dàng; có tiền dư; (nói giảm) đi vệ sinh",
-      "meaning_en": "convenient; suitable; to facilitate; to make things easy; having money to spare; (euphemism) to relieve oneself",
+      "meaning_en": "convenient; suitable; to facilitate; to make things easy; having money to spare",
       "hanviet": "phương tiện",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0070.mp3",
       "chars": [
         {
           "char": "方",
-          "hanviet": "phương"
+          "reading": "fāng",
+          "hanviet": "phương",
+          "meaning_vi": "vuông"
         },
         {
           "char": "便",
-          "hanviet": "tiện"
+          "reading": "biàn",
+          "hanviet": "tiện",
+          "meaning_vi": "đơn giản"
         }
       ]
     },
@@ -1543,8 +1733,8 @@
       "verified": false,
       "target": "放",
       "reading": "fàng",
-      "meaning_vi": "đặt; để; phát hành; thả; để cho đi; thả ra; bắn (pháo hoa)",
-      "meaning_en": "to put; to place; to release; to free; to let go; to let out; to set off (fireworks)",
+      "meaning_vi": "đặt; để; phát hành; thả; để cho đi",
+      "meaning_en": "to put; to place; to release; to free; to let go",
       "hanviet": "phóng",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0071.mp3"
@@ -1566,11 +1756,15 @@
       "chars": [
         {
           "char": "放",
-          "hanviet": "phóng"
+          "reading": "fàng",
+          "hanviet": "phóng",
+          "meaning_vi": "đặt"
         },
         {
           "char": "心",
-          "hanviet": "tâm"
+          "reading": "xīn",
+          "hanviet": "tâm",
+          "meaning_vi": "tim"
         }
       ]
     },
@@ -1583,8 +1777,8 @@
       "verified": false,
       "target": "分",
       "reading": "fēn",
-      "meaning_vi": "chia; tách; phân phối; phân bổ; phân biệt (tốt và xấu); (hình thức kết hợp) chi nhánh (của một tổ chức); phụ- (như trong 分局[fen1 ju2]); phân số; một phần mười (của một số đơn vị); đơn vị chiều dài tương đương 0,33 cm; phút (đơn vị thời gian); phút (đơn vị đo góc); một điểm (trong thể thao hoặc trò chơi); 0,01 nhân dân tệ (đơn vị tiền tệ)",
-      "meaning_en": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad); (bound form) branch of (an organization); sub- (as in 局); fraction; one tenth (of certain units); unit of length equivalent to 0.33 cm; minute (unit of time); minute (angular measurement unit); a point (in sports or games); 0.01 yuan (unit of money)",
+      "meaning_vi": "chia; tách; phân phối; phân bổ; phân biệt (tốt và xấu); (hình thức kết hợp) chi nhánh (của một tổ chức); phụ- (như trong 分局[fen1 ju2]); phân số",
+      "meaning_en": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad); (bound form) branch of (an organization); sub- (as in 局); fraction",
       "hanviet": "phân",
       "distractor_group": "time",
       "audio": "hsk3/hsk3-0073.mp3"
@@ -1606,11 +1800,15 @@
       "chars": [
         {
           "char": "附",
-          "hanviet": "phụ"
+          "reading": "fù",
+          "hanviet": "phụ",
+          "meaning_vi": "thêm"
         },
         {
           "char": "近",
-          "hanviet": "cận"
+          "reading": "jìn",
+          "hanviet": "cận",
+          "meaning_vi": "gần"
         }
       ]
     },
@@ -1623,7 +1821,7 @@
       "verified": false,
       "target": "复习",
       "reading": "fù xí",
-      "meaning_vi": "biến thể của 復習|复习[fu4 xi2]",
+      "meaning_vi": "ôn tập",
       "meaning_en": "to review; revision",
       "hanviet": "phục tập",
       "distractor_group": "verb",
@@ -1631,11 +1829,15 @@
       "chars": [
         {
           "char": "复",
-          "hanviet": "phục"
+          "reading": "fù",
+          "hanviet": "phục",
+          "meaning_vi": "trả lời thư"
         },
         {
           "char": "习",
-          "hanviet": "tập"
+          "reading": "xí",
+          "hanviet": "tập",
+          "meaning_vi": "(dạng cố định) thực hành"
         }
       ]
     },
@@ -1671,11 +1873,15 @@
       "chars": [
         {
           "char": "感",
-          "hanviet": "cảm"
+          "reading": "gǎn",
+          "hanviet": "cảm",
+          "meaning_vi": "cảm thấy"
         },
         {
           "char": "冒",
-          "hanviet": "mạo"
+          "reading": "mào",
+          "hanviet": "mạo",
+          "meaning_vi": "phát ra"
         }
       ]
     },
@@ -1696,11 +1902,15 @@
       "chars": [
         {
           "char": "干",
-          "hanviet": "can"
+          "reading": "gān",
+          "hanviet": "can",
+          "meaning_vi": "(dạng kết hợp) liên quan đến"
         },
         {
           "char": "净",
-          "hanviet": "tịnh"
+          "reading": "jìng",
+          "hanviet": "tịnh",
+          "meaning_vi": "sạch"
         }
       ]
     },
@@ -1713,7 +1923,7 @@
       "verified": false,
       "target": "刚才",
       "reading": "gāng cái",
-      "meaning_vi": "vừa mới (biến thể của 剛才|刚才[gang1 cai2])",
+      "meaning_vi": "vừa mới",
       "meaning_en": "just now; a moment ago",
       "hanviet": "cương tài",
       "distractor_group": "time",
@@ -1721,11 +1931,15 @@
       "chars": [
         {
           "char": "刚",
-          "hanviet": "cương"
+          "reading": "gāng",
+          "hanviet": "cương",
+          "meaning_vi": "cứng"
         },
         {
           "char": "才",
-          "hanviet": "tài"
+          "reading": "cái",
+          "hanviet": "tài",
+          "meaning_vi": "vừa mới"
         }
       ]
     },
@@ -1746,11 +1960,15 @@
       "chars": [
         {
           "char": "根",
-          "hanviet": "căn"
+          "reading": "gēn",
+          "hanviet": "căn",
+          "meaning_vi": "rễ"
         },
         {
           "char": "据",
-          "hanviet": "cứ"
+          "reading": "jù",
+          "hanviet": "cứ",
+          "meaning_vi": "theo"
         }
       ]
     },
@@ -1763,8 +1981,8 @@
       "verified": false,
       "target": "跟",
       "reading": "gēn",
-      "meaning_vi": "gót chân; theo sát; đi cùng; (phụ nữ) lấy ai; với; so với; đến; hướng về; và (nối hai danh từ)",
-      "meaning_en": "heel; to follow closely; to go with; (of a woman) to marry sb; with; compared with; to; towards; and (joining two nouns)",
+      "meaning_vi": "gót chân; theo sát; đi cùng; (phụ nữ) lấy ai; với",
+      "meaning_en": "heel; to follow closely; to go with; (of a woman) to marry sb; with",
       "hanviet": "cân",
       "distractor_group": "preposition",
       "audio": "hsk3/hsk3-0081.mp3"
@@ -1801,11 +2019,15 @@
       "chars": [
         {
           "char": "公",
-          "hanviet": "công"
+          "reading": "gōng",
+          "hanviet": "công",
+          "meaning_vi": "công cộng"
         },
         {
           "char": "园",
-          "hanviet": "viên"
+          "reading": "yuán",
+          "hanviet": "viên",
+          "meaning_vi": "đất dùng để trồng cây"
         }
       ]
     },
@@ -1826,11 +2048,15 @@
       "chars": [
         {
           "char": "故",
-          "hanviet": "cố"
+          "reading": "gù",
+          "hanviet": "cố",
+          "meaning_vi": "sự việc"
         },
         {
           "char": "事",
-          "hanviet": "sự"
+          "reading": "shì",
+          "hanviet": "sự",
+          "meaning_vi": "sự việc"
         }
       ]
     },
@@ -1857,9 +2083,9 @@
       "version": 1,
       "verified": false,
       "target": "关",
-      "reading": "Guān",
+      "reading": "guān",
       "meaning_vi": "ải núi; đóng; khép; tắt; giam giữ; nhốt; nhốt (ai đó trong phòng, chim trong lồng, v.v.); liên quan; dính líu",
-      "meaning_en": "surname Guan",
+      "meaning_en": "mountain pass; to close; to shut; to turn off; to confine; to lock (sb) up; to shut (sb in a room, a bird in a cage etc); to concern; to involve",
       "hanviet": "quan",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0086.mp3"
@@ -1873,19 +2099,23 @@
       "verified": false,
       "target": "关系",
       "reading": "guān xi",
-      "meaning_vi": "biến thể của 關係|关系[guan1 xi5]",
-      "meaning_en": "relation; relationship; to concern; to affect; to have to do with; guanxi",
+      "meaning_vi": "quan hệ; mối quan hệ; liên quan; ảnh hưởng; có liên quan",
+      "meaning_en": "relation; relationship; to concern; to affect; to have to do with",
       "hanviet": "quan hệ",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0087.mp3",
       "chars": [
         {
           "char": "关",
-          "hanviet": "quan"
+          "reading": "guān",
+          "hanviet": "quan",
+          "meaning_vi": "ải núi"
         },
         {
           "char": "系",
-          "hanviet": "hệ"
+          "reading": "xi",
+          "hanviet": "hệ",
+          "meaning_vi": "kết nối"
         }
       ]
     },
@@ -1906,11 +2136,15 @@
       "chars": [
         {
           "char": "关",
-          "hanviet": "quan"
+          "reading": "guān",
+          "hanviet": "quan",
+          "meaning_vi": "ải núi"
         },
         {
           "char": "心",
-          "hanviet": "tâm"
+          "reading": "xīn",
+          "hanviet": "tâm",
+          "meaning_vi": "tim"
         }
       ]
     },
@@ -1931,11 +2165,15 @@
       "chars": [
         {
           "char": "关",
-          "hanviet": "quan"
+          "reading": "guān",
+          "hanviet": "quan",
+          "meaning_vi": "ải núi"
         },
         {
           "char": "于",
-          "hanviet": "ư"
+          "reading": "yú",
+          "hanviet": "ư",
+          "meaning_vi": "(chỉ thời gian hoặc địa điểm) ở"
         }
       ]
     },
@@ -1956,11 +2194,15 @@
       "chars": [
         {
           "char": "国",
-          "hanviet": "quốc"
+          "reading": "guó",
+          "hanviet": "quốc",
+          "meaning_vi": "quốc gia"
         },
         {
           "char": "家",
-          "hanviet": "gia"
+          "reading": "jiā",
+          "hanviet": "gia",
+          "meaning_vi": "nhà"
         }
       ]
     },
@@ -1981,11 +2223,15 @@
       "chars": [
         {
           "char": "果",
-          "hanviet": "quả"
+          "reading": "guǒ",
+          "hanviet": "quả",
+          "meaning_vi": "trái cây"
         },
         {
           "char": "汁",
-          "hanviet": "trấp"
+          "reading": "zhī",
+          "hanviet": "trấp",
+          "meaning_vi": "nước ép"
         }
       ]
     },
@@ -2006,11 +2252,15 @@
       "chars": [
         {
           "char": "过",
-          "hanviet": "quá"
+          "reading": "guò",
+          "hanviet": "quá",
+          "meaning_vi": "băng qua"
         },
         {
           "char": "去",
-          "hanviet": "khứ"
+          "reading": "qù",
+          "hanviet": "khứ",
+          "meaning_vi": "đi"
         }
       ]
     },
@@ -2031,11 +2281,15 @@
       "chars": [
         {
           "char": "还",
-          "hanviet": "hoàn"
+          "reading": "hái",
+          "hanviet": "hoàn",
+          "meaning_vi": "vẫn"
         },
         {
           "char": "是",
-          "hanviet": "thị"
+          "reading": "shi",
+          "hanviet": "thị",
+          "meaning_vi": "là (chỉ theo sau bởi danh từ)"
         }
       ]
     },
@@ -2056,11 +2310,15 @@
       "chars": [
         {
           "char": "害",
-          "hanviet": "hại"
+          "reading": "hài",
+          "hanviet": "hại",
+          "meaning_vi": "gây hại cho"
         },
         {
           "char": "怕",
-          "hanviet": "phạ"
+          "reading": "pà",
+          "hanviet": "phạ",
+          "meaning_vi": "sợ"
         }
       ]
     },
@@ -2096,11 +2354,15 @@
       "chars": [
         {
           "char": "黑",
-          "hanviet": "hắc"
+          "reading": "hēi",
+          "hanviet": "hắc",
+          "meaning_vi": "đen"
         },
         {
           "char": "板",
-          "hanviet": "bản"
+          "reading": "bǎn",
+          "hanviet": "bản",
+          "meaning_vi": "tấm"
         }
       ]
     },
@@ -2121,11 +2383,15 @@
       "chars": [
         {
           "char": "护",
-          "hanviet": "hộ"
+          "reading": "hù",
+          "hanviet": "hộ",
+          "meaning_vi": "bảo vệ"
         },
         {
           "char": "照",
-          "hanviet": "chiếu"
+          "reading": "zhào",
+          "hanviet": "chiếu",
+          "meaning_vi": "theo"
         }
       ]
     },
@@ -2137,9 +2403,9 @@
       "version": 1,
       "verified": false,
       "target": "花",
-      "reading": "Huā",
-      "meaning_vi": "biến thể của 花[hua1]; hoa; bông; cũng đọc là [wei3]",
-      "meaning_en": "surname Hua",
+      "reading": "huā",
+      "meaning_vi": "hoa; bông",
+      "meaning_en": "flower; blossom; fancy pattern; florid; to spend (money, time)",
       "hanviet": "hoa",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0098.mp3"
@@ -2161,11 +2427,15 @@
       "chars": [
         {
           "char": "花",
-          "hanviet": "hoa"
+          "reading": "huā",
+          "hanviet": "hoa",
+          "meaning_vi": "hoa"
         },
         {
           "char": "园",
-          "hanviet": "viên"
+          "reading": "yuán",
+          "hanviet": "viên",
+          "meaning_vi": "đất dùng để trồng cây"
         }
       ]
     },
@@ -2178,8 +2448,8 @@
       "verified": false,
       "target": "画",
       "reading": "huà",
-      "meaning_vi": "vẽ; tô tranh; bức tranh; hội họa (LT: 幅[fu2],張|张[zhang1]); vẽ (một đường) (biến thể của 劃|划[hua4]); nét chữ Hán (biến thể của 劃|划[hua4]); (thư pháp) nét ngang (biến thể của 劃|划[hua4])",
-      "meaning_en": "to draw; to paint; picture; painting; to draw (a line) (variant of 划); stroke of a Chinese character (variant of 划); (calligraphy) horizontal stroke (variant of 划)",
+      "meaning_vi": "vẽ; tô tranh; bức tranh; hội họa (LT: ,); vẽ (một đường); nét chữ Hán; (thư pháp) nét ngang",
+      "meaning_en": "to draw; to paint; picture; painting; to draw (a line); stroke of a Chinese character; (calligraphy) horizontal stroke",
       "hanviet": "hoạ",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0100.mp3"
@@ -2216,11 +2486,15 @@
       "chars": [
         {
           "char": "环",
-          "hanviet": "hoàn"
+          "reading": "huán",
+          "hanviet": "hoàn",
+          "meaning_vi": "nhẫn"
         },
         {
           "char": "境",
-          "hanviet": "cảnh"
+          "reading": "jìng",
+          "hanviet": "cảnh",
+          "meaning_vi": "biên giới"
         }
       ]
     },
@@ -2247,9 +2521,9 @@
       "version": 1,
       "verified": false,
       "target": "黄",
-      "reading": "Huáng",
+      "reading": "huáng",
       "meaning_vi": "màu vàng; khiêu dâm; thất bại",
-      "meaning_en": "surname Huang or Hwang",
+      "meaning_en": "yellow; pornographic; to fall through",
       "hanviet": "hoàng",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0104.mp3"
@@ -2271,11 +2545,15 @@
       "chars": [
         {
           "char": "会",
-          "hanviet": "hội"
+          "reading": "huì",
+          "hanviet": "hội",
+          "meaning_vi": "có thể"
         },
         {
           "char": "议",
-          "hanviet": "nghị"
+          "reading": "yì",
+          "hanviet": "nghị",
+          "meaning_vi": "bình luận"
         }
       ]
     },
@@ -2296,11 +2574,15 @@
       "chars": [
         {
           "char": "或",
-          "hanviet": "hoặc"
+          "reading": "huò",
+          "hanviet": "hoặc",
+          "meaning_vi": "có thể"
         },
         {
           "char": "者",
-          "hanviet": "giả"
+          "reading": "zhě",
+          "hanviet": "giả",
+          "meaning_vi": "(sau động từ hoặc tính từ) người mà ..."
         }
       ]
     },
@@ -2321,11 +2603,15 @@
       "chars": [
         {
           "char": "机",
-          "hanviet": "cơ"
+          "reading": "jī",
+          "hanviet": "cơ",
+          "meaning_vi": "(hình thức kết hợp) máy móc"
         },
         {
           "char": "会",
-          "hanviet": "hội"
+          "reading": "huì",
+          "hanviet": "hội",
+          "meaning_vi": "có thể"
         }
       ]
     },
@@ -2361,11 +2647,15 @@
       "chars": [
         {
           "char": "几",
-          "hanviet": "kỷ"
+          "reading": "jī",
+          "hanviet": "kỷ",
+          "meaning_vi": "gần như"
         },
         {
           "char": "乎",
-          "hanviet": "hồ"
+          "reading": "hū",
+          "hanviet": "hồ",
+          "meaning_vi": "(trợ từ cổ điển tương tự ) trong"
         }
       ]
     },
@@ -2386,11 +2676,15 @@
       "chars": [
         {
           "char": "记",
-          "hanviet": "ký"
+          "reading": "jì",
+          "hanviet": "ký",
+          "meaning_vi": "ghi chép"
         },
         {
           "char": "得",
-          "hanviet": "đắc"
+          "reading": "de",
+          "hanviet": "đắc",
+          "meaning_vi": "trợ từ kết cấu: dùng sau động từ (hoặc tính từ làm động từ chính)"
         }
       ]
     },
@@ -2411,11 +2705,15 @@
       "chars": [
         {
           "char": "季",
-          "hanviet": "quý"
+          "reading": "jì",
+          "hanviet": "quý",
+          "meaning_vi": "mùa"
         },
         {
           "char": "节",
-          "hanviet": "tiết"
+          "reading": "jié",
+          "hanviet": "tiết",
+          "meaning_vi": "khớp"
         }
       ]
     },
@@ -2436,11 +2734,15 @@
       "chars": [
         {
           "char": "检",
-          "hanviet": "kiểm"
+          "reading": "jiǎn",
+          "hanviet": "kiểm",
+          "meaning_vi": "kiểm tra"
         },
         {
           "char": "查",
-          "hanviet": "tra"
+          "reading": "chá",
+          "hanviet": "tra",
+          "meaning_vi": "nghiên cứu"
         }
       ]
     },
@@ -2461,11 +2763,15 @@
       "chars": [
         {
           "char": "简",
-          "hanviet": "giản"
+          "reading": "jiǎn",
+          "hanviet": "giản",
+          "meaning_vi": "đơn giản"
         },
         {
           "char": "单",
-          "hanviet": "đơn"
+          "reading": "dān",
+          "hanviet": "đơn",
+          "meaning_vi": "hóa đơn"
         }
       ]
     },
@@ -2486,11 +2792,15 @@
       "chars": [
         {
           "char": "见",
-          "hanviet": "kiến"
+          "reading": "jiàn",
+          "hanviet": "kiến",
+          "meaning_vi": "thấy"
         },
         {
           "char": "面",
-          "hanviet": "diện"
+          "reading": "miàn",
+          "hanviet": "diện",
+          "meaning_vi": "bột"
         }
       ]
     },
@@ -2511,11 +2821,15 @@
       "chars": [
         {
           "char": "健",
-          "hanviet": "kiện"
+          "reading": "jiàn",
+          "hanviet": "kiện",
+          "meaning_vi": "khỏe mạnh"
         },
         {
           "char": "康",
-          "hanviet": "khang"
+          "reading": "kāng",
+          "hanviet": "khang",
+          "meaning_vi": "khỏe mạnh"
         }
       ]
     },
@@ -2528,8 +2842,8 @@
       "verified": false,
       "target": "讲",
       "reading": "jiǎng",
-      "meaning_vi": "nói; giải thích; đàm phán; nhấn mạnh; kĩ lưỡng; về mặt nào đó; bài nói; chia sẻ",
-      "meaning_en": "to speak; to explain; to negotiate; to emphasize; to be particular about; as far as sth is concerned; speech; lecture",
+      "meaning_vi": "nói; giải thích; đàm phán; nhấn mạnh; kĩ lưỡng",
+      "meaning_en": "to speak; to explain; to negotiate; to emphasize; to be particular about",
       "hanviet": "giảng",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0116.mp3"
@@ -2542,9 +2856,9 @@
       "version": 1,
       "verified": false,
       "target": "角",
-      "reading": "Jué",
-      "meaning_vi": "vai diễn (sân khấu); cạnh tranh; bình rượu ba chân cổ; âm thứ ba của ngũ cung",
-      "meaning_en": "surname Jue",
+      "reading": "jiǎo",
+      "meaning_vi": "góc; góc cạnh; sừng; hình dạng sừng; đơn vị tiền bằng 0,1 nhân dân tệ, hoặc 10 xu (một hào)",
+      "meaning_en": "angle; corner; horn; horn-shaped; unit of money equal to 0.1 yuan, or 10 cents (a dime)",
       "hanviet": "giác",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0117.mp3"
@@ -2558,7 +2872,7 @@
       "verified": false,
       "target": "脚",
       "reading": "jiǎo",
-      "meaning_vi": "bàn chân; chân (của động vật hoặc đồ vật); đế, chân (của đồ vật); lượng từ: 雙|双[shuang1], 隻|只[zhi1]; lượng từ cho cú đá",
+      "meaning_vi": "bàn chân; chân (của động vật hoặc đồ vật); đế, chân (của đồ vật)",
       "meaning_en": "foot; leg (of an animal or an object); base (of an object); classifier for kicks",
       "hanviet": "cước",
       "distractor_group": "noun",
@@ -2572,9 +2886,9 @@
       "version": 1,
       "verified": false,
       "target": "教",
-      "reading": "Jiào",
-      "meaning_vi": "tôn giáo; giảng dạy; làm; khiến; bảo",
-      "meaning_en": "surname Jiao",
+      "reading": "jiāo",
+      "meaning_vi": "dạy",
+      "meaning_en": "to teach",
       "hanviet": "giáo",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0119.mp3"
@@ -2588,8 +2902,8 @@
       "verified": false,
       "target": "接",
       "reading": "jiē",
-      "meaning_vi": "nhận; trả lời (điện thoại); gặp hoặc chào đón ai; kết nối; bắt; ghép; mở rộng; tiếp nhận ca trực; tiếp quản cho ai",
-      "meaning_en": "to receive; to answer (the phone); to meet or welcome sb; to connect; to catch; to join; to extend; to take one's turn on duty; to take over for sb",
+      "meaning_vi": "nhận; trả lời (điện thoại); gặp hoặc chào đón ai; kết nối; bắt",
+      "meaning_en": "to receive; to answer (the phone); to meet or welcome sb; to connect; to catch",
       "hanviet": "tiếp",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0120.mp3"
@@ -2611,11 +2925,15 @@
       "chars": [
         {
           "char": "街",
-          "hanviet": "nhai"
+          "reading": "jiē",
+          "hanviet": "nhai",
+          "meaning_vi": "đường phố"
         },
         {
           "char": "道",
-          "hanviet": "đạo"
+          "reading": "dào",
+          "hanviet": "đạo",
+          "meaning_vi": "đường"
         }
       ]
     },
@@ -2636,11 +2954,15 @@
       "chars": [
         {
           "char": "节",
-          "hanviet": "tiết"
+          "reading": "jié",
+          "hanviet": "tiết",
+          "meaning_vi": "khớp"
         },
         {
           "char": "目",
-          "hanviet": "mục"
+          "reading": "mù",
+          "hanviet": "mục",
+          "meaning_vi": "mắt"
         }
       ]
     },
@@ -2661,11 +2983,15 @@
       "chars": [
         {
           "char": "节",
-          "hanviet": "tiết"
+          "reading": "jié",
+          "hanviet": "tiết",
+          "meaning_vi": "khớp"
         },
         {
           "char": "日",
-          "hanviet": "nhật"
+          "reading": "rì",
+          "hanviet": "nhật",
+          "meaning_vi": "mặt trời"
         }
       ]
     },
@@ -2686,11 +3012,15 @@
       "chars": [
         {
           "char": "结",
-          "hanviet": "kết"
+          "reading": "jié",
+          "hanviet": "kết",
+          "meaning_vi": "nút"
         },
         {
           "char": "婚",
-          "hanviet": "hôn"
+          "reading": "hūn",
+          "hanviet": "hôn",
+          "meaning_vi": "kết hôn"
         }
       ]
     },
@@ -2711,11 +3041,15 @@
       "chars": [
         {
           "char": "结",
-          "hanviet": "kết"
+          "reading": "jié",
+          "hanviet": "kết",
+          "meaning_vi": "nút"
         },
         {
           "char": "束",
-          "hanviet": "thúc"
+          "reading": "shù",
+          "hanviet": "thúc",
+          "meaning_vi": "buộc"
         }
       ]
     },
@@ -2736,11 +3070,15 @@
       "chars": [
         {
           "char": "解",
-          "hanviet": "giải"
+          "reading": "jiě",
+          "hanviet": "giải",
+          "meaning_vi": "chia"
         },
         {
           "char": "决",
-          "hanviet": "quyết"
+          "reading": "jué",
+          "hanviet": "quyết",
+          "meaning_vi": "quyết định"
         }
       ]
     },
@@ -2753,7 +3091,7 @@
       "verified": false,
       "target": "借",
       "reading": "jiè",
-      "meaning_vi": "biến thể của 借[jie4]",
+      "meaning_vi": "mượn; (dùng kết hợp với hoặc ,...) cho mượn; tận dụng; lợi dụng; (đôi khi theo sau bởi ) bằng; với",
       "meaning_en": "to lend; to borrow; by means of; to take (an opportunity)",
       "hanviet": "tá",
       "distractor_group": "verb",
@@ -2776,11 +3114,15 @@
       "chars": [
         {
           "char": "经",
-          "hanviet": "kinh"
+          "reading": "jīng",
+          "hanviet": "kinh",
+          "meaning_vi": "kinh điển"
         },
         {
           "char": "常",
-          "hanviet": "thường"
+          "reading": "cháng",
+          "hanviet": "thường",
+          "meaning_vi": "luôn luôn"
         }
       ]
     },
@@ -2801,11 +3143,15 @@
       "chars": [
         {
           "char": "经",
-          "hanviet": "kinh"
+          "reading": "jīng",
+          "hanviet": "kinh",
+          "meaning_vi": "kinh điển"
         },
         {
           "char": "过",
-          "hanviet": "quá"
+          "reading": "guò",
+          "hanviet": "quá",
+          "meaning_vi": "băng qua"
         }
       ]
     },
@@ -2818,7 +3164,7 @@
       "verified": false,
       "target": "经理",
       "reading": "jīng lǐ",
-      "meaning_vi": "quản lý; giám đốc; Lượng từ: 個|个[ge4], 位[wei4], 名[ming2]",
+      "meaning_vi": "quản lý; giám đốc",
       "meaning_en": "manager; director",
       "hanviet": "kinh lý",
       "distractor_group": "noun",
@@ -2826,11 +3172,15 @@
       "chars": [
         {
           "char": "经",
-          "hanviet": "kinh"
+          "reading": "jīng",
+          "hanviet": "kinh",
+          "meaning_vi": "kinh điển"
         },
         {
           "char": "理",
-          "hanviet": "lý"
+          "reading": "lǐ",
+          "hanviet": "lý",
+          "meaning_vi": "kết cấu"
         }
       ]
     },
@@ -2881,11 +3231,15 @@
       "chars": [
         {
           "char": "举",
-          "hanviet": "cử"
+          "reading": "jǔ",
+          "hanviet": "cử",
+          "meaning_vi": "nâng"
         },
         {
           "char": "行",
-          "hanviet": "hạnh"
+          "reading": "xíng",
+          "hanviet": "hạnh",
+          "meaning_vi": "đi"
         }
       ]
     },
@@ -2906,11 +3260,15 @@
       "chars": [
         {
           "char": "句",
-          "hanviet": "câu"
+          "reading": "jù",
+          "hanviet": "câu",
+          "meaning_vi": "câu"
         },
         {
           "char": "子",
-          "hanviet": "tử"
+          "reading": "zi",
+          "hanviet": "tử",
+          "meaning_vi": "(hậu tố danh từ)"
         }
       ]
     },
@@ -2931,11 +3289,15 @@
       "chars": [
         {
           "char": "决",
-          "hanviet": "quyết"
+          "reading": "jué",
+          "hanviet": "quyết",
+          "meaning_vi": "quyết định"
         },
         {
           "char": "定",
-          "hanviet": "định"
+          "reading": "dìng",
+          "hanviet": "định",
+          "meaning_vi": "cố định"
         }
       ]
     },
@@ -2956,11 +3318,15 @@
       "chars": [
         {
           "char": "可",
-          "hanviet": "khả"
+          "reading": "kě",
+          "hanviet": "khả",
+          "meaning_vi": "(tiền tố) có thể"
         },
         {
           "char": "爱",
-          "hanviet": "ái"
+          "reading": "ài",
+          "hanviet": "ái",
+          "meaning_vi": "yêu"
         }
       ]
     },
@@ -2988,8 +3354,8 @@
       "verified": false,
       "target": "刻",
       "reading": "kè",
-      "meaning_vi": "một phần tư (giờ); khoảnh khắc; khắc; chạm khắc; cắt; áp bức; lượng từ cho khoảng thời gian ngắn",
-      "meaning_en": "quarter (hour); moment; to carve; to engrave; to cut; oppressive; classifier for short time intervals",
+      "meaning_vi": "một phần tư (giờ); khoảnh khắc; khắc; chạm khắc; cắt",
+      "meaning_en": "quarter (hour); moment; to carve; to engrave; to cut",
       "hanviet": "khắc",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0138.mp3"
@@ -3011,11 +3377,15 @@
       "chars": [
         {
           "char": "客",
-          "hanviet": "khách"
+          "reading": "kè",
+          "hanviet": "khách",
+          "meaning_vi": "khách hàng"
         },
         {
           "char": "人",
-          "hanviet": "nhân"
+          "reading": "rén",
+          "hanviet": "nhân",
+          "meaning_vi": "người"
         }
       ]
     },
@@ -3036,11 +3406,15 @@
       "chars": [
         {
           "char": "空",
-          "hanviet": "không"
+          "reading": "kōng",
+          "hanviet": "không",
+          "meaning_vi": "trống không"
         },
         {
           "char": "调",
-          "hanviet": "điều"
+          "reading": "tiáo",
+          "hanviet": "điều",
+          "meaning_vi": "hòa hợp"
         }
       ]
     },
@@ -3053,7 +3427,7 @@
       "verified": false,
       "target": "口",
       "reading": "kǒu",
-      "meaning_vi": "miệng; lượng từ cho những thứ có miệng (người, động vật nuôi, đại bác, giếng, v.v.); lượng từ cho vết cắn hoặc ngụm",
+      "meaning_vi": "miệng",
       "meaning_en": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls",
       "hanviet": "khẩu",
       "distractor_group": "measure",
@@ -3084,18 +3458,22 @@
       "target": "裤子",
       "reading": "kù zi",
       "meaning_vi": "quần dài; quần",
-      "meaning_en": "variant of 裤子, trousers; pants",
+      "meaning_en": "trousers; pants",
       "hanviet": "khố tử",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0143.mp3",
       "chars": [
         {
           "char": "裤",
-          "hanviet": "khố"
+          "reading": "kù",
+          "hanviet": "khố",
+          "meaning_vi": "quần lót"
         },
         {
           "char": "子",
-          "hanviet": "tử"
+          "reading": "zi",
+          "hanviet": "tử",
+          "meaning_vi": "(hậu tố danh từ)"
         }
       ]
     },
@@ -3116,11 +3494,15 @@
       "chars": [
         {
           "char": "筷",
-          "hanviet": "khoái"
+          "reading": "kuài",
+          "hanviet": "khoái",
+          "meaning_vi": "đũa"
         },
         {
           "char": "子",
-          "hanviet": "tử"
+          "reading": "zi",
+          "hanviet": "tử",
+          "meaning_vi": "(hậu tố danh từ)"
         }
       ]
     },
@@ -3132,9 +3514,9 @@
       "version": 1,
       "verified": false,
       "target": "蓝",
-      "reading": "Lán",
+      "reading": "lán",
       "meaning_vi": "màu xanh; dị thảo chàm",
-      "meaning_en": "surname Lan",
+      "meaning_en": "blue; indigo plant",
       "hanviet": "lam",
       "distractor_group": "adj",
       "audio": "hsk3/hsk3-0145.mp3"
@@ -3148,8 +3530,8 @@
       "verified": false,
       "target": "老",
       "reading": "lǎo",
-      "meaning_vi": "tiền tố dùng trước họ của một người hoặc số thứ tự sinh của các con trong gia đình hoặc để chỉ sự thân mật hoặc quen thuộc; già (người); người đáng kính; có kinh nghiệm; lâu năm; luôn luôn; lúc nào cũng; của quá khứ; rất; lỗi thời; (thịt,...) dai",
-      "meaning_en": "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity; old (of people); venerable (person); experienced; of long standing; always; all the time; of the past; very; outdated; (of meat etc) tough",
+      "meaning_vi": "tiền tố dùng trước họ của một người hoặc số thứ tự sinh của các con trong gia đình hoặc để chỉ sự thân mật hoặc quen thuộc; già (người); người đáng kính; có kinh nghiệm; lâu năm",
+      "meaning_en": "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity; old (of people); venerable (person); experienced; of long standing",
       "hanviet": "lão",
       "distractor_group": "adj",
       "audio": "hsk3/hsk3-0146.mp3"
@@ -3171,11 +3553,15 @@
       "chars": [
         {
           "char": "了",
-          "hanviet": "liễu"
+          "reading": "liǎo",
+          "hanviet": "liễu",
+          "meaning_vi": "(mắt) sáng"
         },
         {
           "char": "解",
-          "hanviet": "giải"
+          "reading": "jiě",
+          "hanviet": "giải",
+          "meaning_vi": "chia"
         }
       ]
     },
@@ -3196,11 +3582,15 @@
       "chars": [
         {
           "char": "离",
-          "hanviet": "ly"
+          "reading": "lí",
+          "hanviet": "ly",
+          "meaning_vi": "rời khỏi"
         },
         {
           "char": "开",
-          "hanviet": "khai"
+          "reading": "kāi",
+          "hanviet": "khai",
+          "meaning_vi": "mở (ngoại động từ hoặc nội động từ)"
         }
       ]
     },
@@ -3221,11 +3611,15 @@
       "chars": [
         {
           "char": "礼",
-          "hanviet": "lễ"
+          "reading": "lǐ",
+          "hanviet": "lễ",
+          "meaning_vi": "quà"
         },
         {
           "char": "物",
-          "hanviet": "vật"
+          "reading": "wù",
+          "hanviet": "vật",
+          "meaning_vi": "(hình thức kết hợp) vật"
         }
       ]
     },
@@ -3246,11 +3640,15 @@
       "chars": [
         {
           "char": "历",
-          "hanviet": "lịch"
+          "reading": "lì",
+          "hanviet": "lịch",
+          "meaning_vi": "trải qua"
         },
         {
           "char": "史",
-          "hanviet": "sử"
+          "reading": "shǐ",
+          "hanviet": "sử",
+          "meaning_vi": "lịch sử"
         }
       ]
     },
@@ -3286,11 +3684,15 @@
       "chars": [
         {
           "char": "练",
-          "hanviet": "luyện"
+          "reading": "liàn",
+          "hanviet": "luyện",
+          "meaning_vi": "luyện tập"
         },
         {
           "char": "习",
-          "hanviet": "tập"
+          "reading": "xí",
+          "hanviet": "tập",
+          "meaning_vi": "(dạng cố định) thực hành"
         }
       ]
     },
@@ -3303,7 +3705,7 @@
       "verified": false,
       "target": "辆",
       "reading": "liàng",
-      "meaning_vi": "lượng từ cho xe cộ",
+      "meaning_vi": "lượng từ cho xe cộ (xe, ô tô...)",
       "meaning_en": "classifier for vehicles",
       "hanviet": "lượng",
       "distractor_group": "measure",
@@ -3326,11 +3728,15 @@
       "chars": [
         {
           "char": "邻",
-          "hanviet": "lân"
+          "reading": "lín",
+          "hanviet": "lân",
+          "meaning_vi": "hàng xóm"
         },
         {
           "char": "居",
-          "hanviet": "cư"
+          "reading": "jū",
+          "hanviet": "cư",
+          "meaning_vi": "cư trú"
         }
       ]
     },
@@ -3342,9 +3748,9 @@
       "version": 1,
       "verified": false,
       "target": "楼",
-      "reading": "Lóu",
+      "reading": "lóu",
       "meaning_vi": "nhà có hơn 1 tầng; toà nhà nhiều tầng; tầng",
-      "meaning_en": "surname Lou",
+      "meaning_en": "house with more than 1 story; storied building; floor",
       "hanviet": "lâu",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0155.mp3"
@@ -3372,9 +3778,9 @@
       "version": 1,
       "verified": false,
       "target": "马",
-      "reading": "Mǎ",
-      "meaning_vi": "ngựa; Lượng từ: 匹[pi3]; quân mã trong cờ tướng; quân mã trong cờ vua",
-      "meaning_en": "surname Ma; abbr. for Malaysia 马来西亚",
+      "reading": "mǎ",
+      "meaning_vi": "ngựa; quân mã trong cờ tướng; quân mã trong cờ vua",
+      "meaning_en": "horse; horse or cavalry piece in Chinese chess; knight in Western chess",
       "hanviet": "mã",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0157.mp3"
@@ -3396,11 +3802,15 @@
       "chars": [
         {
           "char": "马",
-          "hanviet": "mã"
+          "reading": "mǎ",
+          "hanviet": "mã",
+          "meaning_vi": "ngựa"
         },
         {
           "char": "上",
-          "hanviet": "thượng"
+          "reading": "shàng",
+          "hanviet": "thượng",
+          "meaning_vi": "(hình thức kết hợp) trên"
         }
       ]
     },
@@ -3421,11 +3831,15 @@
       "chars": [
         {
           "char": "满",
-          "hanviet": "mãn"
+          "reading": "mǎn",
+          "hanviet": "mãn",
+          "meaning_vi": "lấp đầy"
         },
         {
           "char": "意",
-          "hanviet": "ý"
+          "reading": "yì",
+          "hanviet": "ý",
+          "meaning_vi": "ý tưởng"
         }
       ]
     },
@@ -3446,11 +3860,15 @@
       "chars": [
         {
           "char": "帽",
-          "hanviet": "mạo"
+          "reading": "mào",
+          "hanviet": "mạo",
+          "meaning_vi": "mũ"
         },
         {
           "char": "子",
-          "hanviet": "tử"
+          "reading": "zi",
+          "hanviet": "tử",
+          "meaning_vi": "(hậu tố danh từ)"
         }
       ]
     },
@@ -3462,9 +3880,9 @@
       "version": 1,
       "verified": false,
       "target": "米",
-      "reading": "Mǐ",
+      "reading": "mǐ",
       "meaning_vi": "gạo; mét (đơn vị đo)",
-      "meaning_en": "surname Mi",
+      "meaning_en": "rice; meter (classifier)",
       "hanviet": "mễ",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0161.mp3"
@@ -3486,11 +3904,15 @@
       "chars": [
         {
           "char": "面",
-          "hanviet": "diện"
+          "reading": "miàn",
+          "hanviet": "diện",
+          "meaning_vi": "bột"
         },
         {
           "char": "包",
-          "hanviet": "bao"
+          "reading": "bāo",
+          "hanviet": "bao",
+          "meaning_vi": "che phủ"
         }
       ]
     },
@@ -3511,11 +3933,15 @@
       "chars": [
         {
           "char": "面",
-          "hanviet": "diện"
+          "reading": "miàn",
+          "hanviet": "diện",
+          "meaning_vi": "bột"
         },
         {
           "char": "条",
-          "hanviet": "điều"
+          "reading": "tiáo",
+          "hanviet": "điều",
+          "meaning_vi": "dải"
         }
       ]
     },
@@ -3536,11 +3962,15 @@
       "chars": [
         {
           "char": "明",
-          "hanviet": "minh"
+          "reading": "míng",
+          "hanviet": "minh",
+          "meaning_vi": "sáng"
         },
         {
           "char": "白",
-          "hanviet": "bạch"
+          "reading": "bai",
+          "hanviet": "bạch",
+          "meaning_vi": "họ"
         }
       ]
     },
@@ -3553,8 +3983,8 @@
       "verified": false,
       "target": "拿",
       "reading": "ná",
-      "meaning_vi": "cầm; nắm; bắt; chụp; lấy; (dùng giống như 把[ba3]: đánh dấu danh từ phía sau là tân ngữ)",
-      "meaning_en": "old variant of 拿",
+      "meaning_vi": "cầm; nắm; bắt; chụp; lấy",
+      "meaning_en": "to hold; to seize; to catch; to apprehend; to take",
       "hanviet": "nã",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0165.mp3"
@@ -3576,11 +4006,15 @@
       "chars": [
         {
           "char": "奶",
-          "hanviet": "nãi"
+          "reading": "nǎi",
+          "hanviet": "nãi",
+          "meaning_vi": "mẹ"
         },
         {
           "char": "奶",
-          "hanviet": "nãi"
+          "reading": "nai",
+          "hanviet": "nãi",
+          "meaning_vi": "vú"
         }
       ]
     },
@@ -3592,9 +4026,9 @@
       "version": 1,
       "verified": false,
       "target": "南",
-      "reading": "Nán",
+      "reading": "nán",
       "meaning_vi": "phía nam",
-      "meaning_en": "surname Nan",
+      "meaning_en": "south",
       "hanviet": "nam",
       "distractor_group": "adj",
       "audio": "hsk3/hsk3-0167.mp3"
@@ -3631,11 +4065,15 @@
       "chars": [
         {
           "char": "难",
-          "hanviet": "nan"
+          "reading": "nán",
+          "hanviet": "nan",
+          "meaning_vi": "khó (để...)"
         },
         {
           "char": "过",
-          "hanviet": "quá"
+          "reading": "guò",
+          "hanviet": "quá",
+          "meaning_vi": "băng qua"
         }
       ]
     },
@@ -3656,11 +4094,15 @@
       "chars": [
         {
           "char": "年",
-          "hanviet": "niên"
+          "reading": "nián",
+          "hanviet": "niên",
+          "meaning_vi": "ngũ cốc"
         },
         {
           "char": "级",
-          "hanviet": "cấp"
+          "reading": "jí",
+          "hanviet": "cấp",
+          "meaning_vi": "cấp"
         }
       ]
     },
@@ -3681,11 +4123,15 @@
       "chars": [
         {
           "char": "年",
-          "hanviet": "niên"
+          "reading": "nián",
+          "hanviet": "niên",
+          "meaning_vi": "ngũ cốc"
         },
         {
           "char": "轻",
-          "hanviet": "khinh"
+          "reading": "qīng",
+          "hanviet": "khinh",
+          "meaning_vi": "nhẹ"
         }
       ]
     },
@@ -3697,9 +4143,9 @@
       "version": 1,
       "verified": false,
       "target": "鸟",
-      "reading": "diǎo",
-      "meaning_vi": "biến thể của 屌[diao3]; dương vật",
-      "meaning_en": "variant of 屌; penis",
+      "reading": "niǎo",
+      "meaning_vi": "chim; bộ \"chim\" trong chữ Hán (bộ Khang Hy số 196); (tiếng địa phương) để ý đến; (nhấn mạnh) chết tiệt; chết tiệt",
+      "meaning_en": "bird; \"bird\" radical in Chinese characters (Kangxi radical 196); (dialect) to pay attention to; (intensifier) damned; goddamn",
       "hanviet": "điểu",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0172.mp3"
@@ -3721,11 +4167,15 @@
       "chars": [
         {
           "char": "努",
-          "hanviet": "nỗ"
+          "reading": "nǔ",
+          "hanviet": "nỗ",
+          "meaning_vi": "nỗ lực"
         },
         {
           "char": "力",
-          "hanviet": "lực"
+          "reading": "lì",
+          "hanviet": "lực",
+          "meaning_vi": "sức mạnh"
         }
       ]
     },
@@ -3746,11 +4196,15 @@
       "chars": [
         {
           "char": "爬",
-          "hanviet": "bò"
+          "reading": "pá",
+          "hanviet": "bò",
+          "meaning_vi": "bò"
         },
         {
           "char": "山",
-          "hanviet": "sơn"
+          "reading": "shān",
+          "hanviet": "sơn",
+          "meaning_vi": "núi"
         }
       ]
     },
@@ -3771,11 +4225,15 @@
       "chars": [
         {
           "char": "盘",
-          "hanviet": "bàn"
+          "reading": "pán",
+          "hanviet": "bàn",
+          "meaning_vi": "đĩa"
         },
         {
           "char": "子",
-          "hanviet": "tử"
+          "reading": "zi",
+          "hanviet": "tử",
+          "meaning_vi": "(hậu tố danh từ)"
         }
       ]
     },
@@ -3787,9 +4245,9 @@
       "version": 1,
       "verified": false,
       "target": "胖",
-      "reading": "pán",
-      "meaning_vi": "khoẻ mạnh; thư thái",
-      "meaning_en": "healthy; at ease",
+      "reading": "pàng",
+      "meaning_vi": "mập; mũm mĩm",
+      "meaning_en": "fat; plump",
       "hanviet": "bàn",
       "distractor_group": "adj",
       "audio": "hsk3/hsk3-0176.mp3"
@@ -3811,11 +4269,15 @@
       "chars": [
         {
           "char": "啤",
-          "hanviet": "bia"
+          "reading": "pí",
+          "hanviet": "bia",
+          "meaning_vi": "bia"
         },
         {
           "char": "酒",
-          "hanviet": "tửu"
+          "reading": "jiǔ",
+          "hanviet": "tửu",
+          "meaning_vi": "rượu (đặc biệt là rượu gạo)"
         }
       ]
     },
@@ -3836,11 +4298,15 @@
       "chars": [
         {
           "char": "葡",
-          "hanviet": "bồ"
+          "reading": "pú",
+          "hanviet": "bồ",
+          "meaning_vi": "Bồ Đào Nha"
         },
         {
           "char": "萄",
-          "hanviet": "đào"
+          "reading": "tao",
+          "hanviet": "đào",
+          "meaning_vi": ""
         }
       ]
     },
@@ -3861,15 +4327,21 @@
       "chars": [
         {
           "char": "普",
-          "hanviet": "phổ"
+          "reading": "pǔ",
+          "hanviet": "phổ",
+          "meaning_vi": "chung"
         },
         {
           "char": "通",
-          "hanviet": "thông"
+          "reading": "tōng",
+          "hanviet": "thông",
+          "meaning_vi": "đi qua"
         },
         {
           "char": "话",
-          "hanviet": "thoại"
+          "reading": "huà",
+          "hanviet": "thoại",
+          "meaning_vi": "phương ngữ"
         }
       ]
     },
@@ -3890,11 +4362,15 @@
       "chars": [
         {
           "char": "其",
-          "hanviet": "kỳ"
+          "reading": "qí",
+          "hanviet": "kỳ",
+          "meaning_vi": "của anh ấy"
         },
         {
           "char": "实",
-          "hanviet": "thực"
+          "reading": "shí",
+          "hanviet": "thực",
+          "meaning_vi": "thật"
         }
       ]
     },
@@ -3915,11 +4391,15 @@
       "chars": [
         {
           "char": "其",
-          "hanviet": "kỳ"
+          "reading": "qí",
+          "hanviet": "kỳ",
+          "meaning_vi": "của anh ấy"
         },
         {
           "char": "他",
-          "hanviet": "tha"
+          "reading": "tā",
+          "hanviet": "tha",
+          "meaning_vi": "anh ấy"
         }
       ]
     },
@@ -3940,11 +4420,15 @@
       "chars": [
         {
           "char": "奇",
-          "hanviet": "kỳ"
+          "reading": "qí",
+          "hanviet": "kỳ",
+          "meaning_vi": "kỳ lạ"
         },
         {
           "char": "怪",
-          "hanviet": "quái"
+          "reading": "guài",
+          "hanviet": "quái",
+          "meaning_vi": "kỳ quái"
         }
       ]
     },
@@ -3956,9 +4440,9 @@
       "version": 1,
       "verified": false,
       "target": "骑",
-      "reading": "jì",
-      "meaning_vi": "(Đài Loan) ngựa cưỡi; lính kỵ mã",
-      "meaning_en": "(Tw) saddle horse; mounted soldier",
+      "reading": "qí",
+      "meaning_vi": "ngồi cưỡi; cưỡi (ngựa, xe đạp, v.v.)",
+      "meaning_en": "to sit astride; to ride (a horse, bike etc); classifier for saddle horses",
       "hanviet": "kỵ",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0183.mp3"
@@ -3980,11 +4464,15 @@
       "chars": [
         {
           "char": "铅",
-          "hanviet": "duyên"
+          "reading": "qiān",
+          "hanviet": "duyên",
+          "meaning_vi": "chì (hoá học)"
         },
         {
           "char": "笔",
-          "hanviet": "bút"
+          "reading": "bǐ",
+          "hanviet": "bút",
+          "meaning_vi": "bút"
         }
       ]
     },
@@ -4005,11 +4493,15 @@
       "chars": [
         {
           "char": "清",
-          "hanviet": "thanh"
+          "reading": "qīng",
+          "hanviet": "thanh",
+          "meaning_vi": "(nước"
         },
         {
           "char": "楚",
-          "hanviet": "sở"
+          "reading": "chu",
+          "hanviet": "sở",
+          "meaning_vi": "họ"
         }
       ]
     },
@@ -4021,9 +4513,9 @@
       "version": 1,
       "verified": false,
       "target": "秋",
-      "reading": "Qiū",
-      "meaning_vi": "xem 鞦韆|秋千[qiu1 qian1]",
-      "meaning_en": "surname Qiu",
+      "reading": "qiū",
+      "meaning_vi": "mùa thu; thời gian thu hoạch",
+      "meaning_en": "autumn; fall; harvest time",
       "hanviet": "thu",
       "distractor_group": "time",
       "audio": "hsk3/hsk3-0186.mp3"
@@ -4045,11 +4537,15 @@
       "chars": [
         {
           "char": "裙",
-          "hanviet": "quần"
+          "reading": "qún",
+          "hanviet": "quần",
+          "meaning_vi": "váy"
         },
         {
           "char": "子",
-          "hanviet": "tử"
+          "reading": "zi",
+          "hanviet": "tử",
+          "meaning_vi": "(hậu tố danh từ)"
         }
       ]
     },
@@ -4070,11 +4566,15 @@
       "chars": [
         {
           "char": "然",
-          "hanviet": "nhiên"
+          "reading": "rán",
+          "hanviet": "nhiên",
+          "meaning_vi": "đúng"
         },
         {
           "char": "后",
-          "hanviet": "hậu"
+          "reading": "hòu",
+          "hanviet": "hậu",
+          "meaning_vi": "phía sau"
         }
       ]
     },
@@ -4095,11 +4595,15 @@
       "chars": [
         {
           "char": "热",
-          "hanviet": "nhiệt"
+          "reading": "rè",
+          "hanviet": "nhiệt",
+          "meaning_vi": "hâm nóng"
         },
         {
           "char": "情",
-          "hanviet": "tình"
+          "reading": "qíng",
+          "hanviet": "tình",
+          "meaning_vi": "(hình thức kết hợp) tình cảm"
         }
       ]
     },
@@ -4120,11 +4624,15 @@
       "chars": [
         {
           "char": "认",
-          "hanviet": "nhận"
+          "reading": "rèn",
+          "hanviet": "nhận",
+          "meaning_vi": "nhận ra"
         },
         {
           "char": "为",
-          "hanviet": "vi"
+          "reading": "wéi",
+          "hanviet": "vi",
+          "meaning_vi": "làm (với tư cách)"
         }
       ]
     },
@@ -4137,7 +4645,7 @@
       "verified": false,
       "target": "认真",
       "reading": "rèn zhēn",
-      "meaning_vi": "tận tâm; nghiêm túc; nghiêm chỉnh; xem trọng; để tâm",
+      "meaning_vi": "tận tâm; nghiêm túc; nghiêm chỉnh; để tâm",
       "meaning_en": "conscientious; earnest; serious; to take seriously; to take to heart",
       "hanviet": "nhận chân",
       "distractor_group": "adj",
@@ -4145,11 +4653,15 @@
       "chars": [
         {
           "char": "认",
-          "hanviet": "nhận"
+          "reading": "rèn",
+          "hanviet": "nhận",
+          "meaning_vi": "nhận ra"
         },
         {
           "char": "真",
-          "hanviet": "chân"
+          "reading": "zhēn",
+          "hanviet": "chân",
+          "meaning_vi": "thật"
         }
       ]
     },
@@ -4170,11 +4682,15 @@
       "chars": [
         {
           "char": "容",
-          "hanviet": "dung"
+          "reading": "róng",
+          "hanviet": "dung",
+          "meaning_vi": "chứa"
         },
         {
           "char": "易",
-          "hanviet": "dịch"
+          "reading": "yì",
+          "hanviet": "dịch",
+          "meaning_vi": "dễ"
         }
       ]
     },
@@ -4195,11 +4711,15 @@
       "chars": [
         {
           "char": "如",
-          "hanviet": "như"
+          "reading": "rú",
+          "hanviet": "như",
+          "meaning_vi": "như"
         },
         {
           "char": "果",
-          "hanviet": "quả"
+          "reading": "guǒ",
+          "hanviet": "quả",
+          "meaning_vi": "trái cây"
         }
       ]
     },
@@ -4212,7 +4732,7 @@
       "verified": false,
       "target": "伞",
       "reading": "sǎn",
-      "meaning_vi": "lụa trơn; biến thể của 傘|伞[san3]",
+      "meaning_vi": "lụa trơn",
       "meaning_en": "umbrella; parasol",
       "hanviet": "tản",
       "distractor_group": "noun",
@@ -4235,11 +4755,15 @@
       "chars": [
         {
           "char": "上",
-          "hanviet": "thượng"
+          "reading": "shàng",
+          "hanviet": "thượng",
+          "meaning_vi": "(hình thức kết hợp) trên"
         },
         {
           "char": "网",
-          "hanviet": "võng"
+          "reading": "wǎng",
+          "hanviet": "võng",
+          "meaning_vi": "lưới"
         }
       ]
     },
@@ -4260,11 +4784,15 @@
       "chars": [
         {
           "char": "生",
-          "hanviet": "sinh"
+          "reading": "shēng",
+          "hanviet": "sinh",
+          "meaning_vi": "được sinh"
         },
         {
           "char": "气",
-          "hanviet": "khí"
+          "reading": "qì",
+          "hanviet": "khí",
+          "meaning_vi": "khí"
         }
       ]
     },
@@ -4285,11 +4813,15 @@
       "chars": [
         {
           "char": "声",
-          "hanviet": "thanh"
+          "reading": "shēng",
+          "hanviet": "thanh",
+          "meaning_vi": "âm thanh"
         },
         {
           "char": "音",
-          "hanviet": "âm"
+          "reading": "yīn",
+          "hanviet": "âm",
+          "meaning_vi": "âm thanh"
         }
       ]
     },
@@ -4302,8 +4834,8 @@
       "verified": false,
       "target": "使",
       "reading": "shǐ",
-      "meaning_vi": "khiến; làm cho; cho phép; sử dụng; thuê; phái; dạy ai làm việc gì; đặc phái viên; người đưa tin",
-      "meaning_en": "to make; to cause; to enable; to use; to employ; to send; to instruct sb to do sth; envoy; messenger",
+      "meaning_vi": "khiến; làm cho; cho phép; sử dụng; thuê",
+      "meaning_en": "to make; to cause; to enable; to use; to employ",
       "hanviet": "sứ",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0198.mp3"
@@ -4317,7 +4849,7 @@
       "verified": false,
       "target": "世界",
       "reading": "shì jiè",
-      "meaning_vi": "thế giới (LT:個|个[ge4])",
+      "meaning_vi": "thế giới (LT:)",
       "meaning_en": "world",
       "hanviet": "thế giới",
       "distractor_group": "noun",
@@ -4325,11 +4857,15 @@
       "chars": [
         {
           "char": "世",
-          "hanviet": "thế"
+          "reading": "shì",
+          "hanviet": "thế",
+          "meaning_vi": "cuộc đời"
         },
         {
           "char": "界",
-          "hanviet": "giới"
+          "reading": "jiè",
+          "hanviet": "giới",
+          "meaning_vi": "(hình thức kết hợp) ranh giới"
         }
       ]
     },
@@ -4365,11 +4901,15 @@
       "chars": [
         {
           "char": "叔",
-          "hanviet": "thúc"
+          "reading": "shū",
+          "hanviet": "thúc",
+          "meaning_vi": "chú"
         },
         {
           "char": "叔",
-          "hanviet": "thúc"
+          "reading": "shu",
+          "hanviet": "thúc",
+          "meaning_vi": "chú"
         }
       ]
     },
@@ -4390,11 +4930,15 @@
       "chars": [
         {
           "char": "舒",
-          "hanviet": "thư"
+          "reading": "shū",
+          "hanviet": "thư",
+          "meaning_vi": "duỗi"
         },
         {
           "char": "服",
-          "hanviet": "phục"
+          "reading": "fu",
+          "hanviet": "phục",
+          "meaning_vi": "quần áo"
         }
       ]
     },
@@ -4430,11 +4974,15 @@
       "chars": [
         {
           "char": "数",
-          "hanviet": "số"
+          "reading": "shù",
+          "hanviet": "số",
+          "meaning_vi": "con số"
         },
         {
           "char": "学",
-          "hanviet": "học"
+          "reading": "xué",
+          "hanviet": "học",
+          "meaning_vi": "học"
         }
       ]
     },
@@ -4447,8 +4995,8 @@
       "verified": false,
       "target": "刷",
       "reading": "shuā",
-      "meaning_vi": "chải; sơn; quét; đăng lên; bỏ học (của học sinh); sa thải khỏi công việc",
-      "meaning_en": "to brush; to paint; to daub; to paste up; to skip class (of students); to fire from a job",
+      "meaning_vi": "chải; sơn; quét; đăng lên; bỏ học (của học sinh)",
+      "meaning_en": "to brush; to paint; to daub; to paste up; to skip class (of students)",
       "hanviet": "loát",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0205.mp3"
@@ -4461,9 +5009,9 @@
       "version": 1,
       "verified": false,
       "target": "双",
-      "reading": "Shuāng",
+      "reading": "shuāng",
       "meaning_vi": "hai; cặp; đôi; cả hai; số chẵn",
-      "meaning_en": "surname Shuang",
+      "meaning_en": "two; double; pair; both; even (number)",
       "hanviet": "song",
       "distractor_group": "number",
       "audio": "hsk3/hsk3-0206.mp3"
@@ -4485,11 +5033,15 @@
       "chars": [
         {
           "char": "水",
-          "hanviet": "thuỷ"
+          "reading": "shuǐ",
+          "hanviet": "thuỷ",
+          "meaning_vi": "nước"
         },
         {
           "char": "平",
-          "hanviet": "bình"
+          "reading": "píng",
+          "hanviet": "bình",
+          "meaning_vi": "phẳng"
         }
       ]
     },
@@ -4510,11 +5062,15 @@
       "chars": [
         {
           "char": "司",
-          "hanviet": "ti"
+          "reading": "sī",
+          "hanviet": "ti",
+          "meaning_vi": "phụ trách"
         },
         {
           "char": "机",
-          "hanviet": "cơ"
+          "reading": "jī",
+          "hanviet": "cơ",
+          "meaning_vi": "(hình thức kết hợp) máy móc"
         }
       ]
     },
@@ -4535,11 +5091,15 @@
       "chars": [
         {
           "char": "虽",
-          "hanviet": "tuy"
+          "reading": "suī",
+          "hanviet": "tuy",
+          "meaning_vi": "mặc dù"
         },
         {
           "char": "然",
-          "hanviet": "nhiên"
+          "reading": "rán",
+          "hanviet": "nhiên",
+          "meaning_vi": "đúng"
         }
       ]
     },
@@ -4553,18 +5113,22 @@
       "target": "太阳",
       "reading": "tài yang",
       "meaning_vi": "mặt trời; viết tắt của 太陽穴|太阳穴[tai4 yang2 xue2]",
-      "meaning_en": "sun; abbr. for 太阳穴",
+      "meaning_en": "sun",
       "hanviet": "thái dương",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0210.mp3",
       "chars": [
         {
           "char": "太",
-          "hanviet": "thái"
+          "reading": "tài",
+          "hanviet": "thái",
+          "meaning_vi": "cao nhất"
         },
         {
           "char": "阳",
-          "hanviet": "dương"
+          "reading": "yang",
+          "hanviet": "dương",
+          "meaning_vi": "dương (điện)"
         }
       ]
     },
@@ -4577,7 +5141,7 @@
       "verified": false,
       "target": "糖",
       "reading": "táng",
-      "meaning_vi": "biến thể cũ của 糖[tang2]",
+      "meaning_vi": "đường; kẹo; ngọt",
       "meaning_en": "sugar; sweets; candy",
       "hanviet": "đường",
       "distractor_group": "noun",
@@ -4592,7 +5156,7 @@
       "verified": false,
       "target": "特别",
       "reading": "tè bié",
-      "meaning_vi": "khác thường; đặc biệt; rất; đặc biệt; đặc biệt là; đặc biệt; cho một mục đích cụ thể; (thường theo sau bởi 是[shi4]) đặc biệt là",
+      "meaning_vi": "khác thường; đặc biệt; rất; đặc biệt; đặc biệt là; đặc biệt; cho một mục đích cụ thể; (thường theo sau bởi ) đặc biệt là",
       "meaning_en": "unusual; special; very; especially; particularly; expressly; for a specific purpose; (often followed by 是) in particular",
       "hanviet": "đặc biệt",
       "distractor_group": "adverb",
@@ -4600,11 +5164,15 @@
       "chars": [
         {
           "char": "特",
-          "hanviet": "đặc"
+          "reading": "tè",
+          "hanviet": "đặc",
+          "meaning_vi": "đặc biệt"
         },
         {
           "char": "别",
-          "hanviet": "biệt"
+          "reading": "bié",
+          "hanviet": "biệt",
+          "meaning_vi": "rời khỏi"
         }
       ]
     },
@@ -4640,11 +5208,15 @@
       "chars": [
         {
           "char": "提",
-          "hanviet": "đề"
+          "reading": "tí",
+          "hanviet": "đề",
+          "meaning_vi": "xách (thòng xuống từ tay)"
         },
         {
           "char": "高",
-          "hanviet": "cao"
+          "reading": "gāo",
+          "hanviet": "cao",
+          "meaning_vi": "cao"
         }
       ]
     },
@@ -4665,11 +5237,15 @@
       "chars": [
         {
           "char": "体",
-          "hanviet": "thể"
+          "reading": "tǐ",
+          "hanviet": "thể",
+          "meaning_vi": "cơ thể"
         },
         {
           "char": "育",
-          "hanviet": "dục"
+          "reading": "yù",
+          "hanviet": "dục",
+          "meaning_vi": "sinh con"
         }
       ]
     },
@@ -4697,7 +5273,7 @@
       "verified": false,
       "target": "条",
       "reading": "tiáo",
-      "meaning_vi": "dải; mục; điều; khoản (của luật hoặc hiệp ước); lượng từ cho những vật dài mỏng (ruy băng, sông, đường, quần dài, v.v.)",
+      "meaning_vi": "dải; mục; điều; khoản (của luật hoặc hiệp ước)",
       "meaning_en": "strip; item; article; clause (of law or treaty); classifier for long thin things (ribbon, river, road, trousers etc)",
       "hanviet": "điều",
       "distractor_group": "measure",
@@ -4720,11 +5296,15 @@
       "chars": [
         {
           "char": "同",
-          "hanviet": "đồng"
+          "reading": "tóng",
+          "hanviet": "đồng",
+          "meaning_vi": "giống"
         },
         {
           "char": "事",
-          "hanviet": "sự"
+          "reading": "shì",
+          "hanviet": "sự",
+          "meaning_vi": "sự việc"
         }
       ]
     },
@@ -4745,11 +5325,15 @@
       "chars": [
         {
           "char": "同",
-          "hanviet": "đồng"
+          "reading": "tóng",
+          "hanviet": "đồng",
+          "meaning_vi": "giống"
         },
         {
           "char": "意",
-          "hanviet": "ý"
+          "reading": "yì",
+          "hanviet": "ý",
+          "meaning_vi": "ý tưởng"
         }
       ]
     },
@@ -4770,11 +5354,15 @@
       "chars": [
         {
           "char": "头",
-          "hanviet": "đầu"
+          "reading": "tóu",
+          "hanviet": "đầu",
+          "meaning_vi": "đầu"
         },
         {
           "char": "发",
-          "hanviet": "phát"
+          "reading": "fa",
+          "hanviet": "phát",
+          "meaning_vi": "gửi đi"
         }
       ]
     },
@@ -4795,11 +5383,15 @@
       "chars": [
         {
           "char": "突",
-          "hanviet": "đột"
+          "reading": "tū",
+          "hanviet": "đột",
+          "meaning_vi": "lao ra"
         },
         {
           "char": "然",
-          "hanviet": "nhiên"
+          "reading": "rán",
+          "hanviet": "nhiên",
+          "meaning_vi": "đúng"
         }
       ]
     },
@@ -4820,15 +5412,21 @@
       "chars": [
         {
           "char": "图",
-          "hanviet": "đồ"
+          "reading": "tú",
+          "hanviet": "đồ",
+          "meaning_vi": "sơ đồ"
         },
         {
           "char": "书",
-          "hanviet": "thư"
+          "reading": "shū",
+          "hanviet": "thư",
+          "meaning_vi": "sách"
         },
         {
           "char": "馆",
-          "hanviet": "quán"
+          "reading": "guǎn",
+          "hanviet": "quán",
+          "meaning_vi": "toà nhà"
         }
       ]
     },
@@ -4841,7 +5439,7 @@
       "verified": false,
       "target": "腿",
       "reading": "tuǐ",
-      "meaning_vi": "xương hông; biến thể cũ của 腿[tui3]",
+      "meaning_vi": "xương hông",
       "meaning_en": "leg",
       "hanviet": "thối",
       "distractor_group": "noun",
@@ -4864,11 +5462,15 @@
       "chars": [
         {
           "char": "完",
-          "hanviet": "hoàn"
+          "reading": "wán",
+          "hanviet": "hoàn",
+          "meaning_vi": "hoàn thành"
         },
         {
           "char": "成",
-          "hanviet": "thành"
+          "reading": "chéng",
+          "hanviet": "thành",
+          "meaning_vi": "thành công"
         }
       ]
     },
@@ -4882,7 +5484,7 @@
       "target": "碗",
       "reading": "wǎn",
       "meaning_vi": "bát; chén",
-      "meaning_en": "variant of 碗",
+      "meaning_en": "bowl; cup",
       "hanviet": "oản",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0225.mp3"
@@ -4895,10 +5497,10 @@
       "version": 1,
       "verified": false,
       "target": "万",
-      "reading": "mò",
-      "meaning_vi": "dùng trong 万俟[Mo4 qi2]",
-      "meaning_en": "used in 俟",
-      "hanviet": "mặc",
+      "reading": "wàn",
+      "meaning_vi": "mười nghìn; một số lượng lớn",
+      "meaning_en": "ten thousand; a great number",
+      "hanviet": "vạn",
       "distractor_group": "number",
       "audio": "hsk3/hsk3-0226.mp3"
     },
@@ -4919,11 +5521,15 @@
       "chars": [
         {
           "char": "忘",
-          "hanviet": "vong"
+          "reading": "wàng",
+          "hanviet": "vong",
+          "meaning_vi": "quên"
         },
         {
           "char": "记",
-          "hanviet": "ký"
+          "reading": "jì",
+          "hanviet": "ký",
+          "meaning_vi": "ghi chép"
         }
       ]
     },
@@ -4944,11 +5550,15 @@
       "chars": [
         {
           "char": "为",
-          "hanviet": "vi"
+          "reading": "wèi",
+          "hanviet": "vi",
+          "meaning_vi": "bởi vì"
         },
         {
           "char": "了",
-          "hanviet": "liễu"
+          "reading": "le",
+          "hanviet": "liễu",
+          "meaning_vi": "(trợ từ chỉ hành động đã hoàn thành)"
         }
       ]
     },
@@ -4969,15 +5579,21 @@
       "chars": [
         {
           "char": "为",
-          "hanviet": "vi"
+          "reading": "wèi",
+          "hanviet": "vi",
+          "meaning_vi": "bởi vì"
         },
         {
           "char": "什",
-          "hanviet": "thậm"
+          "reading": "shén",
+          "hanviet": "thậm",
+          "meaning_vi": "gì"
         },
         {
           "char": "么",
-          "hanviet": "ma"
+          "reading": "me",
+          "hanviet": "ma",
+          "meaning_vi": "hậu tố"
         }
       ]
     },
@@ -4990,8 +5606,8 @@
       "verified": false,
       "target": "位",
       "reading": "wèi",
-      "meaning_vi": "vị trí; địa điểm; chỗ; ngồi; lượng từ cho người (kính trọng); lượng từ cho bit nhị phân (ví dụ: 十六位 16-bit hoặc 2 byte); (vật lý) thế năng",
-      "meaning_en": "position; location; place; seat; classifier for people (honorific); classifier for binary bits (e.g. 十六位 16-bit or 2 bytes); (physics) potential",
+      "meaning_vi": "vị trí; địa điểm; chỗ; ngồi; (vật lý) thế năng",
+      "meaning_en": "position; location; place; seat; classifier for people (honorific)",
       "hanviet": "vị",
       "distractor_group": "measure",
       "audio": "hsk3/hsk3-0230.mp3"
@@ -5013,11 +5629,15 @@
       "chars": [
         {
           "char": "文",
-          "hanviet": "văn"
+          "reading": "wén",
+          "hanviet": "văn",
+          "meaning_vi": "ngôn ngữ"
         },
         {
           "char": "化",
-          "hanviet": "hoá"
+          "reading": "huà",
+          "hanviet": "hoá",
+          "meaning_vi": "làm thành"
         }
       ]
     },
@@ -5038,11 +5658,15 @@
       "chars": [
         {
           "char": "习",
-          "hanviet": "tập"
+          "reading": "xí",
+          "hanviet": "tập",
+          "meaning_vi": "(dạng cố định) thực hành"
         },
         {
           "char": "惯",
-          "hanviet": "quán"
+          "reading": "guàn",
+          "hanviet": "quán",
+          "meaning_vi": "quen với"
         }
       ]
     },
@@ -5063,15 +5687,21 @@
       "chars": [
         {
           "char": "洗",
-          "hanviet": "tẩy"
+          "reading": "xǐ",
+          "hanviet": "tẩy",
+          "meaning_vi": "rửa"
         },
         {
           "char": "手",
-          "hanviet": "thủ"
+          "reading": "shǒu",
+          "hanviet": "thủ",
+          "meaning_vi": "tay"
         },
         {
           "char": "间",
-          "hanviet": "gian"
+          "reading": "jiān",
+          "hanviet": "gian",
+          "meaning_vi": "giữa"
         }
       ]
     },
@@ -5092,11 +5722,15 @@
       "chars": [
         {
           "char": "洗",
-          "hanviet": "tẩy"
+          "reading": "xǐ",
+          "hanviet": "tẩy",
+          "meaning_vi": "rửa"
         },
         {
           "char": "澡",
-          "hanviet": "táo"
+          "reading": "zǎo",
+          "hanviet": "táo",
+          "meaning_vi": "tắm"
         }
       ]
     },
@@ -5108,9 +5742,9 @@
       "version": 1,
       "verified": false,
       "target": "西",
-      "reading": "Xī",
+      "reading": "xī",
       "meaning_vi": "tây",
-      "meaning_en": "the West; abbr. for Spain 牙; Spanish",
+      "meaning_en": "west",
       "hanviet": "tây",
       "distractor_group": "other",
       "audio": "hsk3/hsk3-0235.mp3"
@@ -5123,9 +5757,9 @@
       "version": 1,
       "verified": false,
       "target": "夏",
-      "reading": "Xià",
+      "reading": "xià",
       "meaning_vi": "mùa hè",
-      "meaning_en": "the Xia or Hsia dynasty c. 2000 BC; Xia of the Sixteen Kingdoms (407-432); surname Xia",
+      "meaning_en": "summer",
       "hanviet": "hạ",
       "distractor_group": "time",
       "audio": "hsk3/hsk3-0236.mp3"
@@ -5162,11 +5796,15 @@
       "chars": [
         {
           "char": "相",
-          "hanviet": "tương"
+          "reading": "xiāng",
+          "hanviet": "tương",
+          "meaning_vi": "lẫn nhau"
         },
         {
           "char": "同",
-          "hanviet": "đồng"
+          "reading": "tóng",
+          "hanviet": "đồng",
+          "meaning_vi": "giống"
         }
       ]
     },
@@ -5187,11 +5825,15 @@
       "chars": [
         {
           "char": "相",
-          "hanviet": "tương"
+          "reading": "xiāng",
+          "hanviet": "tương",
+          "meaning_vi": "lẫn nhau"
         },
         {
           "char": "信",
-          "hanviet": "tín"
+          "reading": "xìn",
+          "hanviet": "tín",
+          "meaning_vi": "thư"
         }
       ]
     },
@@ -5212,11 +5854,15 @@
       "chars": [
         {
           "char": "香",
-          "hanviet": "hương"
+          "reading": "xiāng",
+          "hanviet": "hương",
+          "meaning_vi": "thơm"
         },
         {
           "char": "蕉",
-          "hanviet": "tiêu"
+          "reading": "jiāo",
+          "hanviet": "tiêu",
+          "meaning_vi": "chuối"
         }
       ]
     },
@@ -5229,8 +5875,8 @@
       "verified": false,
       "target": "像",
       "reading": "xiàng",
-      "meaning_vi": "giống; như; nhìn như; chẳng hạn; diện mạo; hình ảnh; chân dung; hình ảnh trong ánh xạ (toán học)",
-      "meaning_en": "to resemble; to be like; to look as if; such as; appearance; image; portrait; image under a mapping (math.)",
+      "meaning_vi": "giống; như; nhìn như; chẳng hạn; diện mạo",
+      "meaning_en": "to resemble; to be like; to look as if; such as; appearance",
       "hanviet": "tượng",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0241.mp3"
@@ -5252,11 +5898,15 @@
       "chars": [
         {
           "char": "小",
-          "hanviet": "tiểu"
+          "reading": "xiǎo",
+          "hanviet": "tiểu",
+          "meaning_vi": "nhỏ"
         },
         {
           "char": "心",
-          "hanviet": "tâm"
+          "reading": "xīn",
+          "hanviet": "tâm",
+          "meaning_vi": "tim"
         }
       ]
     },
@@ -5277,11 +5927,15 @@
       "chars": [
         {
           "char": "校",
-          "hanviet": "hiệu"
+          "reading": "xiào",
+          "hanviet": "hiệu",
+          "meaning_vi": "(hình thức kết hợp) trường học"
         },
         {
           "char": "长",
-          "hanviet": "trưởng"
+          "reading": "zhǎng",
+          "hanviet": "trưởng",
+          "meaning_vi": "trưởng"
         }
       ]
     },
@@ -5294,7 +5948,7 @@
       "verified": false,
       "target": "鞋",
       "reading": "xié",
-      "meaning_vi": "biến thể của 鞋[xie2]",
+      "meaning_vi": "giày",
       "meaning_en": "shoe",
       "hanviet": "hài",
       "distractor_group": "noun",
@@ -5317,11 +5971,15 @@
       "chars": [
         {
           "char": "新",
-          "hanviet": "tân"
+          "reading": "xīn",
+          "hanviet": "tân",
+          "meaning_vi": "mới"
         },
         {
           "char": "闻",
-          "hanviet": "văn"
+          "reading": "wén",
+          "hanviet": "văn",
+          "meaning_vi": "nghe"
         }
       ]
     },
@@ -5342,11 +6000,15 @@
       "chars": [
         {
           "char": "新",
-          "hanviet": "tân"
+          "reading": "xīn",
+          "hanviet": "tân",
+          "meaning_vi": "mới"
         },
         {
           "char": "鲜",
-          "hanviet": "tiên"
+          "reading": "xiān",
+          "hanviet": "tiên",
+          "meaning_vi": "cá"
         }
       ]
     },
@@ -5359,8 +6021,8 @@
       "verified": false,
       "target": "信",
       "reading": "xìn",
-      "meaning_vi": "thư; tín; tin tưởng; tin; tín ngưỡng; thành thật; tự tin; tin cậy; tùy ý; ngẫu nhiên",
-      "meaning_en": "letter; mail; to trust; to believe; to profess faith in; truthful; confidence; trust; at will; at random",
+      "meaning_vi": "thư; tín; tin tưởng; tin; tín ngưỡng",
+      "meaning_en": "letter; mail; to trust; to believe; to profess faith in",
       "hanviet": "tín",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0247.mp3"
@@ -5382,15 +6044,21 @@
       "chars": [
         {
           "char": "行",
-          "hanviet": "hạnh"
+          "reading": "xíng",
+          "hanviet": "hạnh",
+          "meaning_vi": "đi"
         },
         {
           "char": "李",
-          "hanviet": "lý"
+          "reading": "li",
+          "hanviet": "lý",
+          "meaning_vi": "họ"
         },
         {
           "char": "箱",
-          "hanviet": "rương"
+          "reading": "xiāng",
+          "hanviet": "rương",
+          "meaning_vi": "hộp"
         }
       ]
     },
@@ -5411,11 +6079,15 @@
       "chars": [
         {
           "char": "兴",
-          "hanviet": "hứng"
+          "reading": "xìng",
+          "hanviet": "hứng",
+          "meaning_vi": "cảm giác hoặc khao khát làm gì đó"
         },
         {
           "char": "趣",
-          "hanviet": "thú"
+          "reading": "qù",
+          "hanviet": "thú",
+          "meaning_vi": "thú vị"
         }
       ]
     },
@@ -5436,11 +6108,15 @@
       "chars": [
         {
           "char": "熊",
-          "hanviet": "hùng"
+          "reading": "xióng",
+          "hanviet": "hùng",
+          "meaning_vi": "gấu"
         },
         {
           "char": "猫",
-          "hanviet": "miêu"
+          "reading": "māo",
+          "hanviet": "miêu",
+          "meaning_vi": "mèo (LT: )"
         }
       ]
     },
@@ -5461,11 +6137,15 @@
       "chars": [
         {
           "char": "需",
-          "hanviet": "nhu"
+          "reading": "xū",
+          "hanviet": "nhu",
+          "meaning_vi": "yêu cầu"
         },
         {
           "char": "要",
-          "hanviet": "yếu"
+          "reading": "yào",
+          "hanviet": "yếu",
+          "meaning_vi": "muốn"
         }
       ]
     },
@@ -5486,11 +6166,15 @@
       "chars": [
         {
           "char": "选",
-          "hanviet": "tuyển"
+          "reading": "xuǎn",
+          "hanviet": "tuyển",
+          "meaning_vi": "chọn"
         },
         {
           "char": "择",
-          "hanviet": "trạch"
+          "reading": "zé",
+          "hanviet": "trạch",
+          "meaning_vi": "lựa chọn"
         }
       ]
     },
@@ -5511,11 +6195,15 @@
       "chars": [
         {
           "char": "眼",
-          "hanviet": "nhãn"
+          "reading": "yǎn",
+          "hanviet": "nhãn",
+          "meaning_vi": "mắt"
         },
         {
           "char": "镜",
-          "hanviet": "kính"
+          "reading": "jìng",
+          "hanviet": "kính",
+          "meaning_vi": "gương"
         }
       ]
     },
@@ -5529,18 +6217,22 @@
       "target": "要求",
       "reading": "yāo qiú",
       "meaning_vi": "yêu cầu; đòi hỏi; đòi quyền; hỏi",
-      "meaning_en": "to request; to require; requirement; to stake a claim; to ask; to demand",
+      "meaning_en": "to request; to require; requirement; to stake a claim; to ask",
       "hanviet": "yêu cầu",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0254.mp3",
       "chars": [
         {
           "char": "要",
-          "hanviet": "yêu"
+          "reading": "yāo",
+          "hanviet": "yêu",
+          "meaning_vi": "(hình thức kết hợp) yêu cầu"
         },
         {
           "char": "求",
-          "hanviet": "cầu"
+          "reading": "qiú",
+          "hanviet": "cầu",
+          "meaning_vi": "tìm kiếm"
         }
       ]
     },
@@ -5561,11 +6253,15 @@
       "chars": [
         {
           "char": "爷",
-          "hanviet": "gia"
+          "reading": "yé",
+          "hanviet": "gia",
+          "meaning_vi": "ông"
         },
         {
           "char": "爷",
-          "hanviet": "gia"
+          "reading": "ye",
+          "hanviet": "gia",
+          "meaning_vi": "ông"
         }
       ]
     },
@@ -5578,19 +6274,23 @@
       "verified": false,
       "target": "一般",
       "reading": "yī bān",
-      "meaning_vi": "giống; bình thường; tàm tạm; phổ thông; chung; chung chung; nói chung",
-      "meaning_en": "same; ordinary; so-so; common; general; generally; in general",
+      "meaning_vi": "giống; bình thường; tàm tạm; phổ thông; chung",
+      "meaning_en": "same; ordinary; so-so; common; general",
       "hanviet": "nhất ban",
       "distractor_group": "adj",
       "audio": "hsk3/hsk3-0256.mp3",
       "chars": [
         {
           "char": "一",
-          "hanviet": "nhất"
+          "reading": "yī",
+          "hanviet": "nhất",
+          "meaning_vi": "một"
         },
         {
           "char": "般",
-          "hanviet": "ban"
+          "reading": "bān",
+          "hanviet": "ban",
+          "meaning_vi": "loại"
         }
       ]
     },
@@ -5611,11 +6311,15 @@
       "chars": [
         {
           "char": "一",
-          "hanviet": "nhất"
+          "reading": "yī",
+          "hanviet": "nhất",
+          "meaning_vi": "một"
         },
         {
           "char": "边",
-          "hanviet": "biên"
+          "reading": "biān",
+          "hanviet": "biên",
+          "meaning_vi": "bên"
         }
       ]
     },
@@ -5628,19 +6332,23 @@
       "verified": false,
       "target": "一定",
       "reading": "yī dìng",
-      "meaning_vi": "chắc chắn; nhất định; nhất thiết; cố định; một mức độ nhất định (v.v.); đã cho; cụ thể; phải",
-      "meaning_en": "surely; certainly; necessarily; fixed; a certain (extent etc); given; particular; must",
+      "meaning_vi": "chắc chắn; nhất định; nhất thiết; cố định; một mức độ nhất định (v.v.)",
+      "meaning_en": "surely; certainly; necessarily; fixed; a certain (extent etc)",
       "hanviet": "nhất định",
       "distractor_group": "adverb",
       "audio": "hsk3/hsk3-0258.mp3",
       "chars": [
         {
           "char": "一",
-          "hanviet": "nhất"
+          "reading": "yī",
+          "hanviet": "nhất",
+          "meaning_vi": "một"
         },
         {
           "char": "定",
-          "hanviet": "định"
+          "reading": "dìng",
+          "hanviet": "định",
+          "meaning_vi": "cố định"
         }
       ]
     },
@@ -5661,11 +6369,15 @@
       "chars": [
         {
           "char": "一",
-          "hanviet": "nhất"
+          "reading": "yī",
+          "hanviet": "nhất",
+          "meaning_vi": "một"
         },
         {
           "char": "共",
-          "hanviet": "cộng"
+          "reading": "gòng",
+          "hanviet": "cộng",
+          "meaning_vi": "chung"
         }
       ]
     },
@@ -5678,7 +6390,7 @@
       "verified": false,
       "target": "一会儿",
       "reading": "yī huì r",
-      "meaning_vi": "một lúc; một thời gian; ngay lập tức; lúc thì...lúc thì...; cũng đọc là [yi1 hui3 r5]",
+      "meaning_vi": "một lúc; một thời gian; ngay lập tức; lúc thì...lúc thì...",
       "meaning_en": "a moment; a while; in a moment; now...now...; also pr. [yī huǐ r]",
       "hanviet": "nhất hội nhi",
       "distractor_group": "other",
@@ -5686,15 +6398,21 @@
       "chars": [
         {
           "char": "一",
-          "hanviet": "nhất"
+          "reading": "yī",
+          "hanviet": "nhất",
+          "meaning_vi": "một"
         },
         {
           "char": "会",
-          "hanviet": "hội"
+          "reading": "huì",
+          "hanviet": "hội",
+          "meaning_vi": "có thể"
         },
         {
           "char": "儿",
-          "hanviet": "nhi"
+          "reading": "r",
+          "hanviet": "nhi",
+          "meaning_vi": "hậu tố giảm nhẹ không thành âm"
         }
       ]
     },
@@ -5715,11 +6433,15 @@
       "chars": [
         {
           "char": "一",
-          "hanviet": "nhất"
+          "reading": "yī",
+          "hanviet": "nhất",
+          "meaning_vi": "một"
         },
         {
           "char": "样",
-          "hanviet": "dạng"
+          "reading": "yàng",
+          "hanviet": "dạng",
+          "meaning_vi": "cách"
         }
       ]
     },
@@ -5740,11 +6462,15 @@
       "chars": [
         {
           "char": "一",
-          "hanviet": "nhất"
+          "reading": "yī",
+          "hanviet": "nhất",
+          "meaning_vi": "một"
         },
         {
           "char": "直",
-          "hanviet": "trực"
+          "reading": "zhí",
+          "hanviet": "trực",
+          "meaning_vi": "thẳng"
         }
       ]
     },
@@ -5757,19 +6483,23 @@
       "verified": false,
       "target": "以后",
       "reading": "yǐ hòu",
-      "meaning_vi": "sau; khi đó; sau này; theo sau; sau đó; trong tương lai",
-      "meaning_en": "after; later; afterwards; following; later on; in the future",
+      "meaning_vi": "sau; khi đó; sau này; theo sau; sau đó",
+      "meaning_en": "after; later; afterwards; following; later on",
       "hanviet": "dĩ hậu",
       "distractor_group": "other",
       "audio": "hsk3/hsk3-0263.mp3",
       "chars": [
         {
           "char": "以",
-          "hanviet": "dĩ"
+          "reading": "yǐ",
+          "hanviet": "dĩ",
+          "meaning_vi": "sử dụng"
         },
         {
           "char": "后",
-          "hanviet": "hậu"
+          "reading": "hòu",
+          "hanviet": "hậu",
+          "meaning_vi": "phía sau"
         }
       ]
     },
@@ -5790,11 +6520,15 @@
       "chars": [
         {
           "char": "以",
-          "hanviet": "dĩ"
+          "reading": "yǐ",
+          "hanviet": "dĩ",
+          "meaning_vi": "sử dụng"
         },
         {
           "char": "前",
-          "hanviet": "tiền"
+          "reading": "qián",
+          "hanviet": "tiền",
+          "meaning_vi": "trước"
         }
       ]
     },
@@ -5815,11 +6549,15 @@
       "chars": [
         {
           "char": "以",
-          "hanviet": "dĩ"
+          "reading": "yǐ",
+          "hanviet": "dĩ",
+          "meaning_vi": "sử dụng"
         },
         {
           "char": "为",
-          "hanviet": "vi"
+          "reading": "wéi",
+          "hanviet": "vi",
+          "meaning_vi": "làm (với tư cách)"
         }
       ]
     },
@@ -5840,11 +6578,15 @@
       "chars": [
         {
           "char": "音",
-          "hanviet": "âm"
+          "reading": "yīn",
+          "hanviet": "âm",
+          "meaning_vi": "âm thanh"
         },
         {
           "char": "乐",
-          "hanviet": "nhạc"
+          "reading": "yuè",
+          "hanviet": "nhạc",
+          "meaning_vi": "âm nhạc"
         }
       ]
     },
@@ -5865,11 +6607,15 @@
       "chars": [
         {
           "char": "银",
-          "hanviet": "ngân"
+          "reading": "yín",
+          "hanviet": "ngân",
+          "meaning_vi": "bạc"
         },
         {
           "char": "行",
-          "hanviet": "hạnh"
+          "reading": "háng",
+          "hanviet": "hạnh",
+          "meaning_vi": "hàng"
         }
       ]
     },
@@ -5890,11 +6636,15 @@
       "chars": [
         {
           "char": "应",
-          "hanviet": "ưng"
+          "reading": "yīng",
+          "hanviet": "ưng",
+          "meaning_vi": "đồng ý (làm gì đó)"
         },
         {
           "char": "该",
-          "hanviet": "cai"
+          "reading": "gāi",
+          "hanviet": "cai",
+          "meaning_vi": "nên"
         }
       ]
     },
@@ -5915,11 +6665,15 @@
       "chars": [
         {
           "char": "影",
-          "hanviet": "ảnh"
+          "reading": "yǐng",
+          "hanviet": "ảnh",
+          "meaning_vi": "hình ảnh"
         },
         {
           "char": "响",
-          "hanviet": "hưởng"
+          "reading": "xiǎng",
+          "hanviet": "hưởng",
+          "meaning_vi": "tiếng"
         }
       ]
     },
@@ -5932,8 +6686,8 @@
       "verified": false,
       "target": "用",
       "reading": "yòng",
-      "meaning_vi": "sử dụng; tận dụng; phải; ăn hoặc uống; chi phí hoặc tiêu dùng; tính hữu ích; vì vậy; do đó",
-      "meaning_en": "to use; to employ; to have to; to eat or drink; expense or outlay; usefulness; hence; therefore",
+      "meaning_vi": "sử dụng; tận dụng; phải; ăn hoặc uống; chi phí hoặc tiêu dùng",
+      "meaning_en": "to use; to employ; to have to; to eat or drink; expense or outlay",
       "hanviet": "dụng",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0270.mp3"
@@ -5955,11 +6709,15 @@
       "chars": [
         {
           "char": "游",
-          "hanviet": "du"
+          "reading": "yóu",
+          "hanviet": "du",
+          "meaning_vi": "đi"
         },
         {
           "char": "戏",
-          "hanviet": "hí"
+          "reading": "xì",
+          "hanviet": "hí",
+          "meaning_vi": "mánh khoé"
         }
       ]
     },
@@ -5980,11 +6738,15 @@
       "chars": [
         {
           "char": "有",
-          "hanviet": "hữu"
+          "reading": "yǒu",
+          "hanviet": "hữu",
+          "meaning_vi": "có"
         },
         {
           "char": "名",
-          "hanviet": "danh"
+          "reading": "míng",
+          "hanviet": "danh",
+          "meaning_vi": "tên"
         }
       ]
     },
@@ -6020,11 +6782,15 @@
       "chars": [
         {
           "char": "遇",
-          "hanviet": "ngộ"
+          "reading": "yù",
+          "hanviet": "ngộ",
+          "meaning_vi": "(dạng kết hợp) gặp gỡ"
         },
         {
           "char": "到",
-          "hanviet": "đáo"
+          "reading": "dào",
+          "hanviet": "đáo",
+          "meaning_vi": "đến"
         }
       ]
     },
@@ -6045,11 +6811,15 @@
       "chars": [
         {
           "char": "愿",
-          "hanviet": "nguyện"
+          "reading": "yuàn",
+          "hanviet": "nguyện",
+          "meaning_vi": "(hình thức liên kết) mong muốn"
         },
         {
           "char": "意",
-          "hanviet": "ý"
+          "reading": "yì",
+          "hanviet": "ý",
+          "meaning_vi": "ý tưởng"
         }
       ]
     },
@@ -6070,11 +6840,15 @@
       "chars": [
         {
           "char": "月",
-          "hanviet": "nguyệt"
+          "reading": "yuè",
+          "hanviet": "nguyệt",
+          "meaning_vi": "mặt trăng"
         },
         {
           "char": "亮",
-          "hanviet": "lượng"
+          "reading": "liang",
+          "hanviet": "lượng",
+          "meaning_vi": "sáng"
         }
       ]
     },
@@ -6086,9 +6860,9 @@
       "version": 1,
       "verified": false,
       "target": "越",
-      "reading": "Yuè",
+      "reading": "yuè",
       "meaning_vi": "vượt; vượt qua; vượt hơn; càng... càng...",
-      "meaning_en": "generic word for peoples or states of south China or south Asia at different historical periods; abbr. for Vietnam 越南",
+      "meaning_en": "to exceed; to climb over; to surpass; the more... the more",
       "hanviet": "việt",
       "distractor_group": "adverb",
       "audio": "hsk3/hsk3-0277.mp3"
@@ -6117,8 +6891,8 @@
       "verified": false,
       "target": "站",
       "reading": "zhàn",
-      "meaning_vi": "trạm; đứng; dừng; tạm dừng; chi nhánh của một công ty hoặc tổ chức; trang web",
-      "meaning_en": "station; to stand; to halt; to stop; branch of a company or organization; website",
+      "meaning_vi": "trạm; đứng; dừng; tạm dừng; chi nhánh của một công ty hoặc tổ chức",
+      "meaning_en": "station; to stand; to halt; to stop; branch of a company or organization",
       "hanviet": "trạm",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0279.mp3"
@@ -6140,11 +6914,15 @@
       "chars": [
         {
           "char": "照",
-          "hanviet": "chiếu"
+          "reading": "zhào",
+          "hanviet": "chiếu",
+          "meaning_vi": "theo"
         },
         {
           "char": "顾",
-          "hanviet": "cố"
+          "reading": "gu",
+          "hanviet": "cố",
+          "meaning_vi": "họ"
         }
       ]
     },
@@ -6165,11 +6943,15 @@
       "chars": [
         {
           "char": "照",
-          "hanviet": "chiếu"
+          "reading": "zhào",
+          "hanviet": "chiếu",
+          "meaning_vi": "theo"
         },
         {
           "char": "片",
-          "hanviet": "phiến"
+          "reading": "piàn",
+          "hanviet": "phiến",
+          "meaning_vi": "mảnh mỏng"
         }
       ]
     },
@@ -6182,7 +6964,7 @@
       "verified": false,
       "target": "照相机",
       "reading": "zhào xiàng jī",
-      "meaning_vi": "máy ảnh; Lượng từ: 個|个[ge4], 架[jia4], 部[bu4], 台[tai2], 隻|只[zhi1]",
+      "meaning_vi": "máy ảnh",
       "meaning_en": "camera",
       "hanviet": "chiếu tướng cơ",
       "distractor_group": "noun",
@@ -6190,15 +6972,21 @@
       "chars": [
         {
           "char": "照",
-          "hanviet": "chiếu"
+          "reading": "zhào",
+          "hanviet": "chiếu",
+          "meaning_vi": "theo"
         },
         {
           "char": "相",
-          "hanviet": "tướng"
+          "reading": "xiàng",
+          "hanviet": "tướng",
+          "meaning_vi": "diện mạo"
         },
         {
           "char": "机",
-          "hanviet": "cơ"
+          "reading": "jī",
+          "hanviet": "cơ",
+          "meaning_vi": "(hình thức kết hợp) máy móc"
         }
       ]
     },
@@ -6219,11 +7007,15 @@
       "chars": [
         {
           "char": "着",
-          "hanviet": "trước"
+          "reading": "zháo",
+          "hanviet": "trước",
+          "meaning_vi": "chạm"
         },
         {
           "char": "急",
-          "hanviet": "cấp"
+          "reading": "jí",
+          "hanviet": "cấp",
+          "meaning_vi": "khẩn cấp"
         }
       ]
     },
@@ -6236,7 +7028,7 @@
       "verified": false,
       "target": "只",
       "reading": "zhǐ",
-      "meaning_vi": "biến thể của 只[zhi3]",
+      "meaning_vi": "chỉ; chỉ đơn thuần; chỉ là; nhưng",
       "meaning_en": "only; merely; just; but",
       "hanviet": "chỉ",
       "distractor_group": "adverb",
@@ -6259,11 +7051,15 @@
       "chars": [
         {
           "char": "中",
-          "hanviet": "trung"
+          "reading": "zhōng",
+          "hanviet": "trung",
+          "meaning_vi": "bên trong"
         },
         {
           "char": "间",
-          "hanviet": "gian"
+          "reading": "jiān",
+          "hanviet": "gian",
+          "meaning_vi": "giữa"
         }
       ]
     },
@@ -6284,11 +7080,15 @@
       "chars": [
         {
           "char": "终",
-          "hanviet": "chung"
+          "reading": "zhōng",
+          "hanviet": "chung",
+          "meaning_vi": "kết thúc"
         },
         {
           "char": "于",
-          "hanviet": "ư"
+          "reading": "yú",
+          "hanviet": "ư",
+          "meaning_vi": "(chỉ thời gian hoặc địa điểm) ở"
         }
       ]
     },
@@ -6301,7 +7101,7 @@
       "verified": false,
       "target": "种",
       "reading": "zhǒng",
-      "meaning_vi": "hạt; loài; loại; kiểu; lượng từ cho loại, kiểu, dạng",
+      "meaning_vi": "hạt; loài; loại; kiểu",
       "meaning_en": "seed; species; kind; type; classifier for types, kinds, sorts",
       "hanviet": "chủng",
       "distractor_group": "measure",
@@ -6324,11 +7124,15 @@
       "chars": [
         {
           "char": "重",
-          "hanviet": "trọng"
+          "reading": "zhòng",
+          "hanviet": "trọng",
+          "meaning_vi": "nặng"
         },
         {
           "char": "要",
-          "hanviet": "yếu"
+          "reading": "yào",
+          "hanviet": "yếu",
+          "meaning_vi": "muốn"
         }
       ]
     },
@@ -6349,11 +7153,15 @@
       "chars": [
         {
           "char": "周",
-          "hanviet": "chu"
+          "reading": "zhōu",
+          "hanviet": "chu",
+          "meaning_vi": "tuần"
         },
         {
           "char": "末",
-          "hanviet": "mạt"
+          "reading": "mò",
+          "hanviet": "mạt",
+          "meaning_vi": "đầu mút"
         }
       ]
     },
@@ -6374,11 +7182,15 @@
       "chars": [
         {
           "char": "主",
-          "hanviet": "chúa"
+          "reading": "zhǔ",
+          "hanviet": "chúa",
+          "meaning_vi": "chủ"
         },
         {
           "char": "要",
-          "hanviet": "yếu"
+          "reading": "yào",
+          "hanviet": "yếu",
+          "meaning_vi": "muốn"
         }
       ]
     },
@@ -6399,11 +7211,15 @@
       "chars": [
         {
           "char": "注",
-          "hanviet": "chú"
+          "reading": "zhù",
+          "hanviet": "chú",
+          "meaning_vi": "đăng ký"
         },
         {
           "char": "意",
-          "hanviet": "ý"
+          "reading": "yì",
+          "hanviet": "ý",
+          "meaning_vi": "ý tưởng"
         }
       ]
     },
@@ -6415,9 +7231,9 @@
       "version": 1,
       "verified": false,
       "target": "祝",
-      "reading": "Zhù",
+      "reading": "zhù",
       "meaning_vi": "cầu nguyện; chúc (ai đó thượng lộ bình an, sinh nhật vui vẻ, v.v.); người cầu khấn thần linh trong các nghi lễ tế tự",
-      "meaning_en": "surname Zhu",
+      "meaning_en": "to pray for; to wish (sb bon voyage, happy birthday etc); person who invokes the spirits during sacrificial ceremonies",
       "hanviet": "chúc",
       "distractor_group": "verb",
       "audio": "hsk3/hsk3-0292.mp3"
@@ -6431,7 +7247,7 @@
       "verified": false,
       "target": "字典",
       "reading": "zì diǎn",
-      "meaning_vi": "Từ điển chữ Hán (chứa mục từ cho từng chữ đơn, khác với 詞典|词典[ci2 dian3], chứa mục từ cho từ gồm một hoặc nhiều chữ); (thông tục) từ điển; Lượng từ: 本[ben3]",
+      "meaning_vi": "Từ điển chữ Hán (chứa mục từ cho từng chữ đơn, khác với 詞典|词典[ci2 dian3], chứa mục từ cho từ gồm một hoặc nhiều chữ); (thông tục) từ điển",
       "meaning_en": "Chinese character dictionary (containing entries for single characters, contrasted with a 词典, which has entries for words of one or more characters); (coll.) dictionary",
       "hanviet": "tự điển",
       "distractor_group": "noun",
@@ -6439,11 +7255,15 @@
       "chars": [
         {
           "char": "字",
-          "hanviet": "tự"
+          "reading": "zì",
+          "hanviet": "tự",
+          "meaning_vi": "chữ"
         },
         {
           "char": "典",
-          "hanviet": "điển"
+          "reading": "diǎn",
+          "hanviet": "điển",
+          "meaning_vi": "kinh điển"
         }
       ]
     },
@@ -6464,11 +7284,15 @@
       "chars": [
         {
           "char": "自",
-          "hanviet": "tự"
+          "reading": "zì",
+          "hanviet": "tự",
+          "meaning_vi": "(dạng kết hợp) tự"
         },
         {
           "char": "己",
-          "hanviet": "kỷ"
+          "reading": "jǐ",
+          "hanviet": "kỷ",
+          "meaning_vi": "tự bản thân"
         }
       ]
     },
@@ -6489,11 +7313,15 @@
       "chars": [
         {
           "char": "总",
-          "hanviet": "tổng"
+          "reading": "zǒng",
+          "hanviet": "tổng",
+          "meaning_vi": "tổng thể"
         },
         {
           "char": "是",
-          "hanviet": "thị"
+          "reading": "shì",
+          "hanviet": "thị",
+          "meaning_vi": "là (chỉ theo sau bởi danh từ)"
         }
       ]
     },
@@ -6514,11 +7342,15 @@
       "chars": [
         {
           "char": "最",
-          "hanviet": "tối"
+          "reading": "zuì",
+          "hanviet": "tối",
+          "meaning_vi": "nhất"
         },
         {
           "char": "近",
-          "hanviet": "cận"
+          "reading": "jìn",
+          "hanviet": "cận",
+          "meaning_vi": "gần"
         }
       ]
     },
@@ -6531,19 +7363,23 @@
       "verified": false,
       "target": "作业",
       "reading": "zuò yè",
-      "meaning_vi": "bài tập về nhà; bài tập; công việc; nhiệm vụ; vận hành; thao tác",
-      "meaning_en": "school assignment; homework; work; task; operation; to operate",
+      "meaning_vi": "bài tập về nhà; bài tập; công việc; nhiệm vụ; vận hành",
+      "meaning_en": "school assignment; homework; work; task; operation",
       "hanviet": "tác nghiệp",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0297.mp3",
       "chars": [
         {
           "char": "作",
-          "hanviet": "tác"
+          "reading": "zuò",
+          "hanviet": "tác",
+          "meaning_vi": "làm"
         },
         {
           "char": "业",
-          "hanviet": "nghiệp"
+          "reading": "yè",
+          "hanviet": "nghiệp",
+          "meaning_vi": "ngành kinh doanh"
         }
       ]
     },
@@ -6557,18 +7393,22 @@
       "target": "作用",
       "reading": "zuò yòng",
       "meaning_vi": "tác động đến; ảnh hưởng; hành động; chức năng; hoạt động; tác động; kết quả; hiệu quả; mục đích; ý định; hậu tố -ation, -tion, v.v., như trong 抑制作用[yi4 zhi4 zuo4 yong4], ức chế",
-      "meaning_en": "to act on; to affect; action; function; activity; impact; result; effect; purpose; intent; (suffix) -ation, -tion etc, as in 用, inhibition",
+      "meaning_en": "to act on; to affect; action; function; activity",
       "hanviet": "tác dụng",
       "distractor_group": "noun",
       "audio": "hsk3/hsk3-0298.mp3",
       "chars": [
         {
           "char": "作",
-          "hanviet": "tác"
+          "reading": "zuò",
+          "hanviet": "tác",
+          "meaning_vi": "làm"
         },
         {
           "char": "用",
-          "hanviet": "dụng"
+          "reading": "yòng",
+          "hanviet": "dụng",
+          "meaning_vi": "sử dụng"
         }
       ]
     }
