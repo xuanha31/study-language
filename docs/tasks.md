@@ -40,32 +40,33 @@
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
-| E2-1 | Khởi tạo project Flutter, cấu trúc thư mục, lint | ☐ TODO |
-| E2-2 | Model Dart cho Card / Course / Lesson (parse JSON) | ☐ TODO |
-| E2-3 | Repository: load content từ assets/local, áp manifest | ☐ TODO |
-| E2-4 | State management (Riverpod/Bloc — chọn) | ☐ TODO |
-| E2-5 | Nhúng font CJK (Noto Sans SC) | ☐ TODO |
+| E2-1 | Khởi tạo project Flutter, cấu trúc thư mục, lint | ☑ DONE |
+| E2-2 | Model Dart cho Card / CharInfo / Course (parse JSON) | ☑ DONE |
+| E2-3 | ContentRepository: load manifest + hskN.json từ assets (bundle `content/`) | ☑ DONE |
+| E2-4 | State management → **Bloc** (GameBloc) + Cubit (ContentCubit) | ☑ DONE |
+| E2-5 | Nhúng font CJK (Noto Sans SC) — hiện dùng font hệ thống | ☐ TODO |
 
 ## E3 — Engine game (gameplay hướng A)
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
-| E3-1 | Spike: thử Flame vs widget cho nhân vật nhảy/scroll | ☐ TODO |
-| E3-2 | Màn chơi: nhân vật chạy → dừng hỏi → nhảy ăn nấm | ☐ TODO |
-| E3-3 | UI câu hỏi 4 đáp án + hiệu ứng đúng/sai | ☐ TODO |
-| E3-4 | Hệ thống mạng (3 mặc định, cộng dồn) + nấm + combo | ☐ TODO |
+| E3-1 | Spike Flame vs widget → chọn **Flame** (cảnh vẽ bằng canvas, chưa sprite) | ☑ DONE |
+| E3-2 | Màn chơi: nhân vật + mặt đất, nhảy ăn nấm khi đúng (hướng A) | ☑ DONE |
+| E3-3 | UI câu hỏi 4 đáp án (overlay) + hiệu ứng đúng/sai | ☑ DONE |
+| E3-4 | Hệ thống mạng (3 mặc định) + nấm + combo + thưởng mạng mỗi 5 combo | ☑ DONE |
 | E3-5 | Boss câu 20 + power-up (gợi ý/đóng băng/hồi mạng) | ☐ TODO |
-| E3-6 | Sinh màn tự động theo 20 câu (template) | ☐ TODO |
+| E3-6 | Sinh màn tự động/scroll theo 20 câu (hiện cảnh tĩnh 1 màn) | ☐ TODO |
 | E3-7 | Điều chỉnh tốc độ chơi (chậm/vừa/nhanh) | ☐ TODO |
+| E3-8 | **Verify**: chạy app trên emulator/thiết bị (mới analyze+test, chưa chạy GUI) | ☐ TODO |
 
 ## E4 — Học tập (chọn câu, SRS, ôn tập)
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
-| E4-1 | Sinh 4 đáp án từ `distractor_group` | ☐ TODO |
-| E4-2 | Các dạng câu hỏi đảo chiều (nhận diện/sản xuất/nghe/thanh điệu/Hán Việt) | ☐ TODO |
-| E4-3 | Lưu tiến độ học từng từ (level, nextReviewDate) | ☐ TODO |
-| E4-4 | Thuật toán SRS (lên/xuống bậc, đo thời gian tương đối) | ☐ TODO |
+| E4-1 | Sinh 4 đáp án từ `distractor_group` (AnswerService) | ☑ DONE |
+| E4-2 | Dạng câu hỏi đảo chiều: Hán→nghĩa, nghĩa→Hán (nghe/thanh điệu/Hán Việt chưa) | ◐ DOING |
+| E4-3 | Lưu tiến độ học từng từ (level, nextReviewMs) — Hive | ☑ DONE |
+| E4-4 | Thuật toán SRS (lên/xuống bậc, đo thời gian tương đối) | ☑ DONE |
 | E4-5 | Màn ôn tập (trộn vào vòng / phần riêng) | ☐ TODO |
 | E4-6 | Preview từ vựng trước vòng + gợi ý tốc độ | ☐ TODO |
 
@@ -81,7 +82,7 @@
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
-| E6-1 | Lưu tiến độ local (SQLite/Hive — chọn) | ☐ TODO |
+| E6-1 | Lưu tiến độ local → **Hive** (ProgressRepository) | ☑ DONE |
 | E6-2 | Google Sign-In + Drive AppData | ☐ TODO |
 | E6-3 | Tạo/liệt kê/restore/xóa snapshot, giới hạn ~10 bản | ☐ TODO |
 | E6-4 | Cảnh báo khi restore đè tiến độ | ☐ TODO |
@@ -105,7 +106,7 @@
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
-| E9-1 | Màn chọn khóa HSK → bài → vòng | ☐ TODO |
+| E9-1 | Màn chọn khóa HSK → bài → vòng | ☑ DONE |
 | E9-2 | Màn cài đặt (tốc độ, chiều Việt↔Trung, âm thanh) | ☐ TODO |
 | E9-3 | Màn thống kê tiến độ / từ đã thuộc | ☐ TODO |
 | E9-4 | Daily streak + local notification nhắc học | ☐ TODO |

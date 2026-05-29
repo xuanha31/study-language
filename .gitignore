@@ -11,6 +11,19 @@ build/
 .idea/
 .vscode/
 
+# Flutter native build artifacts & secrets
+**/.gradle/
+**/android/local.properties
+**/android/key.properties
+*.jks
+*.keystore
+**/GeneratedPluginRegistrant.*
+ios/Pods/
+ios/.symlinks/
+**/Flutter/ephemeral/
+**/Flutter/Generated.xcconfig
+**/Flutter/flutter_export_environment.sh
+
 # OS
 Thumbs.db
 .DS_Store
