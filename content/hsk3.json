@@ -1,0 +1,6576 @@
+{
+  "code": "HSK3",
+  "title_vi": "HSK 3",
+  "version": 1,
+  "lessonSize": 20,
+  "_warning": "Sinh tu nguon mo (HSK list MIT + CVDICT CC-BY-SA-4.0 + Unihan kVietnamese). verified=false. meaning_vi do AI dich (CVDICT), hanviet lay am dau tien Unihan - CAN ra soat.",
+  "_sources": {
+    "wordlist": "drkameleon/complete-hsk-vocabulary (MIT)",
+    "meaning_vi": "CVDICT - Phong Phan (CC-BY-SA 4.0)",
+    "hanviet": "Unihan kVietnamese (Unicode)"
+  },
+  "cards": [
+    {
+      "id": "hsk3-0001",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "阿姨",
+      "reading": "ā yí",
+      "meaning_vi": "dì (chị em của mẹ); mẹ kế; người trông trẻ; bảo mẫu; phụ nữ có tuổi tương tự bố mẹ (cách xưng hô của trẻ em)",
+      "meaning_en": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child)",
+      "hanviet": "a di",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0001.mp3",
+      "chars": [
+        {
+          "char": "阿",
+          "hanviet": "a"
+        },
+        {
+          "char": "姨",
+          "hanviet": "di"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0002",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "啊",
+      "reading": "ā",
+      "meaning_vi": "thán từ biểu thị sự ngạc nhiên; A!; Ồ!",
+      "meaning_en": "interjection of surprise; Ah!; Oh!",
+      "hanviet": "a",
+      "distractor_group": "particle",
+      "audio": "hsk3/hsk3-0002.mp3"
+    },
+    {
+      "id": "hsk3-0003",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "矮",
+      "reading": "ǎi",
+      "meaning_vi": "thấp; ngắn (về chiều dài)",
+      "meaning_en": "low; short (in length)",
+      "hanviet": "ải",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0003.mp3"
+    },
+    {
+      "id": "hsk3-0004",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "爱好",
+      "reading": "ài hào",
+      "meaning_vi": "thích; đam mê; lấy làm thú vui; say mê; sở thích",
+      "meaning_en": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby",
+      "hanviet": "ái hiếu",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0004.mp3",
+      "chars": [
+        {
+          "char": "爱",
+          "hanviet": "ái"
+        },
+        {
+          "char": "好",
+          "hanviet": "hiếu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0005",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "安静",
+      "reading": "ān jìng",
+      "meaning_vi": "yên tĩnh; bình yên; điềm tĩnh",
+      "meaning_en": "quiet; peaceful; calm",
+      "hanviet": "an tĩnh",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0005.mp3",
+      "chars": [
+        {
+          "char": "安",
+          "hanviet": "an"
+        },
+        {
+          "char": "静",
+          "hanviet": "tĩnh"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0006",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "把",
+      "reading": "bǎ",
+      "meaning_vi": "cầm; nắm; đỡ em bé để đi tiểu hoặc đại tiện; tay cầm; lượng từ: nắm, bó, chùm; lượng từ cho vật có cán; (dùng để đưa tân ngữ lên trước động từ: 把[ba3] + {danh từ} + {động từ})",
+      "meaning_en": "to hold; to grasp; to hold a baby in position to help it urinate or defecate; handlebar; classifier: handful, bundle, bunch; classifier for things with handles; (used to put the object before the verb: 把 + {noun} + {verb})",
+      "hanviet": "bả",
+      "distractor_group": "preposition",
+      "audio": "hsk3/hsk3-0006.mp3"
+    },
+    {
+      "id": "hsk3-0007",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "班",
+      "reading": "Bān",
+      "meaning_vi": "nhóm; lớp; khối; (quân sự) tiểu đội; ca làm việc; lượng từ cho nhóm người và các phương tiện giao thông theo lịch trình",
+      "meaning_en": "surname Ban",
+      "hanviet": "ban",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0007.mp3"
+    },
+    {
+      "id": "hsk3-0008",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "搬",
+      "reading": "bān",
+      "meaning_vi": "di chuyển (tức là tự dời đi); di chuyển (thứ gì đó tương đối nặng hoặc cồng kềnh); chuyển; dọn sao chép mà không chọn lọc",
+      "meaning_en": "to move (i.e. relocate oneself); to move (sth relatively heavy or bulky); to shift; to copy indiscriminately",
+      "hanviet": "ban",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0008.mp3"
+    },
+    {
+      "id": "hsk3-0009",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "办法",
+      "reading": "bàn fǎ",
+      "meaning_vi": "cách; phương pháp; cách thức (làm gì đó)",
+      "meaning_en": "means; method; way (of doing sth)",
+      "hanviet": "biện pháp",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0009.mp3",
+      "chars": [
+        {
+          "char": "办",
+          "hanviet": "biện"
+        },
+        {
+          "char": "法",
+          "hanviet": "pháp"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0010",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "办公室",
+      "reading": "bàn gōng shì",
+      "meaning_vi": "văn phòng; cơ sở kinh doanh; cục",
+      "meaning_en": "office; business premises; bureau",
+      "hanviet": "biện công thất",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0010.mp3",
+      "chars": [
+        {
+          "char": "办",
+          "hanviet": "biện"
+        },
+        {
+          "char": "公",
+          "hanviet": "công"
+        },
+        {
+          "char": "室",
+          "hanviet": "thất"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0011",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "半",
+      "reading": "bàn",
+      "meaning_vi": "một nửa; bán-; chưa hoàn chỉnh; (sau một số) một nửa",
+      "meaning_en": "half; semi-; incomplete; (after a number) and a half",
+      "hanviet": "bán",
+      "distractor_group": "number",
+      "audio": "hsk3/hsk3-0011.mp3"
+    },
+    {
+      "id": "hsk3-0012",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "帮忙",
+      "reading": "bāng máng",
+      "meaning_vi": "giúp; giúp đỡ; làm ơn; làm giúp một tay",
+      "meaning_en": "to help; to lend a hand; to do a favor; to do a good turn",
+      "hanviet": "bang mang",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0012.mp3",
+      "chars": [
+        {
+          "char": "帮",
+          "hanviet": "bang"
+        },
+        {
+          "char": "忙",
+          "hanviet": "mang"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0013",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "包",
+      "reading": "Bāo",
+      "meaning_vi": "che phủ; gói; cầm; nắm bao gồm; phụ trách; hợp đồng (làm hoặc cho); bọc; đựng; túi; ôm hoặc ôm chặt; bó",
+      "meaning_en": "surname Bao",
+      "hanviet": "bao",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0013.mp3"
+    },
+    {
+      "id": "hsk3-0014",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "饱",
+      "reading": "bǎo",
+      "meaning_vi": "ăn no; hài lòng",
+      "meaning_en": "to eat till full; satisfied",
+      "hanviet": "bão",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0014.mp3"
+    },
+    {
+      "id": "hsk3-0015",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "北方",
+      "reading": "běi fāng",
+      "meaning_vi": "phía bắc; phần phía bắc của một quốc gia; Trung Quốc ở phía bắc sông Hoàng Hà",
+      "meaning_en": "north; the northern part a country; China north of the Yellow River",
+      "hanviet": "bắc phương",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0015.mp3",
+      "chars": [
+        {
+          "char": "北",
+          "hanviet": "bắc"
+        },
+        {
+          "char": "方",
+          "hanviet": "phương"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0016",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "被",
+      "reading": "bèi",
+      "meaning_vi": "chăn; đắp (bằng); (văn học) chịu (một điều không may); dùng để chỉ thể bị động (đặt trước người thực hiện hành động như \"bởi\" trong câu bị động tiếng Anh, hoặc, nếu không nhắc đến người thực hiện, thì đặt trước động từ); (khoảng năm 2009) (mỉa mai hoặc hài hước) dùng để chỉ rằng từ sau đó nên được hiểu là trong dấu ngoặc kép (như trong 被旅遊|被旅游[bei4 lu:3 you2] \"đi du lịch\", chẳng hạn)",
+      "meaning_en": "quilt; to cover (with); (literary) to suffer (a misfortune); used to indicate passive voice (placed before the doer of the action like \"by\" in English passive-voice sentences, or, if the doer is not mentioned, before the verb); (since c. 2009) (sarcastic or jocular) used to indicate that the following word should be regarded as being in air quotes (as in 被旅游 to \"go on a trip\", for example)",
+      "hanviet": "bị",
+      "distractor_group": "preposition",
+      "audio": "hsk3/hsk3-0016.mp3"
+    },
+    {
+      "id": "hsk3-0017",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "鼻子",
+      "reading": "bí zi",
+      "meaning_vi": "mũi",
+      "meaning_en": "nose",
+      "hanviet": "tỵ tử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0017.mp3",
+      "chars": [
+        {
+          "char": "鼻",
+          "hanviet": "tỵ"
+        },
+        {
+          "char": "子",
+          "hanviet": "tử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0018",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "比较",
+      "reading": "bǐ jiào",
+      "meaning_vi": "so sánh; đối chiếu; tương đối; khá; phân tích so sánh; sự so sánh",
+      "meaning_en": "to compare; to contrast; comparatively; relatively; quite; comparison",
+      "hanviet": "bi giảo",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0018.mp3",
+      "chars": [
+        {
+          "char": "比",
+          "hanviet": "bi"
+        },
+        {
+          "char": "较",
+          "hanviet": "giảo"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0019",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "比赛",
+      "reading": "bǐ sài",
+      "meaning_vi": "cuộc thi (thể thao, v.v.); trận đấu; thi đấu",
+      "meaning_en": "competition (sports etc); match; to compete",
+      "hanviet": "bi tái",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0019.mp3",
+      "chars": [
+        {
+          "char": "比",
+          "hanviet": "bi"
+        },
+        {
+          "char": "赛",
+          "hanviet": "tái"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0020",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 1,
+      "version": 1,
+      "verified": false,
+      "target": "必须",
+      "reading": "bì xū",
+      "meaning_vi": "phải; bắt buộc; cần thiết; nhất thiết",
+      "meaning_en": "to have to; must; compulsory; necessarily",
+      "hanviet": "tất tu",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0020.mp3",
+      "chars": [
+        {
+          "char": "必",
+          "hanviet": "tất"
+        },
+        {
+          "char": "须",
+          "hanviet": "tu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0021",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "变化",
+      "reading": "biàn huà",
+      "meaning_vi": "thay đổi; biến đổi; biến hoá",
+      "meaning_en": "(intransitive) to change; to vary; change; variation",
+      "hanviet": "biến hoá",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0021.mp3",
+      "chars": [
+        {
+          "char": "变",
+          "hanviet": "biến"
+        },
+        {
+          "char": "化",
+          "hanviet": "hoá"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0022",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "表示",
+      "reading": "biǎo shì",
+      "meaning_vi": "(về ai đó) bày tỏ; phát biểu; cho thấy; (về điều gì đó) biểu thị; có nghĩa; cho thấy; sự biểu đạt; sự thể hiện",
+      "meaning_en": "to express; to show; to say; to state; to indicate; to mean",
+      "hanviet": "biểu thị",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0022.mp3",
+      "chars": [
+        {
+          "char": "表",
+          "hanviet": "biểu"
+        },
+        {
+          "char": "示",
+          "hanviet": "thị"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0023",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "表演",
+      "reading": "biǎo yǎn",
+      "meaning_vi": "vở kịch; buổi biểu diễn; trình diễn; biểu diễn; diễn xuất; minh họa",
+      "meaning_en": "play; show; performance; exhibition; to perform; to act; to demonstrate",
+      "hanviet": "biểu diễn",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0023.mp3",
+      "chars": [
+        {
+          "char": "表",
+          "hanviet": "biểu"
+        },
+        {
+          "char": "演",
+          "hanviet": "diễn"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0024",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "别人",
+      "reading": "bié ren",
+      "meaning_vi": "người khác; những người khác",
+      "meaning_en": "other people; others; other person",
+      "hanviet": "biệt nhân",
+      "distractor_group": "pronoun",
+      "audio": "hsk3/hsk3-0024.mp3",
+      "chars": [
+        {
+          "char": "别",
+          "hanviet": "biệt"
+        },
+        {
+          "char": "人",
+          "hanviet": "nhân"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0025",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "宾馆",
+      "reading": "bīn guǎn",
+      "meaning_vi": "nhà khách; nhà nghỉ; khách sạn",
+      "meaning_en": "guesthouse; lodge; hotel",
+      "hanviet": "tân quán",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0025.mp3",
+      "chars": [
+        {
+          "char": "宾",
+          "hanviet": "tân"
+        },
+        {
+          "char": "馆",
+          "hanviet": "quán"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0026",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "冰箱",
+      "reading": "bīng xiāng",
+      "meaning_vi": "tủ lạnh; (cũ) thùng đá",
+      "meaning_en": "icebox; freezer cabinet; refrigerator",
+      "hanviet": "băng rương",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0026.mp3",
+      "chars": [
+        {
+          "char": "冰",
+          "hanviet": "băng"
+        },
+        {
+          "char": "箱",
+          "hanviet": "rương"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0027",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "才",
+      "reading": "cái",
+      "meaning_vi": "(biến thể của 才[cai2]) vừa mới; (biến thể của 才[cai2]) (trước một biểu thức chỉ số lượng) chỉ",
+      "meaning_en": "ability; talent; sb of a certain type; a capable individual; then and only then; just now; (before an expression of quantity) only",
+      "hanviet": "tài",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0027.mp3"
+    },
+    {
+      "id": "hsk3-0028",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "菜单",
+      "reading": "cài dān",
+      "meaning_vi": "thực đơn",
+      "meaning_en": "menu",
+      "hanviet": "thái đơn",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0028.mp3",
+      "chars": [
+        {
+          "char": "菜",
+          "hanviet": "thái"
+        },
+        {
+          "char": "单",
+          "hanviet": "đơn"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0029",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "参加",
+      "reading": "cān jiā",
+      "meaning_vi": "tham gia; tham dự",
+      "meaning_en": "to participate; to take part; to join",
+      "hanviet": "tham gia",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0029.mp3",
+      "chars": [
+        {
+          "char": "参",
+          "hanviet": "tham"
+        },
+        {
+          "char": "加",
+          "hanviet": "gia"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0030",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "草",
+      "reading": "cǎo",
+      "meaning_vi": "cỏ; rơm; bản thảo; phác thảo (một văn kiện); cẩu thả; sơ sài",
+      "meaning_en": "variant of 草",
+      "hanviet": "thảo",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0030.mp3"
+    },
+    {
+      "id": "hsk3-0031",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "层",
+      "reading": "céng",
+      "meaning_vi": "chồng lên nhau; tầng; lớp; tầng (của tòa nhà); tầng; (toán) bó; số đếm cho các lớp",
+      "meaning_en": "to pile on top of one another; layer; stratum; floor (of a building); story; (math.) sheaf; classifier for layers",
+      "hanviet": "tầng",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0031.mp3"
+    },
+    {
+      "id": "hsk3-0032",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "差",
+      "reading": "chā",
+      "meaning_vi": "sự khác biệt; không nhất quán; (toán) hiệu số (lượng còn lại sau phép trừ); (văn học) một chút; hơi; hơi hơi",
+      "meaning_en": "difference; discrepancy; (math.) difference (amount remaining after a subtraction); (literary) a little; somewhat; slightly",
+      "hanviet": "sai",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0032.mp3"
+    },
+    {
+      "id": "hsk3-0033",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "超市",
+      "reading": "chāo shì",
+      "meaning_vi": "siêu thị (viết tắt của 超級市場|超级市场[chao1 ji2 shi4 chang3])",
+      "meaning_en": "supermarket (abbr. for 超级市场)",
+      "hanviet": "siêu thị",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0033.mp3",
+      "chars": [
+        {
+          "char": "超",
+          "hanviet": "siêu"
+        },
+        {
+          "char": "市",
+          "hanviet": "thị"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0034",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "衬衫",
+      "reading": "chèn shān",
+      "meaning_vi": "áo sơ mi; áo blouse",
+      "meaning_en": "shirt; blouse",
+      "hanviet": "sấn sam",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0034.mp3",
+      "chars": [
+        {
+          "char": "衬",
+          "hanviet": "sấn"
+        },
+        {
+          "char": "衫",
+          "hanviet": "sam"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0035",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "成绩",
+      "reading": "chéng jì",
+      "meaning_vi": "thành tích; kết quả học tập; điểm số",
+      "meaning_en": "achievement; performance records; grades",
+      "hanviet": "thành tích",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0035.mp3",
+      "chars": [
+        {
+          "char": "成",
+          "hanviet": "thành"
+        },
+        {
+          "char": "绩",
+          "hanviet": "tích"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0036",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "城市",
+      "reading": "chéng shì",
+      "meaning_vi": "thành phố; thị trấn",
+      "meaning_en": "city; town",
+      "hanviet": "thành thị",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0036.mp3",
+      "chars": [
+        {
+          "char": "城",
+          "hanviet": "thành"
+        },
+        {
+          "char": "市",
+          "hanviet": "thị"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0037",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "迟到",
+      "reading": "chí dào",
+      "meaning_vi": "đến muộn",
+      "meaning_en": "to arrive late",
+      "hanviet": "trì đáo",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0037.mp3",
+      "chars": [
+        {
+          "char": "迟",
+          "hanviet": "trì"
+        },
+        {
+          "char": "到",
+          "hanviet": "đáo"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0038",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "出现",
+      "reading": "chū xiàn",
+      "meaning_vi": "xuất hiện; phát sinh; nổi lên; có mặt",
+      "meaning_en": "to appear; to arise; to emerge; to show up",
+      "hanviet": "xuất hiện",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0038.mp3",
+      "chars": [
+        {
+          "char": "出",
+          "hanviet": "xuất"
+        },
+        {
+          "char": "现",
+          "hanviet": "hiện"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0039",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "除了",
+      "reading": "chú le",
+      "meaning_vi": "ngoài ra; ngoài (... còn...); thêm vào; ngoại trừ",
+      "meaning_en": "besides; apart from (... also...); in addition to; except (for)",
+      "hanviet": "trừ liễu",
+      "distractor_group": "preposition",
+      "audio": "hsk3/hsk3-0039.mp3",
+      "chars": [
+        {
+          "char": "除",
+          "hanviet": "trừ"
+        },
+        {
+          "char": "了",
+          "hanviet": "liễu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0040",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 2,
+      "version": 1,
+      "verified": false,
+      "target": "厨房",
+      "reading": "chú fáng",
+      "meaning_vi": "nhà bếp",
+      "meaning_en": "kitchen",
+      "hanviet": "trù phòng",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0040.mp3",
+      "chars": [
+        {
+          "char": "厨",
+          "hanviet": "trù"
+        },
+        {
+          "char": "房",
+          "hanviet": "phòng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0041",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "春",
+      "reading": "chūn",
+      "meaning_vi": "mùa xuân; vui tươi; hân hoan; trẻ trung; tình yêu; dục vọng; sự sống",
+      "meaning_en": "old variant of 春",
+      "hanviet": "xuân",
+      "distractor_group": "time",
+      "audio": "hsk3/hsk3-0041.mp3"
+    },
+    {
+      "id": "hsk3-0042",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "词语",
+      "reading": "cí yǔ",
+      "meaning_vi": "từ (thuật ngữ chung bao gồm từ đơn âm đến cụm ngắn); thuật ngữ (ví dụ: thuật ngữ kỹ thuật); biểu đạt",
+      "meaning_en": "word (general term including monosyllables through to short phrases); term (e.g. technical term); expression",
+      "hanviet": "từ ngữ",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0042.mp3",
+      "chars": [
+        {
+          "char": "词",
+          "hanviet": "từ"
+        },
+        {
+          "char": "语",
+          "hanviet": "ngữ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0043",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "聪明",
+      "reading": "cōng ming",
+      "meaning_vi": "thông minh; lanh lợi; sáng dạ; nhanh nhạy (về thị giác và thính giác)",
+      "meaning_en": "intelligent; clever; bright; smart; acute (of sight and hearing)",
+      "hanviet": "thông minh",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0043.mp3",
+      "chars": [
+        {
+          "char": "聪",
+          "hanviet": "thông"
+        },
+        {
+          "char": "明",
+          "hanviet": "minh"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0044",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "打扫",
+      "reading": "dǎ sǎo",
+      "meaning_vi": "dọn dẹp; quét",
+      "meaning_en": "to clean; to sweep",
+      "hanviet": "đả tảo",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0044.mp3",
+      "chars": [
+        {
+          "char": "打",
+          "hanviet": "đả"
+        },
+        {
+          "char": "扫",
+          "hanviet": "tảo"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0045",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "打算",
+      "reading": "dǎ suàn",
+      "meaning_vi": "dự định; dự tính; tính toán; kế hoạch",
+      "meaning_en": "to plan; to intend; to calculate; plan; intention; calculation",
+      "hanviet": "đả toán",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0045.mp3",
+      "chars": [
+        {
+          "char": "打",
+          "hanviet": "đả"
+        },
+        {
+          "char": "算",
+          "hanviet": "toán"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0046",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "带",
+      "reading": "dài",
+      "meaning_vi": "dải; thắt lưng; ruy băng; lốp; vùng; khu vực; khu; đeo; mang; dẫn theo; chịu; có; dẫn; dắt; chăm sóc; nuôi dưỡng",
+      "meaning_en": "band; belt; girdle; ribbon; tire; area; zone; region; to wear; to carry; to take along; to bear (i.e. to have); to lead; to bring; to look after; to raise",
+      "hanviet": "đới",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0046.mp3"
+    },
+    {
+      "id": "hsk3-0047",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "担心",
+      "reading": "dān xīn",
+      "meaning_vi": "lo lắng; bồn chồn; không yên; lo âu; tâm trạng lo lắng",
+      "meaning_en": "anxious; worried; uneasy; to worry; to be anxious",
+      "hanviet": "dứt tâm",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0047.mp3",
+      "chars": [
+        {
+          "char": "担",
+          "hanviet": "dứt"
+        },
+        {
+          "char": "心",
+          "hanviet": "tâm"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0048",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "蛋糕",
+      "reading": "dàn gāo",
+      "meaning_vi": "bánh ngọt",
+      "meaning_en": "cake",
+      "hanviet": "đản cao",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0048.mp3",
+      "chars": [
+        {
+          "char": "蛋",
+          "hanviet": "đản"
+        },
+        {
+          "char": "糕",
+          "hanviet": "cao"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0049",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "当然",
+      "reading": "dāng rán",
+      "meaning_vi": "đương nhiên; như lẽ ra phải thế; tất nhiên; dĩ nhiên; không nghi ngờ gì",
+      "meaning_en": "only natural; as it should be; certainly; of course; without doubt",
+      "hanviet": "đáng nhiên",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0049.mp3",
+      "chars": [
+        {
+          "char": "当",
+          "hanviet": "đáng"
+        },
+        {
+          "char": "然",
+          "hanviet": "nhiên"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0050",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "地",
+      "reading": "de",
+      "meaning_vi": "trợ từ kết cấu: dùng trước động từ hoặc tính từ, liên kết với trạng ngữ bổ nghĩa đứng trước",
+      "meaning_en": "-ly; structural particle: used before a verb or adjective, linking it to preceding modifying adverbial adjunct",
+      "hanviet": "địa",
+      "distractor_group": "particle",
+      "audio": "hsk3/hsk3-0050.mp3"
+    },
+    {
+      "id": "hsk3-0051",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "地方",
+      "reading": "dì fāng",
+      "meaning_vi": "khu vực; mang tính khu vực (xa quản lý trung ương); địa phương",
+      "meaning_en": "region; regional (away from the central administration); local",
+      "hanviet": "địa phương",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0051.mp3",
+      "chars": [
+        {
+          "char": "地",
+          "hanviet": "địa"
+        },
+        {
+          "char": "方",
+          "hanviet": "phương"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0052",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "地铁",
+      "reading": "dì tiě",
+      "meaning_vi": "đường sắt ngầm; tàu điện ngầm; tàu điện ngầm",
+      "meaning_en": "underground railway; subway; subway train",
+      "hanviet": "địa thiết",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0052.mp3",
+      "chars": [
+        {
+          "char": "地",
+          "hanviet": "địa"
+        },
+        {
+          "char": "铁",
+          "hanviet": "thiết"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0053",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "地图",
+      "reading": "dì tú",
+      "meaning_vi": "bản đồ",
+      "meaning_en": "map",
+      "hanviet": "địa đồ",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0053.mp3",
+      "chars": [
+        {
+          "char": "地",
+          "hanviet": "địa"
+        },
+        {
+          "char": "图",
+          "hanviet": "đồ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0054",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "灯",
+      "reading": "dēng",
+      "meaning_vi": "đèn; ánh sáng; đèn lồng",
+      "meaning_en": "lamp; light; lantern",
+      "hanviet": "đăng",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0054.mp3"
+    },
+    {
+      "id": "hsk3-0055",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "低",
+      "reading": "dī",
+      "meaning_vi": "thấp; bên dưới; cúi (đầu); để rũ xuống; treo xuống; nghiêng",
+      "meaning_en": "low; beneath; to lower (one's head); to let droop; to hang down; to incline",
+      "hanviet": "đê",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0055.mp3"
+    },
+    {
+      "id": "hsk3-0056",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "电梯",
+      "reading": "diàn tī",
+      "meaning_vi": "thang máy; thang cuốn",
+      "meaning_en": "elevator; escalator",
+      "hanviet": "điện thê",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0056.mp3",
+      "chars": [
+        {
+          "char": "电",
+          "hanviet": "điện"
+        },
+        {
+          "char": "梯",
+          "hanviet": "thê"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0057",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "电子",
+      "reading": "diàn zǐ",
+      "meaning_vi": "điện tử; elektron (vật lý hạt)",
+      "meaning_en": "electronic; electron (particle physics)",
+      "hanviet": "điện tử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0057.mp3",
+      "chars": [
+        {
+          "char": "电",
+          "hanviet": "điện"
+        },
+        {
+          "char": "子",
+          "hanviet": "tử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0058",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "东",
+      "reading": "Dōng",
+      "meaning_vi": "phía đông; chủ nhà (tức là ngồi phía đông của khách); địa chủ",
+      "meaning_en": "surname Dong",
+      "hanviet": "đông",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0058.mp3"
+    },
+    {
+      "id": "hsk3-0059",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "冬",
+      "reading": "dōng",
+      "meaning_vi": "(tượng thanh) đánh trống; thùng thùng",
+      "meaning_en": "winter",
+      "hanviet": "đông",
+      "distractor_group": "time",
+      "audio": "hsk3/hsk3-0059.mp3"
+    },
+    {
+      "id": "hsk3-0060",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 3,
+      "version": 1,
+      "verified": false,
+      "target": "动物",
+      "reading": "dòng wù",
+      "meaning_vi": "động vật",
+      "meaning_en": "animal",
+      "hanviet": "động vật",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0060.mp3",
+      "chars": [
+        {
+          "char": "动",
+          "hanviet": "động"
+        },
+        {
+          "char": "物",
+          "hanviet": "vật"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0061",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "短",
+      "reading": "duǎn",
+      "meaning_vi": "ngắn; gọn; thiếu; điểm yếu; lỗi",
+      "meaning_en": "short; brief; to lack; weak point; fault",
+      "hanviet": "đoản",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0061.mp3"
+    },
+    {
+      "id": "hsk3-0062",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "段",
+      "reading": "Duàn",
+      "meaning_vi": "đoạn; phần; mẩu; giai đoạn (của một quá trình); lượng từ cho câu chuyện, khoảng thời gian, độ dài sợi chỉ, v.v.",
+      "meaning_en": "surname Duan",
+      "hanviet": "đoạn",
+      "distractor_group": "measure",
+      "audio": "hsk3/hsk3-0062.mp3"
+    },
+    {
+      "id": "hsk3-0063",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "锻炼",
+      "reading": "duàn liàn",
+      "meaning_vi": "rèn luyện; rèn giũa; tập thể dục; tập luyện; (bóng) phát triển kỹ năng; tự đào tạo",
+      "meaning_en": "to toughen; to temper; to engage in physical exercise; to work out; (fig.) to develop one's skills; to train oneself",
+      "hanviet": "đoán luyện",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0063.mp3",
+      "chars": [
+        {
+          "char": "锻",
+          "hanviet": "đoán"
+        },
+        {
+          "char": "炼",
+          "hanviet": "luyện"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0064",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "多么",
+      "reading": "duō me",
+      "meaning_vi": "như thế nào (tuyệt vời, v.v.); thật là (một ý tưởng tuyệt vời, v.v.); dù (có khó khăn, v.v.); (trong câu nghi vấn) bao nhiêu; mức độ nào",
+      "meaning_en": "how (wonderful etc); what (a great idea etc); however (difficult it may be etc); (in interrogative sentences) how (much etc); to what extent",
+      "hanviet": "đa ma",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0064.mp3",
+      "chars": [
+        {
+          "char": "多",
+          "hanviet": "đa"
+        },
+        {
+          "char": "么",
+          "hanviet": "ma"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0065",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "饿",
+      "reading": "è",
+      "meaning_vi": "đói; làm cho đói",
+      "meaning_en": "to be hungry; hungry; to starve (sb)",
+      "hanviet": "ngạ",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0065.mp3"
+    },
+    {
+      "id": "hsk3-0066",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "而且",
+      "reading": "ér qiě",
+      "meaning_vi": "(không những ...) mà còn; hơn nữa; thêm vào đó; hơn thế nữa",
+      "meaning_en": "(not only ...) but also; moreover; in addition; furthermore",
+      "hanviet": "nhi thả",
+      "distractor_group": "conjunction",
+      "audio": "hsk3/hsk3-0066.mp3",
+      "chars": [
+        {
+          "char": "而",
+          "hanviet": "nhi"
+        },
+        {
+          "char": "且",
+          "hanviet": "thả"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0067",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "耳朵",
+      "reading": "ěr duo",
+      "meaning_vi": "tai; cái quai (của tách)",
+      "meaning_en": "ear; handle (on a cup)",
+      "hanviet": "nhĩ đoá",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0067.mp3",
+      "chars": [
+        {
+          "char": "耳",
+          "hanviet": "nhĩ"
+        },
+        {
+          "char": "朵",
+          "hanviet": "đoá"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0068",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "发烧",
+      "reading": "fā shāo",
+      "meaning_vi": "bị sốt; có sốt",
+      "meaning_en": "to have a high temperature (from illness); to have a fever",
+      "hanviet": "phát thiêu",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0068.mp3",
+      "chars": [
+        {
+          "char": "发",
+          "hanviet": "phát"
+        },
+        {
+          "char": "烧",
+          "hanviet": "thiêu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0069",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "发现",
+      "reading": "fā xiàn",
+      "meaning_vi": "để ý; nhận ra; phát hiện; tìm thấy; phát giác; một khám phá",
+      "meaning_en": "to notice; to become aware of; to discover; to find; to detect; a discovery",
+      "hanviet": "phát hiện",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0069.mp3",
+      "chars": [
+        {
+          "char": "发",
+          "hanviet": "phát"
+        },
+        {
+          "char": "现",
+          "hanviet": "hiện"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0070",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "方便",
+      "reading": "fāng biàn",
+      "meaning_vi": "tiện lợi; thích hợp; tạo điều kiện; làm cho dễ dàng; có tiền dư; (nói giảm) đi vệ sinh",
+      "meaning_en": "convenient; suitable; to facilitate; to make things easy; having money to spare; (euphemism) to relieve oneself",
+      "hanviet": "phương tiện",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0070.mp3",
+      "chars": [
+        {
+          "char": "方",
+          "hanviet": "phương"
+        },
+        {
+          "char": "便",
+          "hanviet": "tiện"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0071",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "放",
+      "reading": "fàng",
+      "meaning_vi": "đặt; để; phát hành; thả; để cho đi; thả ra; bắn (pháo hoa)",
+      "meaning_en": "to put; to place; to release; to free; to let go; to let out; to set off (fireworks)",
+      "hanviet": "phóng",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0071.mp3"
+    },
+    {
+      "id": "hsk3-0072",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "放心",
+      "reading": "fàng xīn",
+      "meaning_vi": "cảm thấy nhẹ nhõm; cảm thấy yên tâm; an tâm",
+      "meaning_en": "to feel relieved; to feel reassured; to be at ease",
+      "hanviet": "phóng tâm",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0072.mp3",
+      "chars": [
+        {
+          "char": "放",
+          "hanviet": "phóng"
+        },
+        {
+          "char": "心",
+          "hanviet": "tâm"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0073",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "分",
+      "reading": "fēn",
+      "meaning_vi": "chia; tách; phân phối; phân bổ; phân biệt (tốt và xấu); (hình thức kết hợp) chi nhánh (của một tổ chức); phụ- (như trong 分局[fen1 ju2]); phân số; một phần mười (của một số đơn vị); đơn vị chiều dài tương đương 0,33 cm; phút (đơn vị thời gian); phút (đơn vị đo góc); một điểm (trong thể thao hoặc trò chơi); 0,01 nhân dân tệ (đơn vị tiền tệ)",
+      "meaning_en": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad); (bound form) branch of (an organization); sub- (as in 局); fraction; one tenth (of certain units); unit of length equivalent to 0.33 cm; minute (unit of time); minute (angular measurement unit); a point (in sports or games); 0.01 yuan (unit of money)",
+      "hanviet": "phân",
+      "distractor_group": "time",
+      "audio": "hsk3/hsk3-0073.mp3"
+    },
+    {
+      "id": "hsk3-0074",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "附近",
+      "reading": "fù jìn",
+      "meaning_vi": "gần đó; lân cận; (trong) khu vực (của); hàng xóm",
+      "meaning_en": "nearby; neighboring; (in the) vicinity (of); neighborhood",
+      "hanviet": "phụ cận",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0074.mp3",
+      "chars": [
+        {
+          "char": "附",
+          "hanviet": "phụ"
+        },
+        {
+          "char": "近",
+          "hanviet": "cận"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0075",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "复习",
+      "reading": "fù xí",
+      "meaning_vi": "biến thể của 復習|复习[fu4 xi2]",
+      "meaning_en": "to review; revision",
+      "hanviet": "phục tập",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0075.mp3",
+      "chars": [
+        {
+          "char": "复",
+          "hanviet": "phục"
+        },
+        {
+          "char": "习",
+          "hanviet": "tập"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0076",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "敢",
+      "reading": "gǎn",
+      "meaning_vi": "dám; cả gan; (lịch sự) tôi xin mạo muội",
+      "meaning_en": "to dare; daring; (polite) may I venture",
+      "hanviet": "cảm",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0076.mp3"
+    },
+    {
+      "id": "hsk3-0077",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "感冒",
+      "reading": "gǎn mào",
+      "meaning_vi": "bị cảm lạnh; bệnh cảm lạnh; (thông tục) hứng thú (thường dùng ở phủ định); (Đài Loan) ghét; không chịu nổi",
+      "meaning_en": "to catch cold; (common) cold; (coll.) to be interested in (often used in the negative); (Tw) to detest; can't stand",
+      "hanviet": "cảm mạo",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0077.mp3",
+      "chars": [
+        {
+          "char": "感",
+          "hanviet": "cảm"
+        },
+        {
+          "char": "冒",
+          "hanviet": "mạo"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0078",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "干净",
+      "reading": "gān jìng",
+      "meaning_vi": "sạch; gọn gàng",
+      "meaning_en": "clean; neat",
+      "hanviet": "can tịnh",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0078.mp3",
+      "chars": [
+        {
+          "char": "干",
+          "hanviet": "can"
+        },
+        {
+          "char": "净",
+          "hanviet": "tịnh"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0079",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "刚才",
+      "reading": "gāng cái",
+      "meaning_vi": "vừa mới (biến thể của 剛才|刚才[gang1 cai2])",
+      "meaning_en": "just now; a moment ago",
+      "hanviet": "cương tài",
+      "distractor_group": "time",
+      "audio": "hsk3/hsk3-0079.mp3",
+      "chars": [
+        {
+          "char": "刚",
+          "hanviet": "cương"
+        },
+        {
+          "char": "才",
+          "hanviet": "tài"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0080",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 4,
+      "version": 1,
+      "verified": false,
+      "target": "根据",
+      "reading": "gēn jù",
+      "meaning_vi": "theo; dựa vào; cơ sở; nền tảng",
+      "meaning_en": "according to; based on; basis; foundation",
+      "hanviet": "căn cứ",
+      "distractor_group": "preposition",
+      "audio": "hsk3/hsk3-0080.mp3",
+      "chars": [
+        {
+          "char": "根",
+          "hanviet": "căn"
+        },
+        {
+          "char": "据",
+          "hanviet": "cứ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0081",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "跟",
+      "reading": "gēn",
+      "meaning_vi": "gót chân; theo sát; đi cùng; (phụ nữ) lấy ai; với; so với; đến; hướng về; và (nối hai danh từ)",
+      "meaning_en": "heel; to follow closely; to go with; (of a woman) to marry sb; with; compared with; to; towards; and (joining two nouns)",
+      "hanviet": "cân",
+      "distractor_group": "preposition",
+      "audio": "hsk3/hsk3-0081.mp3"
+    },
+    {
+      "id": "hsk3-0082",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "更",
+      "reading": "gēng",
+      "meaning_vi": "thay đổi hoặc thay thế; trải qua; một trong năm khoảng thời gian hai giờ mà đêm từng được chia ra; canh (ví dụ: của lính gác hoặc bảo vệ)",
+      "meaning_en": "to change or replace; to experience; one of the five two-hour periods into which the night was formerly divided; watch (e.g. of a sentry or guard)",
+      "hanviet": "canh",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0082.mp3"
+    },
+    {
+      "id": "hsk3-0083",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "公园",
+      "reading": "gōng yuán",
+      "meaning_vi": "công viên (dành cho công chúng giải trí)",
+      "meaning_en": "park (for public recreation)",
+      "hanviet": "công viên",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0083.mp3",
+      "chars": [
+        {
+          "char": "公",
+          "hanviet": "công"
+        },
+        {
+          "char": "园",
+          "hanviet": "viên"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0084",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "故事",
+      "reading": "gù shì",
+      "meaning_vi": "tục lệ cũ",
+      "meaning_en": "old practice",
+      "hanviet": "cố sự",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0084.mp3",
+      "chars": [
+        {
+          "char": "故",
+          "hanviet": "cố"
+        },
+        {
+          "char": "事",
+          "hanviet": "sự"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0085",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "刮",
+      "reading": "guā",
+      "meaning_vi": "thổi (của gió)",
+      "meaning_en": "to scrape; to blow; to shave; to plunder; to extort",
+      "hanviet": "quát",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0085.mp3"
+    },
+    {
+      "id": "hsk3-0086",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "关",
+      "reading": "Guān",
+      "meaning_vi": "ải núi; đóng; khép; tắt; giam giữ; nhốt; nhốt (ai đó trong phòng, chim trong lồng, v.v.); liên quan; dính líu",
+      "meaning_en": "surname Guan",
+      "hanviet": "quan",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0086.mp3"
+    },
+    {
+      "id": "hsk3-0087",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "关系",
+      "reading": "guān xi",
+      "meaning_vi": "biến thể của 關係|关系[guan1 xi5]",
+      "meaning_en": "relation; relationship; to concern; to affect; to have to do with; guanxi",
+      "hanviet": "quan hệ",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0087.mp3",
+      "chars": [
+        {
+          "char": "关",
+          "hanviet": "quan"
+        },
+        {
+          "char": "系",
+          "hanviet": "hệ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0088",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "关心",
+      "reading": "guān xīn",
+      "meaning_vi": "quan tâm đến; chăm sóc",
+      "meaning_en": "to be concerned about; to care about",
+      "hanviet": "quan tâm",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0088.mp3",
+      "chars": [
+        {
+          "char": "关",
+          "hanviet": "quan"
+        },
+        {
+          "char": "心",
+          "hanviet": "tâm"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0089",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "关于",
+      "reading": "guān yú",
+      "meaning_vi": "liên quan đến; về; đối với; về việc; là vấn đề",
+      "meaning_en": "pertaining to; concerning; with regard to; about; a matter of",
+      "hanviet": "quan ư",
+      "distractor_group": "preposition",
+      "audio": "hsk3/hsk3-0089.mp3",
+      "chars": [
+        {
+          "char": "关",
+          "hanviet": "quan"
+        },
+        {
+          "char": "于",
+          "hanviet": "ư"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0090",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "国家",
+      "reading": "guó jiā",
+      "meaning_vi": "quốc gia; dân tộc; nhà nước",
+      "meaning_en": "country; nation; state",
+      "hanviet": "quốc gia",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0090.mp3",
+      "chars": [
+        {
+          "char": "国",
+          "hanviet": "quốc"
+        },
+        {
+          "char": "家",
+          "hanviet": "gia"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0091",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "果汁",
+      "reading": "guǒ zhī",
+      "meaning_vi": "nước ép trái cây",
+      "meaning_en": "fruit juice",
+      "hanviet": "quả trấp",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0091.mp3",
+      "chars": [
+        {
+          "char": "果",
+          "hanviet": "quả"
+        },
+        {
+          "char": "汁",
+          "hanviet": "trấp"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0092",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "过去",
+      "reading": "guò qù",
+      "meaning_vi": "(trong quá khứ); trước đây; trước đó; đi qua; trôi qua",
+      "meaning_en": "(in the) past; former; previous; to go over; to pass by",
+      "hanviet": "quá khứ",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0092.mp3",
+      "chars": [
+        {
+          "char": "过",
+          "hanviet": "quá"
+        },
+        {
+          "char": "去",
+          "hanviet": "khứ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0093",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "还是",
+      "reading": "hái shi",
+      "meaning_vi": "vẫn (như trước); nên (tốt hơn); không ngờ; hoặc",
+      "meaning_en": "still (as before); had better; unexpectedly; or",
+      "hanviet": "hoàn thị",
+      "distractor_group": "conjunction",
+      "audio": "hsk3/hsk3-0093.mp3",
+      "chars": [
+        {
+          "char": "还",
+          "hanviet": "hoàn"
+        },
+        {
+          "char": "是",
+          "hanviet": "thị"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0094",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "害怕",
+      "reading": "hài pà",
+      "meaning_vi": "sợ hãi; lo sợ",
+      "meaning_en": "to be afraid; to be scared",
+      "hanviet": "hại phạ",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0094.mp3",
+      "chars": [
+        {
+          "char": "害",
+          "hanviet": "hại"
+        },
+        {
+          "char": "怕",
+          "hanviet": "phạ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0095",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "河",
+      "reading": "hé",
+      "meaning_vi": "sông",
+      "meaning_en": "river",
+      "hanviet": "hà",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0095.mp3"
+    },
+    {
+      "id": "hsk3-0096",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "黑板",
+      "reading": "hēi bǎn",
+      "meaning_vi": "bảng đen",
+      "meaning_en": "blackboard",
+      "hanviet": "hắc bản",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0096.mp3",
+      "chars": [
+        {
+          "char": "黑",
+          "hanviet": "hắc"
+        },
+        {
+          "char": "板",
+          "hanviet": "bản"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0097",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "护照",
+      "reading": "hù zhào",
+      "meaning_vi": "hộ chiếu",
+      "meaning_en": "passport",
+      "hanviet": "hộ chiếu",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0097.mp3",
+      "chars": [
+        {
+          "char": "护",
+          "hanviet": "hộ"
+        },
+        {
+          "char": "照",
+          "hanviet": "chiếu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0098",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "花",
+      "reading": "Huā",
+      "meaning_vi": "biến thể của 花[hua1]; hoa; bông; cũng đọc là [wei3]",
+      "meaning_en": "surname Hua",
+      "hanviet": "hoa",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0098.mp3"
+    },
+    {
+      "id": "hsk3-0099",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "花园",
+      "reading": "huā yuán",
+      "meaning_vi": "vườn",
+      "meaning_en": "garden",
+      "hanviet": "hoa viên",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0099.mp3",
+      "chars": [
+        {
+          "char": "花",
+          "hanviet": "hoa"
+        },
+        {
+          "char": "园",
+          "hanviet": "viên"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0100",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 5,
+      "version": 1,
+      "verified": false,
+      "target": "画",
+      "reading": "huà",
+      "meaning_vi": "vẽ; tô tranh; bức tranh; hội họa (LT: 幅[fu2],張|张[zhang1]); vẽ (một đường) (biến thể của 劃|划[hua4]); nét chữ Hán (biến thể của 劃|划[hua4]); (thư pháp) nét ngang (biến thể của 劃|划[hua4])",
+      "meaning_en": "to draw; to paint; picture; painting; to draw (a line) (variant of 划); stroke of a Chinese character (variant of 划); (calligraphy) horizontal stroke (variant of 划)",
+      "hanviet": "hoạ",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0100.mp3"
+    },
+    {
+      "id": "hsk3-0101",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "坏",
+      "reading": "huài",
+      "meaning_vi": "xấu; bị hỏng; hư; hỏng; (hậu tố) cực kỳ",
+      "meaning_en": "bad; spoiled; broken; to break down; (suffix) to the utmost",
+      "hanviet": "hoại",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0101.mp3"
+    },
+    {
+      "id": "hsk3-0102",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "环境",
+      "reading": "huán jìng",
+      "meaning_vi": "môi trường; tình huống; xung quanh; không gian xung quanh",
+      "meaning_en": "environment; circumstances; surroundings; ambient",
+      "hanviet": "hoàn cảnh",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0102.mp3",
+      "chars": [
+        {
+          "char": "环",
+          "hanviet": "hoàn"
+        },
+        {
+          "char": "境",
+          "hanviet": "cảnh"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0103",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "换",
+      "reading": "huàn",
+      "meaning_vi": "trao đổi; thay đổi (quần áo, v.v.); thay thế; chuyển đổi; đổi (tiền tệ)",
+      "meaning_en": "to exchange; to change (clothes etc); to substitute; to switch; to convert (currency)",
+      "hanviet": "hoán",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0103.mp3"
+    },
+    {
+      "id": "hsk3-0104",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "黄",
+      "reading": "Huáng",
+      "meaning_vi": "màu vàng; khiêu dâm; thất bại",
+      "meaning_en": "surname Huang or Hwang",
+      "hanviet": "hoàng",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0104.mp3"
+    },
+    {
+      "id": "hsk3-0105",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "会议",
+      "reading": "huì yì",
+      "meaning_vi": "cuộc họp; hội nghị",
+      "meaning_en": "meeting; conference",
+      "hanviet": "hội nghị",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0105.mp3",
+      "chars": [
+        {
+          "char": "会",
+          "hanviet": "hội"
+        },
+        {
+          "char": "议",
+          "hanviet": "nghị"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0106",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "或者",
+      "reading": "huò zhě",
+      "meaning_vi": "hoặc; có thể; có lẽ",
+      "meaning_en": "or; possibly; maybe; perhaps",
+      "hanviet": "hoặc giả",
+      "distractor_group": "conjunction",
+      "audio": "hsk3/hsk3-0106.mp3",
+      "chars": [
+        {
+          "char": "或",
+          "hanviet": "hoặc"
+        },
+        {
+          "char": "者",
+          "hanviet": "giả"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0107",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "机会",
+      "reading": "jī huì",
+      "meaning_vi": "cơ hội; thời cơ; dịp",
+      "meaning_en": "opportunity; chance; occasion",
+      "hanviet": "cơ hội",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0107.mp3",
+      "chars": [
+        {
+          "char": "机",
+          "hanviet": "cơ"
+        },
+        {
+          "char": "会",
+          "hanviet": "hội"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0108",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "极",
+      "reading": "jí",
+      "meaning_vi": "cực kỳ; cực (địa lý, vật lý); tột cùng; đỉnh",
+      "meaning_en": "extremely; pole (geography, physics); utmost; top",
+      "hanviet": "cực",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0108.mp3"
+    },
+    {
+      "id": "hsk3-0109",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "几乎",
+      "reading": "jī hū",
+      "meaning_vi": "hầu như; gần như; hầu hết",
+      "meaning_en": "almost; nearly; practically",
+      "hanviet": "kỷ hồ",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0109.mp3",
+      "chars": [
+        {
+          "char": "几",
+          "hanviet": "kỷ"
+        },
+        {
+          "char": "乎",
+          "hanviet": "hồ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0110",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "记得",
+      "reading": "jì de",
+      "meaning_vi": "nhớ",
+      "meaning_en": "to remember",
+      "hanviet": "ký đắc",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0110.mp3",
+      "chars": [
+        {
+          "char": "记",
+          "hanviet": "ký"
+        },
+        {
+          "char": "得",
+          "hanviet": "đắc"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0111",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "季节",
+      "reading": "jì jié",
+      "meaning_vi": "thời gian; mùa; giai đoạn",
+      "meaning_en": "time; season; period",
+      "hanviet": "quý tiết",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0111.mp3",
+      "chars": [
+        {
+          "char": "季",
+          "hanviet": "quý"
+        },
+        {
+          "char": "节",
+          "hanviet": "tiết"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0112",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "检查",
+      "reading": "jiǎn chá",
+      "meaning_vi": "kiểm tra; khám xét; kiểm định",
+      "meaning_en": "inspection; to examine; to inspect",
+      "hanviet": "kiểm tra",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0112.mp3",
+      "chars": [
+        {
+          "char": "检",
+          "hanviet": "kiểm"
+        },
+        {
+          "char": "查",
+          "hanviet": "tra"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0113",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "简单",
+      "reading": "jiǎn dān",
+      "meaning_vi": "đơn giản; không phức tạp",
+      "meaning_en": "simple; not complicated",
+      "hanviet": "giản đơn",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0113.mp3",
+      "chars": [
+        {
+          "char": "简",
+          "hanviet": "giản"
+        },
+        {
+          "char": "单",
+          "hanviet": "đơn"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0114",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "见面",
+      "reading": "jiàn miàn",
+      "meaning_vi": "gặp mặt; gặp nhau",
+      "meaning_en": "to meet; to see each other",
+      "hanviet": "kiến diện",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0114.mp3",
+      "chars": [
+        {
+          "char": "见",
+          "hanviet": "kiến"
+        },
+        {
+          "char": "面",
+          "hanviet": "diện"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0115",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "健康",
+      "reading": "jiàn kāng",
+      "meaning_vi": "sức khỏe; khỏe mạnh",
+      "meaning_en": "health; healthy",
+      "hanviet": "kiện khang",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0115.mp3",
+      "chars": [
+        {
+          "char": "健",
+          "hanviet": "kiện"
+        },
+        {
+          "char": "康",
+          "hanviet": "khang"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0116",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "讲",
+      "reading": "jiǎng",
+      "meaning_vi": "nói; giải thích; đàm phán; nhấn mạnh; kĩ lưỡng; về mặt nào đó; bài nói; chia sẻ",
+      "meaning_en": "to speak; to explain; to negotiate; to emphasize; to be particular about; as far as sth is concerned; speech; lecture",
+      "hanviet": "giảng",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0116.mp3"
+    },
+    {
+      "id": "hsk3-0117",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "角",
+      "reading": "Jué",
+      "meaning_vi": "vai diễn (sân khấu); cạnh tranh; bình rượu ba chân cổ; âm thứ ba của ngũ cung",
+      "meaning_en": "surname Jue",
+      "hanviet": "giác",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0117.mp3"
+    },
+    {
+      "id": "hsk3-0118",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "脚",
+      "reading": "jiǎo",
+      "meaning_vi": "bàn chân; chân (của động vật hoặc đồ vật); đế, chân (của đồ vật); lượng từ: 雙|双[shuang1], 隻|只[zhi1]; lượng từ cho cú đá",
+      "meaning_en": "foot; leg (of an animal or an object); base (of an object); classifier for kicks",
+      "hanviet": "cước",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0118.mp3"
+    },
+    {
+      "id": "hsk3-0119",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "教",
+      "reading": "Jiào",
+      "meaning_vi": "tôn giáo; giảng dạy; làm; khiến; bảo",
+      "meaning_en": "surname Jiao",
+      "hanviet": "giáo",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0119.mp3"
+    },
+    {
+      "id": "hsk3-0120",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 6,
+      "version": 1,
+      "verified": false,
+      "target": "接",
+      "reading": "jiē",
+      "meaning_vi": "nhận; trả lời (điện thoại); gặp hoặc chào đón ai; kết nối; bắt; ghép; mở rộng; tiếp nhận ca trực; tiếp quản cho ai",
+      "meaning_en": "to receive; to answer (the phone); to meet or welcome sb; to connect; to catch; to join; to extend; to take one's turn on duty; to take over for sb",
+      "hanviet": "tiếp",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0120.mp3"
+    },
+    {
+      "id": "hsk3-0121",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "街道",
+      "reading": "jiē dào",
+      "meaning_vi": "đường phố; khu phố; khu dân cư",
+      "meaning_en": "street; subdistrict; residential district",
+      "hanviet": "nhai đạo",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0121.mp3",
+      "chars": [
+        {
+          "char": "街",
+          "hanviet": "nhai"
+        },
+        {
+          "char": "道",
+          "hanviet": "đạo"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0122",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "节目",
+      "reading": "jié mù",
+      "meaning_vi": "chương trình; mục (trong chương trình)",
+      "meaning_en": "program; item (on a program)",
+      "hanviet": "tiết mục",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0122.mp3",
+      "chars": [
+        {
+          "char": "节",
+          "hanviet": "tiết"
+        },
+        {
+          "char": "目",
+          "hanviet": "mục"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0123",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "节日",
+      "reading": "jié rì",
+      "meaning_vi": "ngày lễ; lễ hội",
+      "meaning_en": "holiday; festival",
+      "hanviet": "tiết nhật",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0123.mp3",
+      "chars": [
+        {
+          "char": "节",
+          "hanviet": "tiết"
+        },
+        {
+          "char": "日",
+          "hanviet": "nhật"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0124",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "结婚",
+      "reading": "jié hūn",
+      "meaning_vi": "kết hôn; cưới",
+      "meaning_en": "to marry; to get married",
+      "hanviet": "kết hôn",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0124.mp3",
+      "chars": [
+        {
+          "char": "结",
+          "hanviet": "kết"
+        },
+        {
+          "char": "婚",
+          "hanviet": "hôn"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0125",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "结束",
+      "reading": "jié shù",
+      "meaning_vi": "chấm dứt; hoàn thành; kết thúc; kết luận; khép lại",
+      "meaning_en": "termination; to finish; to end; to conclude; to close",
+      "hanviet": "kết thúc",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0125.mp3",
+      "chars": [
+        {
+          "char": "结",
+          "hanviet": "kết"
+        },
+        {
+          "char": "束",
+          "hanviet": "thúc"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0126",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "解决",
+      "reading": "jiě jué",
+      "meaning_vi": "giải quyết; xử lý; giải quyết (một vấn đề); loại bỏ; tiêu diệt (kẻ thù, cướp bóc, v.v.)",
+      "meaning_en": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
+      "hanviet": "giải quyết",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0126.mp3",
+      "chars": [
+        {
+          "char": "解",
+          "hanviet": "giải"
+        },
+        {
+          "char": "决",
+          "hanviet": "quyết"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0127",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "借",
+      "reading": "jiè",
+      "meaning_vi": "biến thể của 借[jie4]",
+      "meaning_en": "to lend; to borrow; by means of; to take (an opportunity)",
+      "hanviet": "tá",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0127.mp3"
+    },
+    {
+      "id": "hsk3-0128",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "经常",
+      "reading": "jīng cháng",
+      "meaning_vi": "thường xuyên; liên tục; đều đặn; thường; ngày thường; hằng ngày; mỗi ngày",
+      "meaning_en": "frequently; constantly; regularly; often; day-to-day; everyday; daily",
+      "hanviet": "kinh thường",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0128.mp3",
+      "chars": [
+        {
+          "char": "经",
+          "hanviet": "kinh"
+        },
+        {
+          "char": "常",
+          "hanviet": "thường"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0129",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "经过",
+      "reading": "jīng guò",
+      "meaning_vi": "đi qua; trải qua; quá trình; tiến trình",
+      "meaning_en": "to pass; to go through; process; course",
+      "hanviet": "kinh quá",
+      "distractor_group": "preposition",
+      "audio": "hsk3/hsk3-0129.mp3",
+      "chars": [
+        {
+          "char": "经",
+          "hanviet": "kinh"
+        },
+        {
+          "char": "过",
+          "hanviet": "quá"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0130",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "经理",
+      "reading": "jīng lǐ",
+      "meaning_vi": "quản lý; giám đốc; Lượng từ: 個|个[ge4], 位[wei4], 名[ming2]",
+      "meaning_en": "manager; director",
+      "hanviet": "kinh lý",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0130.mp3",
+      "chars": [
+        {
+          "char": "经",
+          "hanviet": "kinh"
+        },
+        {
+          "char": "理",
+          "hanviet": "lý"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0131",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "久",
+      "reading": "jiǔ",
+      "meaning_vi": "thời gian (dài); (khoảng) thời gian dài",
+      "meaning_en": "(long) time; (long) duration of time",
+      "hanviet": "cửu",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0131.mp3"
+    },
+    {
+      "id": "hsk3-0132",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "旧",
+      "reading": "jiù",
+      "meaning_vi": "cũ; đối lập: mới 新; trước; hao mòn (theo thời gian)",
+      "meaning_en": "old; opposite: new 新; former; worn (with age)",
+      "hanviet": "cựu",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0132.mp3"
+    },
+    {
+      "id": "hsk3-0133",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "举行",
+      "reading": "jǔ xíng",
+      "meaning_vi": "tổ chức (cuộc họp, buổi lễ, v.v.)",
+      "meaning_en": "to hold (a meeting, ceremony etc)",
+      "hanviet": "cử hạnh",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0133.mp3",
+      "chars": [
+        {
+          "char": "举",
+          "hanviet": "cử"
+        },
+        {
+          "char": "行",
+          "hanviet": "hạnh"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0134",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "句子",
+      "reading": "jù zi",
+      "meaning_vi": "câu",
+      "meaning_en": "sentence",
+      "hanviet": "câu tử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0134.mp3",
+      "chars": [
+        {
+          "char": "句",
+          "hanviet": "câu"
+        },
+        {
+          "char": "子",
+          "hanviet": "tử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0135",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "决定",
+      "reading": "jué dìng",
+      "meaning_vi": "quyết định (làm gì đó); quyết tâm; quyết định; chắc chắn",
+      "meaning_en": "to decide (to do something); to resolve; decision; certainly",
+      "hanviet": "quyết định",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0135.mp3",
+      "chars": [
+        {
+          "char": "决",
+          "hanviet": "quyết"
+        },
+        {
+          "char": "定",
+          "hanviet": "định"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0136",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "可爱",
+      "reading": "kě ài",
+      "meaning_vi": "đáng yêu; dễ thương; đáng mến",
+      "meaning_en": "adorable; cute; lovely",
+      "hanviet": "khả ái",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0136.mp3",
+      "chars": [
+        {
+          "char": "可",
+          "hanviet": "khả"
+        },
+        {
+          "char": "爱",
+          "hanviet": "ái"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0137",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "渴",
+      "reading": "kě",
+      "meaning_vi": "khát",
+      "meaning_en": "thirsty",
+      "hanviet": "khát",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0137.mp3"
+    },
+    {
+      "id": "hsk3-0138",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "刻",
+      "reading": "kè",
+      "meaning_vi": "một phần tư (giờ); khoảnh khắc; khắc; chạm khắc; cắt; áp bức; lượng từ cho khoảng thời gian ngắn",
+      "meaning_en": "quarter (hour); moment; to carve; to engrave; to cut; oppressive; classifier for short time intervals",
+      "hanviet": "khắc",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0138.mp3"
+    },
+    {
+      "id": "hsk3-0139",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "客人",
+      "reading": "kè rén",
+      "meaning_vi": "khách thăm; khách hàng; khách",
+      "meaning_en": "visitor; guest; customer; client",
+      "hanviet": "khách nhân",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0139.mp3",
+      "chars": [
+        {
+          "char": "客",
+          "hanviet": "khách"
+        },
+        {
+          "char": "人",
+          "hanviet": "nhân"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0140",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 7,
+      "version": 1,
+      "verified": false,
+      "target": "空调",
+      "reading": "kōng tiáo",
+      "meaning_vi": "điều hòa không khí; máy điều hòa (bao gồm cả loại có chế độ sưởi)",
+      "meaning_en": "air conditioning; air conditioner (including units that have a heating mode)",
+      "hanviet": "không điều",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0140.mp3",
+      "chars": [
+        {
+          "char": "空",
+          "hanviet": "không"
+        },
+        {
+          "char": "调",
+          "hanviet": "điều"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0141",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "口",
+      "reading": "kǒu",
+      "meaning_vi": "miệng; lượng từ cho những thứ có miệng (người, động vật nuôi, đại bác, giếng, v.v.); lượng từ cho vết cắn hoặc ngụm",
+      "meaning_en": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls",
+      "hanviet": "khẩu",
+      "distractor_group": "measure",
+      "audio": "hsk3/hsk3-0141.mp3"
+    },
+    {
+      "id": "hsk3-0142",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "哭",
+      "reading": "kū",
+      "meaning_vi": "khóc; rơi lệ",
+      "meaning_en": "to cry; to weep",
+      "hanviet": "khóc",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0142.mp3"
+    },
+    {
+      "id": "hsk3-0143",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "裤子",
+      "reading": "kù zi",
+      "meaning_vi": "quần dài; quần",
+      "meaning_en": "variant of 裤子, trousers; pants",
+      "hanviet": "khố tử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0143.mp3",
+      "chars": [
+        {
+          "char": "裤",
+          "hanviet": "khố"
+        },
+        {
+          "char": "子",
+          "hanviet": "tử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0144",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "筷子",
+      "reading": "kuài zi",
+      "meaning_vi": "đũa",
+      "meaning_en": "chopsticks",
+      "hanviet": "khoái tử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0144.mp3",
+      "chars": [
+        {
+          "char": "筷",
+          "hanviet": "khoái"
+        },
+        {
+          "char": "子",
+          "hanviet": "tử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0145",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "蓝",
+      "reading": "Lán",
+      "meaning_vi": "màu xanh; dị thảo chàm",
+      "meaning_en": "surname Lan",
+      "hanviet": "lam",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0145.mp3"
+    },
+    {
+      "id": "hsk3-0146",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "老",
+      "reading": "lǎo",
+      "meaning_vi": "tiền tố dùng trước họ của một người hoặc số thứ tự sinh của các con trong gia đình hoặc để chỉ sự thân mật hoặc quen thuộc; già (người); người đáng kính; có kinh nghiệm; lâu năm; luôn luôn; lúc nào cũng; của quá khứ; rất; lỗi thời; (thịt,...) dai",
+      "meaning_en": "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity; old (of people); venerable (person); experienced; of long standing; always; all the time; of the past; very; outdated; (of meat etc) tough",
+      "hanviet": "lão",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0146.mp3"
+    },
+    {
+      "id": "hsk3-0147",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "了解",
+      "reading": "liǎo jiě",
+      "meaning_vi": "hiểu; nhận ra; tìm hiểu",
+      "meaning_en": "to understand; to realize; to find out",
+      "hanviet": "liễu giải",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0147.mp3",
+      "chars": [
+        {
+          "char": "了",
+          "hanviet": "liễu"
+        },
+        {
+          "char": "解",
+          "hanviet": "giải"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0148",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "离开",
+      "reading": "lí kāi",
+      "meaning_vi": "rời khỏi; rời đi",
+      "meaning_en": "to depart; to leave",
+      "hanviet": "ly khai",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0148.mp3",
+      "chars": [
+        {
+          "char": "离",
+          "hanviet": "ly"
+        },
+        {
+          "char": "开",
+          "hanviet": "khai"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0149",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "礼物",
+      "reading": "lǐ wù",
+      "meaning_vi": "quà; món quà",
+      "meaning_en": "gift; present",
+      "hanviet": "lễ vật",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0149.mp3",
+      "chars": [
+        {
+          "char": "礼",
+          "hanviet": "lễ"
+        },
+        {
+          "char": "物",
+          "hanviet": "vật"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0150",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "历史",
+      "reading": "lì shǐ",
+      "meaning_vi": "lịch sử",
+      "meaning_en": "history",
+      "hanviet": "lịch sử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0150.mp3",
+      "chars": [
+        {
+          "char": "历",
+          "hanviet": "lịch"
+        },
+        {
+          "char": "史",
+          "hanviet": "sử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0151",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "脸",
+      "reading": "liǎn",
+      "meaning_vi": "khuôn mặt",
+      "meaning_en": "face",
+      "hanviet": "kiểm",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0151.mp3"
+    },
+    {
+      "id": "hsk3-0152",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "练习",
+      "reading": "liàn xí",
+      "meaning_vi": "luyện tập; bài tập; rèn luyện; thực hành",
+      "meaning_en": "to practice; exercise; drill; practice",
+      "hanviet": "luyện tập",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0152.mp3",
+      "chars": [
+        {
+          "char": "练",
+          "hanviet": "luyện"
+        },
+        {
+          "char": "习",
+          "hanviet": "tập"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0153",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "辆",
+      "reading": "liàng",
+      "meaning_vi": "lượng từ cho xe cộ",
+      "meaning_en": "classifier for vehicles",
+      "hanviet": "lượng",
+      "distractor_group": "measure",
+      "audio": "hsk3/hsk3-0153.mp3"
+    },
+    {
+      "id": "hsk3-0154",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "邻居",
+      "reading": "lín jū",
+      "meaning_vi": "hàng xóm; sát vách",
+      "meaning_en": "neighbor; next door",
+      "hanviet": "lân cư",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0154.mp3",
+      "chars": [
+        {
+          "char": "邻",
+          "hanviet": "lân"
+        },
+        {
+          "char": "居",
+          "hanviet": "cư"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0155",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "楼",
+      "reading": "Lóu",
+      "meaning_vi": "nhà có hơn 1 tầng; toà nhà nhiều tầng; tầng",
+      "meaning_en": "surname Lou",
+      "hanviet": "lâu",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0155.mp3"
+    },
+    {
+      "id": "hsk3-0156",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "绿",
+      "reading": "lǜ",
+      "meaning_vi": "màu xanh lá; (tiếng lóng) (xuất phát từ 綠帽子|绿帽子[lu:4 mao4 zi5]) cắm sừng (vợ, chồng, bạn trai hoặc bạn gái)",
+      "meaning_en": "green; (slang) (derived from 绿帽子) to cheat on (one's spouse or boyfriend or girlfriend)",
+      "hanviet": "lục",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0156.mp3"
+    },
+    {
+      "id": "hsk3-0157",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "马",
+      "reading": "Mǎ",
+      "meaning_vi": "ngựa; Lượng từ: 匹[pi3]; quân mã trong cờ tướng; quân mã trong cờ vua",
+      "meaning_en": "surname Ma; abbr. for Malaysia 马来西亚",
+      "hanviet": "mã",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0157.mp3"
+    },
+    {
+      "id": "hsk3-0158",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "马上",
+      "reading": "mǎ shàng",
+      "meaning_vi": "ngay lập tức; ngay tức khắc; lập tức; trên lưng ngựa (tức là bằng vũ lực quân sự)",
+      "meaning_en": "at once; right away; immediately; on horseback (i.e. by military force)",
+      "hanviet": "mã thượng",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0158.mp3",
+      "chars": [
+        {
+          "char": "马",
+          "hanviet": "mã"
+        },
+        {
+          "char": "上",
+          "hanviet": "thượng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0159",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "满意",
+      "reading": "mǎn yì",
+      "meaning_vi": "hài lòng; vui lòng; đúng như mong đợi",
+      "meaning_en": "satisfied; pleased; to one's satisfaction",
+      "hanviet": "mãn ý",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0159.mp3",
+      "chars": [
+        {
+          "char": "满",
+          "hanviet": "mãn"
+        },
+        {
+          "char": "意",
+          "hanviet": "ý"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0160",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 8,
+      "version": 1,
+      "verified": false,
+      "target": "帽子",
+      "reading": "mào zi",
+      "meaning_vi": "mũ; nón; (bóng) nhãn; mang tiếng xấu",
+      "meaning_en": "hat; cap; (fig.) label; bad name",
+      "hanviet": "mạo tử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0160.mp3",
+      "chars": [
+        {
+          "char": "帽",
+          "hanviet": "mạo"
+        },
+        {
+          "char": "子",
+          "hanviet": "tử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0161",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "米",
+      "reading": "Mǐ",
+      "meaning_vi": "gạo; mét (đơn vị đo)",
+      "meaning_en": "surname Mi",
+      "hanviet": "mễ",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0161.mp3"
+    },
+    {
+      "id": "hsk3-0162",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "面包",
+      "reading": "miàn bāo",
+      "meaning_vi": "bánh mì",
+      "meaning_en": "bread",
+      "hanviet": "diện bao",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0162.mp3",
+      "chars": [
+        {
+          "char": "面",
+          "hanviet": "diện"
+        },
+        {
+          "char": "包",
+          "hanviet": "bao"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0163",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "面条",
+      "reading": "miàn tiáo",
+      "meaning_vi": "mì sợi",
+      "meaning_en": "noodles",
+      "hanviet": "diện điều",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0163.mp3",
+      "chars": [
+        {
+          "char": "面",
+          "hanviet": "diện"
+        },
+        {
+          "char": "条",
+          "hanviet": "điều"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0164",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "明白",
+      "reading": "míng bai",
+      "meaning_vi": "rõ ràng; hiển nhiên; không mơ hồ; hiểu; nhận ra",
+      "meaning_en": "clear; obvious; unequivocal; to understand; to realize",
+      "hanviet": "minh bạch",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0164.mp3",
+      "chars": [
+        {
+          "char": "明",
+          "hanviet": "minh"
+        },
+        {
+          "char": "白",
+          "hanviet": "bạch"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0165",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "拿",
+      "reading": "ná",
+      "meaning_vi": "cầm; nắm; bắt; chụp; lấy; (dùng giống như 把[ba3]: đánh dấu danh từ phía sau là tân ngữ)",
+      "meaning_en": "old variant of 拿",
+      "hanviet": "nã",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0165.mp3"
+    },
+    {
+      "id": "hsk3-0166",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "奶奶",
+      "reading": "nǎi nai",
+      "meaning_vi": "(thân mật) bà (bà nội); (kính trọng) bà chủ nhà; (thông tục) vú; ngực",
+      "meaning_en": "(informal) grandma (paternal grandmother); (respectful) mistress of the house; (coll.) boobies; breasts",
+      "hanviet": "nãi nãi",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0166.mp3",
+      "chars": [
+        {
+          "char": "奶",
+          "hanviet": "nãi"
+        },
+        {
+          "char": "奶",
+          "hanviet": "nãi"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0167",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "南",
+      "reading": "Nán",
+      "meaning_vi": "phía nam",
+      "meaning_en": "surname Nan",
+      "hanviet": "nam",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0167.mp3"
+    },
+    {
+      "id": "hsk3-0168",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "难",
+      "reading": "nán",
+      "meaning_vi": "khó (để...); vấn đề; khó khăn; khó; không tốt",
+      "meaning_en": "difficult (to...); problem; difficulty; difficult; not good",
+      "hanviet": "nan",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0168.mp3"
+    },
+    {
+      "id": "hsk3-0169",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "难过",
+      "reading": "nán guò",
+      "meaning_vi": "cảm thấy buồn; cảm thấy không khỏe; (cuộc sống) cảm thấy khó khăn",
+      "meaning_en": "to feel sad; to feel unwell; (of life) to be difficult",
+      "hanviet": "nan quá",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0169.mp3",
+      "chars": [
+        {
+          "char": "难",
+          "hanviet": "nan"
+        },
+        {
+          "char": "过",
+          "hanviet": "quá"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0170",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "年级",
+      "reading": "nián jí",
+      "meaning_vi": "lớp; năm (trong trường học, đại học, v.v.)",
+      "meaning_en": "grade; year (in school, college etc)",
+      "hanviet": "niên cấp",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0170.mp3",
+      "chars": [
+        {
+          "char": "年",
+          "hanviet": "niên"
+        },
+        {
+          "char": "级",
+          "hanviet": "cấp"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0171",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "年轻",
+      "reading": "nián qīng",
+      "meaning_vi": "trẻ",
+      "meaning_en": "young",
+      "hanviet": "niên khinh",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0171.mp3",
+      "chars": [
+        {
+          "char": "年",
+          "hanviet": "niên"
+        },
+        {
+          "char": "轻",
+          "hanviet": "khinh"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0172",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "鸟",
+      "reading": "diǎo",
+      "meaning_vi": "biến thể của 屌[diao3]; dương vật",
+      "meaning_en": "variant of 屌; penis",
+      "hanviet": "điểu",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0172.mp3"
+    },
+    {
+      "id": "hsk3-0173",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "努力",
+      "reading": "nǔ lì",
+      "meaning_vi": "nỗ lực; cố gắng; phấn đấu; chăm chỉ; tận tụy",
+      "meaning_en": "to make an effort; to try hard; to strive; hard-working; conscientious",
+      "hanviet": "nỗ lực",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0173.mp3",
+      "chars": [
+        {
+          "char": "努",
+          "hanviet": "nỗ"
+        },
+        {
+          "char": "力",
+          "hanviet": "lực"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0174",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "爬山",
+      "reading": "pá shān",
+      "meaning_vi": "leo núi; đi bộ đường dài; môn leo núi",
+      "meaning_en": "to climb a mountain; to mountaineer; hiking; mountaineering",
+      "hanviet": "bò sơn",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0174.mp3",
+      "chars": [
+        {
+          "char": "爬",
+          "hanviet": "bò"
+        },
+        {
+          "char": "山",
+          "hanviet": "sơn"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0175",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "盘子",
+      "reading": "pán zi",
+      "meaning_vi": "khay; đĩa; chén",
+      "meaning_en": "tray; plate; dish",
+      "hanviet": "bàn tử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0175.mp3",
+      "chars": [
+        {
+          "char": "盘",
+          "hanviet": "bàn"
+        },
+        {
+          "char": "子",
+          "hanviet": "tử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0176",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "胖",
+      "reading": "pán",
+      "meaning_vi": "khoẻ mạnh; thư thái",
+      "meaning_en": "healthy; at ease",
+      "hanviet": "bàn",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0176.mp3"
+    },
+    {
+      "id": "hsk3-0177",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "啤酒",
+      "reading": "pí jiǔ",
+      "meaning_vi": "bia (từ mượn)",
+      "meaning_en": "beer (loanword)",
+      "hanviet": "bia tửu",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0177.mp3",
+      "chars": [
+        {
+          "char": "啤",
+          "hanviet": "bia"
+        },
+        {
+          "char": "酒",
+          "hanviet": "tửu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0178",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "葡萄",
+      "reading": "pú tao",
+      "meaning_vi": "nho",
+      "meaning_en": "grape",
+      "hanviet": "bồ đào",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0178.mp3",
+      "chars": [
+        {
+          "char": "葡",
+          "hanviet": "bồ"
+        },
+        {
+          "char": "萄",
+          "hanviet": "đào"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0179",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "普通话",
+      "reading": "pǔ tōng huà",
+      "meaning_vi": "Quan Thoại (ngôn ngữ phổ thông); Phổ thông thoại (lời nói chung của tiếng Trung Quốc); lời nói thông thường",
+      "meaning_en": "Mandarin (common language); Putonghua (common speech of the Chinese language); ordinary speech",
+      "hanviet": "phổ thông thoại",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0179.mp3",
+      "chars": [
+        {
+          "char": "普",
+          "hanviet": "phổ"
+        },
+        {
+          "char": "通",
+          "hanviet": "thông"
+        },
+        {
+          "char": "话",
+          "hanviet": "thoại"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0180",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 9,
+      "version": 1,
+      "verified": false,
+      "target": "其实",
+      "reading": "qí shí",
+      "meaning_vi": "thực ra; thực tế; thật sự",
+      "meaning_en": "actually; in fact; really",
+      "hanviet": "kỳ thực",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0180.mp3",
+      "chars": [
+        {
+          "char": "其",
+          "hanviet": "kỳ"
+        },
+        {
+          "char": "实",
+          "hanviet": "thực"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0181",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "其他",
+      "reading": "qí tā",
+      "meaning_vi": "khác; (điều gì đó hoặc ai đó) khác; phần còn lại",
+      "meaning_en": "other; (sth or sb) else; the rest",
+      "hanviet": "kỳ tha",
+      "distractor_group": "pronoun",
+      "audio": "hsk3/hsk3-0181.mp3",
+      "chars": [
+        {
+          "char": "其",
+          "hanviet": "kỳ"
+        },
+        {
+          "char": "他",
+          "hanviet": "tha"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0182",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "奇怪",
+      "reading": "qí guài",
+      "meaning_vi": "kỳ lạ; lập dị; ngạc nhiên; bối rối",
+      "meaning_en": "strange; odd; to marvel; to be baffled",
+      "hanviet": "kỳ quái",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0182.mp3",
+      "chars": [
+        {
+          "char": "奇",
+          "hanviet": "kỳ"
+        },
+        {
+          "char": "怪",
+          "hanviet": "quái"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0183",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "骑",
+      "reading": "jì",
+      "meaning_vi": "(Đài Loan) ngựa cưỡi; lính kỵ mã",
+      "meaning_en": "(Tw) saddle horse; mounted soldier",
+      "hanviet": "kỵ",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0183.mp3"
+    },
+    {
+      "id": "hsk3-0184",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "铅笔",
+      "reading": "qiān bǐ",
+      "meaning_vi": "bút chì",
+      "meaning_en": "(lead) pencil",
+      "hanviet": "duyên bút",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0184.mp3",
+      "chars": [
+        {
+          "char": "铅",
+          "hanviet": "duyên"
+        },
+        {
+          "char": "笔",
+          "hanviet": "bút"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0185",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "清楚",
+      "reading": "qīng chu",
+      "meaning_vi": "rõ ràng; minh bạch; hiểu rõ; nắm rõ",
+      "meaning_en": "clear; distinct; to understand thoroughly; to be clear about",
+      "hanviet": "thanh sở",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0185.mp3",
+      "chars": [
+        {
+          "char": "清",
+          "hanviet": "thanh"
+        },
+        {
+          "char": "楚",
+          "hanviet": "sở"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0186",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "秋",
+      "reading": "Qiū",
+      "meaning_vi": "xem 鞦韆|秋千[qiu1 qian1]",
+      "meaning_en": "surname Qiu",
+      "hanviet": "thu",
+      "distractor_group": "time",
+      "audio": "hsk3/hsk3-0186.mp3"
+    },
+    {
+      "id": "hsk3-0187",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "裙子",
+      "reading": "qún zi",
+      "meaning_vi": "váy",
+      "meaning_en": "skirt",
+      "hanviet": "quần tử",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0187.mp3",
+      "chars": [
+        {
+          "char": "裙",
+          "hanviet": "quần"
+        },
+        {
+          "char": "子",
+          "hanviet": "tử"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0188",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "然后",
+      "reading": "rán hòu",
+      "meaning_vi": "sau đó; sau này",
+      "meaning_en": "then; after that; afterwards",
+      "hanviet": "nhiên hậu",
+      "distractor_group": "conjunction",
+      "audio": "hsk3/hsk3-0188.mp3",
+      "chars": [
+        {
+          "char": "然",
+          "hanviet": "nhiên"
+        },
+        {
+          "char": "后",
+          "hanviet": "hậu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0189",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "热情",
+      "reading": "rè qíng",
+      "meaning_vi": "nồng nhiệt; nhiệt tình; đam mê; một cách đam mê",
+      "meaning_en": "cordial; enthusiastic; passion; passionate; passionately",
+      "hanviet": "nhiệt tình",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0189.mp3",
+      "chars": [
+        {
+          "char": "热",
+          "hanviet": "nhiệt"
+        },
+        {
+          "char": "情",
+          "hanviet": "tình"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0190",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "认为",
+      "reading": "rèn wéi",
+      "meaning_vi": "tin; nghĩ; xem xét; cảm thấy",
+      "meaning_en": "to believe; to think; to consider; to feel",
+      "hanviet": "nhận vi",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0190.mp3",
+      "chars": [
+        {
+          "char": "认",
+          "hanviet": "nhận"
+        },
+        {
+          "char": "为",
+          "hanviet": "vi"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0191",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "认真",
+      "reading": "rèn zhēn",
+      "meaning_vi": "tận tâm; nghiêm túc; nghiêm chỉnh; xem trọng; để tâm",
+      "meaning_en": "conscientious; earnest; serious; to take seriously; to take to heart",
+      "hanviet": "nhận chân",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0191.mp3",
+      "chars": [
+        {
+          "char": "认",
+          "hanviet": "nhận"
+        },
+        {
+          "char": "真",
+          "hanviet": "chân"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0192",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "容易",
+      "reading": "róng yì",
+      "meaning_vi": "dễ dàng; đơn giản; có khả năng; dễ có thể; có khuynh hướng",
+      "meaning_en": "easy; straightforward; likely; liable to; apt to",
+      "hanviet": "dung dịch",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0192.mp3",
+      "chars": [
+        {
+          "char": "容",
+          "hanviet": "dung"
+        },
+        {
+          "char": "易",
+          "hanviet": "dịch"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0193",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "如果",
+      "reading": "rú guǒ",
+      "meaning_vi": "nếu; trong trường hợp; nếu như",
+      "meaning_en": "if; in case; in the event that",
+      "hanviet": "như quả",
+      "distractor_group": "conjunction",
+      "audio": "hsk3/hsk3-0193.mp3",
+      "chars": [
+        {
+          "char": "如",
+          "hanviet": "như"
+        },
+        {
+          "char": "果",
+          "hanviet": "quả"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0194",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "伞",
+      "reading": "sǎn",
+      "meaning_vi": "lụa trơn; biến thể của 傘|伞[san3]",
+      "meaning_en": "umbrella; parasol",
+      "hanviet": "tản",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0194.mp3"
+    },
+    {
+      "id": "hsk3-0195",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "上网",
+      "reading": "shàng wǎng",
+      "meaning_vi": "lên mạng; kết nối Internet; (tài liệu,...) được tải lên Internet; (quần vợt, bóng chuyền,...) lên lưới",
+      "meaning_en": "to go online; to connect to the Internet; (of a document etc) to be uploaded to the Internet; (tennis, volleyball etc) to move in close to the net",
+      "hanviet": "thượng võng",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0195.mp3",
+      "chars": [
+        {
+          "char": "上",
+          "hanviet": "thượng"
+        },
+        {
+          "char": "网",
+          "hanviet": "võng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0196",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "生气",
+      "reading": "shēng qì",
+      "meaning_vi": "nổi giận; tức giận; sinh khí; sức sống",
+      "meaning_en": "to get angry; to take offense; angry; vitality; liveliness",
+      "hanviet": "sinh khí",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0196.mp3",
+      "chars": [
+        {
+          "char": "生",
+          "hanviet": "sinh"
+        },
+        {
+          "char": "气",
+          "hanviet": "khí"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0197",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "声音",
+      "reading": "shēng yīn",
+      "meaning_vi": "giọng; âm thanh",
+      "meaning_en": "voice; sound",
+      "hanviet": "thanh âm",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0197.mp3",
+      "chars": [
+        {
+          "char": "声",
+          "hanviet": "thanh"
+        },
+        {
+          "char": "音",
+          "hanviet": "âm"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0198",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "使",
+      "reading": "shǐ",
+      "meaning_vi": "khiến; làm cho; cho phép; sử dụng; thuê; phái; dạy ai làm việc gì; đặc phái viên; người đưa tin",
+      "meaning_en": "to make; to cause; to enable; to use; to employ; to send; to instruct sb to do sth; envoy; messenger",
+      "hanviet": "sứ",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0198.mp3"
+    },
+    {
+      "id": "hsk3-0199",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "世界",
+      "reading": "shì jiè",
+      "meaning_vi": "thế giới (LT:個|个[ge4])",
+      "meaning_en": "world",
+      "hanviet": "thế giới",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0199.mp3",
+      "chars": [
+        {
+          "char": "世",
+          "hanviet": "thế"
+        },
+        {
+          "char": "界",
+          "hanviet": "giới"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0200",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 10,
+      "version": 1,
+      "verified": false,
+      "target": "瘦",
+      "reading": "shòu",
+      "meaning_vi": "gầy; giảm cân; (quần áo) chật; (thịt) nạc; (đất đai) cằn cỗi",
+      "meaning_en": "thin; to lose weight; (of clothing) tight; (of meat) lean; (of land) unproductive",
+      "hanviet": "sấu",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0200.mp3"
+    },
+    {
+      "id": "hsk3-0201",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "叔叔",
+      "reading": "shū shu",
+      "meaning_vi": "em trai của bố; chú; cách đọc tại Đài Loan: [shu2 shu5]",
+      "meaning_en": "father's younger brother; uncle; Taiwan pr. [shú shu]",
+      "hanviet": "thúc thúc",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0201.mp3",
+      "chars": [
+        {
+          "char": "叔",
+          "hanviet": "thúc"
+        },
+        {
+          "char": "叔",
+          "hanviet": "thúc"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0202",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "舒服",
+      "reading": "shū fu",
+      "meaning_vi": "thoải mái; cảm thấy khỏe",
+      "meaning_en": "comfortable; feeling well",
+      "hanviet": "thư phục",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0202.mp3",
+      "chars": [
+        {
+          "char": "舒",
+          "hanviet": "thư"
+        },
+        {
+          "char": "服",
+          "hanviet": "phục"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0203",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "树",
+      "reading": "shù",
+      "meaning_vi": "cây; trồng; triển khai",
+      "meaning_en": "tree; to cultivate; to set up",
+      "hanviet": "thụ",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0203.mp3"
+    },
+    {
+      "id": "hsk3-0204",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "数学",
+      "reading": "shù xué",
+      "meaning_vi": "toán học",
+      "meaning_en": "mathematics; mathematical",
+      "hanviet": "số học",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0204.mp3",
+      "chars": [
+        {
+          "char": "数",
+          "hanviet": "số"
+        },
+        {
+          "char": "学",
+          "hanviet": "học"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0205",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "刷",
+      "reading": "shuā",
+      "meaning_vi": "chải; sơn; quét; đăng lên; bỏ học (của học sinh); sa thải khỏi công việc",
+      "meaning_en": "to brush; to paint; to daub; to paste up; to skip class (of students); to fire from a job",
+      "hanviet": "loát",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0205.mp3"
+    },
+    {
+      "id": "hsk3-0206",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "双",
+      "reading": "Shuāng",
+      "meaning_vi": "hai; cặp; đôi; cả hai; số chẵn",
+      "meaning_en": "surname Shuang",
+      "hanviet": "song",
+      "distractor_group": "number",
+      "audio": "hsk3/hsk3-0206.mp3"
+    },
+    {
+      "id": "hsk3-0207",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "水平",
+      "reading": "shuǐ píng",
+      "meaning_vi": "mức độ (thành tựu, v.v.); tiêu chuẩn; ngang",
+      "meaning_en": "level (of achievement etc); standard; horizontal",
+      "hanviet": "thuỷ bình",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0207.mp3",
+      "chars": [
+        {
+          "char": "水",
+          "hanviet": "thuỷ"
+        },
+        {
+          "char": "平",
+          "hanviet": "bình"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0208",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "司机",
+      "reading": "sī jī",
+      "meaning_vi": "tài xế; người lái xe",
+      "meaning_en": "chauffeur; driver",
+      "hanviet": "ti cơ",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0208.mp3",
+      "chars": [
+        {
+          "char": "司",
+          "hanviet": "ti"
+        },
+        {
+          "char": "机",
+          "hanviet": "cơ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0209",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "虽然",
+      "reading": "suī rán",
+      "meaning_vi": "mặc dù; cho dù (thường dùng kết hợp với 可是[ke3 shi4] hoặc 但是[dan4 shi4],...)",
+      "meaning_en": "although; even though (often used correlatively with 是 or 是 etc)",
+      "hanviet": "tuy nhiên",
+      "distractor_group": "conjunction",
+      "audio": "hsk3/hsk3-0209.mp3",
+      "chars": [
+        {
+          "char": "虽",
+          "hanviet": "tuy"
+        },
+        {
+          "char": "然",
+          "hanviet": "nhiên"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0210",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "太阳",
+      "reading": "tài yang",
+      "meaning_vi": "mặt trời; viết tắt của 太陽穴|太阳穴[tai4 yang2 xue2]",
+      "meaning_en": "sun; abbr. for 太阳穴",
+      "hanviet": "thái dương",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0210.mp3",
+      "chars": [
+        {
+          "char": "太",
+          "hanviet": "thái"
+        },
+        {
+          "char": "阳",
+          "hanviet": "dương"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0211",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "糖",
+      "reading": "táng",
+      "meaning_vi": "biến thể cũ của 糖[tang2]",
+      "meaning_en": "sugar; sweets; candy",
+      "hanviet": "đường",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0211.mp3"
+    },
+    {
+      "id": "hsk3-0212",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "特别",
+      "reading": "tè bié",
+      "meaning_vi": "khác thường; đặc biệt; rất; đặc biệt; đặc biệt là; đặc biệt; cho một mục đích cụ thể; (thường theo sau bởi 是[shi4]) đặc biệt là",
+      "meaning_en": "unusual; special; very; especially; particularly; expressly; for a specific purpose; (often followed by 是) in particular",
+      "hanviet": "đặc biệt",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0212.mp3",
+      "chars": [
+        {
+          "char": "特",
+          "hanviet": "đặc"
+        },
+        {
+          "char": "别",
+          "hanviet": "biệt"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0213",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "疼",
+      "reading": "téng",
+      "meaning_vi": "(bị) đau; nhức; yêu thương hết mực",
+      "meaning_en": "(it) hurts; sore; to love dearly",
+      "hanviet": "đông",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0213.mp3"
+    },
+    {
+      "id": "hsk3-0214",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "提高",
+      "reading": "tí gāo",
+      "meaning_vi": "nâng cao; tăng; cải thiện",
+      "meaning_en": "to raise; to increase; to improve",
+      "hanviet": "đề cao",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0214.mp3",
+      "chars": [
+        {
+          "char": "提",
+          "hanviet": "đề"
+        },
+        {
+          "char": "高",
+          "hanviet": "cao"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0215",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "体育",
+      "reading": "tǐ yù",
+      "meaning_vi": "thể thao; giáo dục thể chất",
+      "meaning_en": "sports; physical education",
+      "hanviet": "thể dục",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0215.mp3",
+      "chars": [
+        {
+          "char": "体",
+          "hanviet": "thể"
+        },
+        {
+          "char": "育",
+          "hanviet": "dục"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0216",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "甜",
+      "reading": "tián",
+      "meaning_vi": "ngọt",
+      "meaning_en": "sweet",
+      "hanviet": "điềm",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0216.mp3"
+    },
+    {
+      "id": "hsk3-0217",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "条",
+      "reading": "tiáo",
+      "meaning_vi": "dải; mục; điều; khoản (của luật hoặc hiệp ước); lượng từ cho những vật dài mỏng (ruy băng, sông, đường, quần dài, v.v.)",
+      "meaning_en": "strip; item; article; clause (of law or treaty); classifier for long thin things (ribbon, river, road, trousers etc)",
+      "hanviet": "điều",
+      "distractor_group": "measure",
+      "audio": "hsk3/hsk3-0217.mp3"
+    },
+    {
+      "id": "hsk3-0218",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "同事",
+      "reading": "tóng shì",
+      "meaning_vi": "đồng nghiệp; cộng sự",
+      "meaning_en": "colleague; co-worker",
+      "hanviet": "đồng sự",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0218.mp3",
+      "chars": [
+        {
+          "char": "同",
+          "hanviet": "đồng"
+        },
+        {
+          "char": "事",
+          "hanviet": "sự"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0219",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "同意",
+      "reading": "tóng yì",
+      "meaning_vi": "đồng ý; tán thành; chấp thuận",
+      "meaning_en": "to agree; to consent; to approve",
+      "hanviet": "đồng ý",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0219.mp3",
+      "chars": [
+        {
+          "char": "同",
+          "hanviet": "đồng"
+        },
+        {
+          "char": "意",
+          "hanviet": "ý"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0220",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 11,
+      "version": 1,
+      "verified": false,
+      "target": "头发",
+      "reading": "tóu fa",
+      "meaning_vi": "tóc (trên đầu)",
+      "meaning_en": "hair (on the head)",
+      "hanviet": "đầu phát",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0220.mp3",
+      "chars": [
+        {
+          "char": "头",
+          "hanviet": "đầu"
+        },
+        {
+          "char": "发",
+          "hanviet": "phát"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0221",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "突然",
+      "reading": "tū rán",
+      "meaning_vi": "đột ngột; bất ngờ; không dự kiến",
+      "meaning_en": "sudden; abrupt; unexpected",
+      "hanviet": "đột nhiên",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0221.mp3",
+      "chars": [
+        {
+          "char": "突",
+          "hanviet": "đột"
+        },
+        {
+          "char": "然",
+          "hanviet": "nhiên"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0222",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "图书馆",
+      "reading": "tú shū guǎn",
+      "meaning_vi": "thư viện",
+      "meaning_en": "library",
+      "hanviet": "đồ thư quán",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0222.mp3",
+      "chars": [
+        {
+          "char": "图",
+          "hanviet": "đồ"
+        },
+        {
+          "char": "书",
+          "hanviet": "thư"
+        },
+        {
+          "char": "馆",
+          "hanviet": "quán"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0223",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "腿",
+      "reading": "tuǐ",
+      "meaning_vi": "xương hông; biến thể cũ của 腿[tui3]",
+      "meaning_en": "leg",
+      "hanviet": "thối",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0223.mp3"
+    },
+    {
+      "id": "hsk3-0224",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "完成",
+      "reading": "wán chéng",
+      "meaning_vi": "hoàn thành; thực hiện",
+      "meaning_en": "to complete; to accomplish",
+      "hanviet": "hoàn thành",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0224.mp3",
+      "chars": [
+        {
+          "char": "完",
+          "hanviet": "hoàn"
+        },
+        {
+          "char": "成",
+          "hanviet": "thành"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0225",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "碗",
+      "reading": "wǎn",
+      "meaning_vi": "bát; chén",
+      "meaning_en": "variant of 碗",
+      "hanviet": "oản",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0225.mp3"
+    },
+    {
+      "id": "hsk3-0226",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "万",
+      "reading": "mò",
+      "meaning_vi": "dùng trong 万俟[Mo4 qi2]",
+      "meaning_en": "used in 俟",
+      "hanviet": "mặc",
+      "distractor_group": "number",
+      "audio": "hsk3/hsk3-0226.mp3"
+    },
+    {
+      "id": "hsk3-0227",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "忘记",
+      "reading": "wàng jì",
+      "meaning_vi": "quên",
+      "meaning_en": "to forget",
+      "hanviet": "vong ký",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0227.mp3",
+      "chars": [
+        {
+          "char": "忘",
+          "hanviet": "vong"
+        },
+        {
+          "char": "记",
+          "hanviet": "ký"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0228",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "为了",
+      "reading": "wèi le",
+      "meaning_vi": "để; nhằm mục đích; để mà",
+      "meaning_en": "for; for the purpose of; in order to",
+      "hanviet": "vi liễu",
+      "distractor_group": "preposition",
+      "audio": "hsk3/hsk3-0228.mp3",
+      "chars": [
+        {
+          "char": "为",
+          "hanviet": "vi"
+        },
+        {
+          "char": "了",
+          "hanviet": "liễu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0229",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "为什么",
+      "reading": "wèi shén me",
+      "meaning_vi": "tại sao?; vì lý do gì?",
+      "meaning_en": "why?; for what reason?",
+      "hanviet": "vi thậm ma",
+      "distractor_group": "pronoun",
+      "audio": "hsk3/hsk3-0229.mp3",
+      "chars": [
+        {
+          "char": "为",
+          "hanviet": "vi"
+        },
+        {
+          "char": "什",
+          "hanviet": "thậm"
+        },
+        {
+          "char": "么",
+          "hanviet": "ma"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0230",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "位",
+      "reading": "wèi",
+      "meaning_vi": "vị trí; địa điểm; chỗ; ngồi; lượng từ cho người (kính trọng); lượng từ cho bit nhị phân (ví dụ: 十六位 16-bit hoặc 2 byte); (vật lý) thế năng",
+      "meaning_en": "position; location; place; seat; classifier for people (honorific); classifier for binary bits (e.g. 十六位 16-bit or 2 bytes); (physics) potential",
+      "hanviet": "vị",
+      "distractor_group": "measure",
+      "audio": "hsk3/hsk3-0230.mp3"
+    },
+    {
+      "id": "hsk3-0231",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "文化",
+      "reading": "wén huà",
+      "meaning_vi": "văn hóa; nền văn minh; thuộc về văn hóa",
+      "meaning_en": "culture; civilization; cultural",
+      "hanviet": "văn hoá",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0231.mp3",
+      "chars": [
+        {
+          "char": "文",
+          "hanviet": "văn"
+        },
+        {
+          "char": "化",
+          "hanviet": "hoá"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0232",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "习惯",
+      "reading": "xí guàn",
+      "meaning_vi": "thói quen; phong tục; thói quen thường lệ; quen với",
+      "meaning_en": "habit; custom; usual practice; to be used to",
+      "hanviet": "tập quán",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0232.mp3",
+      "chars": [
+        {
+          "char": "习",
+          "hanviet": "tập"
+        },
+        {
+          "char": "惯",
+          "hanviet": "quán"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0233",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "洗手间",
+      "reading": "xǐ shǒu jiān",
+      "meaning_vi": "nhà vệ sinh; phòng vệ sinh; phòng rửa tay",
+      "meaning_en": "toilet; lavatory; washroom",
+      "hanviet": "tẩy thủ gian",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0233.mp3",
+      "chars": [
+        {
+          "char": "洗",
+          "hanviet": "tẩy"
+        },
+        {
+          "char": "手",
+          "hanviet": "thủ"
+        },
+        {
+          "char": "间",
+          "hanviet": "gian"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0234",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "洗澡",
+      "reading": "xǐ zǎo",
+      "meaning_vi": "tắm; tắm vòi sen",
+      "meaning_en": "to bathe; to take a shower",
+      "hanviet": "tẩy táo",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0234.mp3",
+      "chars": [
+        {
+          "char": "洗",
+          "hanviet": "tẩy"
+        },
+        {
+          "char": "澡",
+          "hanviet": "táo"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0235",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "西",
+      "reading": "Xī",
+      "meaning_vi": "tây",
+      "meaning_en": "the West; abbr. for Spain 牙; Spanish",
+      "hanviet": "tây",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0235.mp3"
+    },
+    {
+      "id": "hsk3-0236",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "夏",
+      "reading": "Xià",
+      "meaning_vi": "mùa hè",
+      "meaning_en": "the Xia or Hsia dynasty c. 2000 BC; Xia of the Sixteen Kingdoms (407-432); surname Xia",
+      "hanviet": "hạ",
+      "distractor_group": "time",
+      "audio": "hsk3/hsk3-0236.mp3"
+    },
+    {
+      "id": "hsk3-0237",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "先",
+      "reading": "xiān",
+      "meaning_vi": "trước; đầu tiên; sớm hơn; lúc đầu; vốn dĩ; tạm thời; hiện tại; (tiền tố) quá cố (khi nói về người thân đã mất lớn tuổi hơn mình)",
+      "meaning_en": "early; prior; former; in advance; first",
+      "hanviet": "tiên",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0237.mp3"
+    },
+    {
+      "id": "hsk3-0238",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "相同",
+      "reading": "xiāng tóng",
+      "meaning_vi": "giống hệt; giống nhau",
+      "meaning_en": "identical; same",
+      "hanviet": "tương đồng",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0238.mp3",
+      "chars": [
+        {
+          "char": "相",
+          "hanviet": "tương"
+        },
+        {
+          "char": "同",
+          "hanviet": "đồng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0239",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "相信",
+      "reading": "xiāng xìn",
+      "meaning_vi": "tin tưởng; bị thuyết phục; chấp nhận là thật",
+      "meaning_en": "to be convinced (that sth is true); to believe; to accept sth as true",
+      "hanviet": "tương tín",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0239.mp3",
+      "chars": [
+        {
+          "char": "相",
+          "hanviet": "tương"
+        },
+        {
+          "char": "信",
+          "hanviet": "tín"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0240",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 12,
+      "version": 1,
+      "verified": false,
+      "target": "香蕉",
+      "reading": "xiāng jiāo",
+      "meaning_vi": "quả chuối",
+      "meaning_en": "banana",
+      "hanviet": "hương tiêu",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0240.mp3",
+      "chars": [
+        {
+          "char": "香",
+          "hanviet": "hương"
+        },
+        {
+          "char": "蕉",
+          "hanviet": "tiêu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0241",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "像",
+      "reading": "xiàng",
+      "meaning_vi": "giống; như; nhìn như; chẳng hạn; diện mạo; hình ảnh; chân dung; hình ảnh trong ánh xạ (toán học)",
+      "meaning_en": "to resemble; to be like; to look as if; such as; appearance; image; portrait; image under a mapping (math.)",
+      "hanviet": "tượng",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0241.mp3"
+    },
+    {
+      "id": "hsk3-0242",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "小心",
+      "reading": "xiǎo xīn",
+      "meaning_vi": "cẩn thận; chú ý",
+      "meaning_en": "to be careful; to take care",
+      "hanviet": "tiểu tâm",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0242.mp3",
+      "chars": [
+        {
+          "char": "小",
+          "hanviet": "tiểu"
+        },
+        {
+          "char": "心",
+          "hanviet": "tâm"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0243",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "校长",
+      "reading": "xiào zhǎng",
+      "meaning_vi": "(trường cao đẳng, đại học) hiệu trưởng",
+      "meaning_en": "(college, university) president; headmaster",
+      "hanviet": "hiệu trưởng",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0243.mp3",
+      "chars": [
+        {
+          "char": "校",
+          "hanviet": "hiệu"
+        },
+        {
+          "char": "长",
+          "hanviet": "trưởng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0244",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "鞋",
+      "reading": "xié",
+      "meaning_vi": "biến thể của 鞋[xie2]",
+      "meaning_en": "shoe",
+      "hanviet": "hài",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0244.mp3"
+    },
+    {
+      "id": "hsk3-0245",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "新闻",
+      "reading": "xīn wén",
+      "meaning_vi": "tin tức",
+      "meaning_en": "news",
+      "hanviet": "tân văn",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0245.mp3",
+      "chars": [
+        {
+          "char": "新",
+          "hanviet": "tân"
+        },
+        {
+          "char": "闻",
+          "hanviet": "văn"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0246",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "新鲜",
+      "reading": "xīn xiān",
+      "meaning_vi": "tươi (trải nghiệm, thực phẩm,...); sự tươi mới; mới lạ; không phổ biến",
+      "meaning_en": "fresh (experience, food etc); freshness; novel; uncommon",
+      "hanviet": "tân tiên",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0246.mp3",
+      "chars": [
+        {
+          "char": "新",
+          "hanviet": "tân"
+        },
+        {
+          "char": "鲜",
+          "hanviet": "tiên"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0247",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "信",
+      "reading": "xìn",
+      "meaning_vi": "thư; tín; tin tưởng; tin; tín ngưỡng; thành thật; tự tin; tin cậy; tùy ý; ngẫu nhiên",
+      "meaning_en": "letter; mail; to trust; to believe; to profess faith in; truthful; confidence; trust; at will; at random",
+      "hanviet": "tín",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0247.mp3"
+    },
+    {
+      "id": "hsk3-0248",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "行李箱",
+      "reading": "xíng li xiāng",
+      "meaning_vi": "vali; ngăn hành lý; hộc để hành lý; trố̂ng xe; cốp xe",
+      "meaning_en": "suitcase; baggage compartment; overhead bin; (car) trunk; boot",
+      "hanviet": "hạnh lý rương",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0248.mp3",
+      "chars": [
+        {
+          "char": "行",
+          "hanviet": "hạnh"
+        },
+        {
+          "char": "李",
+          "hanviet": "lý"
+        },
+        {
+          "char": "箱",
+          "hanviet": "rương"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0249",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "兴趣",
+      "reading": "xìng qù",
+      "meaning_vi": "hứng thú (mong muốn biết về gì đó); hứng thú (điều mà người ta quan tâm); sở thích",
+      "meaning_en": "interest (desire to know about sth); interest (thing in which one is interested); hobby",
+      "hanviet": "hứng thú",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0249.mp3",
+      "chars": [
+        {
+          "char": "兴",
+          "hanviet": "hứng"
+        },
+        {
+          "char": "趣",
+          "hanviet": "thú"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0250",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "熊猫",
+      "reading": "xióng māo",
+      "meaning_vi": "gấu trúc",
+      "meaning_en": "panda",
+      "hanviet": "hùng miêu",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0250.mp3",
+      "chars": [
+        {
+          "char": "熊",
+          "hanviet": "hùng"
+        },
+        {
+          "char": "猫",
+          "hanviet": "miêu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0251",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "需要",
+      "reading": "xū yào",
+      "meaning_vi": "cần; muốn; yêu cầu; đòi hỏi; nhu cầu",
+      "meaning_en": "to need; to want; to demand; to require; needs",
+      "hanviet": "nhu yếu",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0251.mp3",
+      "chars": [
+        {
+          "char": "需",
+          "hanviet": "nhu"
+        },
+        {
+          "char": "要",
+          "hanviet": "yếu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0252",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "选择",
+      "reading": "xuǎn zé",
+      "meaning_vi": "chọn; chọn lựa; lựa chọn; phương án; thay thế",
+      "meaning_en": "to select; to pick; choice; option; alternative",
+      "hanviet": "tuyển trạch",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0252.mp3",
+      "chars": [
+        {
+          "char": "选",
+          "hanviet": "tuyển"
+        },
+        {
+          "char": "择",
+          "hanviet": "trạch"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0253",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "眼镜",
+      "reading": "yǎn jìng",
+      "meaning_vi": "kính mắt; kính đeo mắt",
+      "meaning_en": "spectacles; eyeglasses",
+      "hanviet": "nhãn kính",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0253.mp3",
+      "chars": [
+        {
+          "char": "眼",
+          "hanviet": "nhãn"
+        },
+        {
+          "char": "镜",
+          "hanviet": "kính"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0254",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "要求",
+      "reading": "yāo qiú",
+      "meaning_vi": "yêu cầu; đòi hỏi; đòi quyền; hỏi",
+      "meaning_en": "to request; to require; requirement; to stake a claim; to ask; to demand",
+      "hanviet": "yêu cầu",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0254.mp3",
+      "chars": [
+        {
+          "char": "要",
+          "hanviet": "yêu"
+        },
+        {
+          "char": "求",
+          "hanviet": "cầu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0255",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "爷爷",
+      "reading": "yé ye",
+      "meaning_vi": "(thân mật) ông nội; ông bên nội",
+      "meaning_en": "(coll.) father's father; paternal grandfather",
+      "hanviet": "gia gia",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0255.mp3",
+      "chars": [
+        {
+          "char": "爷",
+          "hanviet": "gia"
+        },
+        {
+          "char": "爷",
+          "hanviet": "gia"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0256",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "一般",
+      "reading": "yī bān",
+      "meaning_vi": "giống; bình thường; tàm tạm; phổ thông; chung; chung chung; nói chung",
+      "meaning_en": "same; ordinary; so-so; common; general; generally; in general",
+      "hanviet": "nhất ban",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0256.mp3",
+      "chars": [
+        {
+          "char": "一",
+          "hanviet": "nhất"
+        },
+        {
+          "char": "般",
+          "hanviet": "ban"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0257",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "一边",
+      "reading": "yī biān",
+      "meaning_vi": "một bên; mỗi bên; một mặt; mặt khác; vừa làm vừa",
+      "meaning_en": "one side; either side; on the one hand; on the other hand; doing while",
+      "hanviet": "nhất biên",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0257.mp3",
+      "chars": [
+        {
+          "char": "一",
+          "hanviet": "nhất"
+        },
+        {
+          "char": "边",
+          "hanviet": "biên"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0258",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "一定",
+      "reading": "yī dìng",
+      "meaning_vi": "chắc chắn; nhất định; nhất thiết; cố định; một mức độ nhất định (v.v.); đã cho; cụ thể; phải",
+      "meaning_en": "surely; certainly; necessarily; fixed; a certain (extent etc); given; particular; must",
+      "hanviet": "nhất định",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0258.mp3",
+      "chars": [
+        {
+          "char": "一",
+          "hanviet": "nhất"
+        },
+        {
+          "char": "定",
+          "hanviet": "định"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0259",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "一共",
+      "reading": "yī gòng",
+      "meaning_vi": "tổng cộng",
+      "meaning_en": "altogether",
+      "hanviet": "nhất cộng",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0259.mp3",
+      "chars": [
+        {
+          "char": "一",
+          "hanviet": "nhất"
+        },
+        {
+          "char": "共",
+          "hanviet": "cộng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0260",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 13,
+      "version": 1,
+      "verified": false,
+      "target": "一会儿",
+      "reading": "yī huì r",
+      "meaning_vi": "một lúc; một thời gian; ngay lập tức; lúc thì...lúc thì...; cũng đọc là [yi1 hui3 r5]",
+      "meaning_en": "a moment; a while; in a moment; now...now...; also pr. [yī huǐ r]",
+      "hanviet": "nhất hội nhi",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0260.mp3",
+      "chars": [
+        {
+          "char": "一",
+          "hanviet": "nhất"
+        },
+        {
+          "char": "会",
+          "hanviet": "hội"
+        },
+        {
+          "char": "儿",
+          "hanviet": "nhi"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0261",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "一样",
+      "reading": "yī yàng",
+      "meaning_vi": "giống; như; bằng; với; giống như",
+      "meaning_en": "same; like; equal to; the same as; just like",
+      "hanviet": "nhất dạng",
+      "distractor_group": "particle",
+      "audio": "hsk3/hsk3-0261.mp3",
+      "chars": [
+        {
+          "char": "一",
+          "hanviet": "nhất"
+        },
+        {
+          "char": "样",
+          "hanviet": "dạng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0262",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "一直",
+      "reading": "yī zhí",
+      "meaning_vi": "thẳng (theo đường thẳng); liên tục; luôn luôn; suốt",
+      "meaning_en": "straight (in a straight line); continuously; always; all the way through",
+      "hanviet": "nhất trực",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0262.mp3",
+      "chars": [
+        {
+          "char": "一",
+          "hanviet": "nhất"
+        },
+        {
+          "char": "直",
+          "hanviet": "trực"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0263",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "以后",
+      "reading": "yǐ hòu",
+      "meaning_vi": "sau; khi đó; sau này; theo sau; sau đó; trong tương lai",
+      "meaning_en": "after; later; afterwards; following; later on; in the future",
+      "hanviet": "dĩ hậu",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0263.mp3",
+      "chars": [
+        {
+          "char": "以",
+          "hanviet": "dĩ"
+        },
+        {
+          "char": "后",
+          "hanviet": "hậu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0264",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "以前",
+      "reading": "yǐ qián",
+      "meaning_vi": "trước đây; trước; thuở trước; cách đây",
+      "meaning_en": "before; formerly; previous; ago",
+      "hanviet": "dĩ tiền",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0264.mp3",
+      "chars": [
+        {
+          "char": "以",
+          "hanviet": "dĩ"
+        },
+        {
+          "char": "前",
+          "hanviet": "tiền"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0265",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "以为",
+      "reading": "yǐ wéi",
+      "meaning_vi": "nghĩ rằng (tức là cho là đúng ...) (Thường có hàm ý rằng quan niệm đó là sai lầm – ngoại trừ khi diễn đạt ý kiến hiện tại của chính mình.)",
+      "meaning_en": "to think (i.e. to take it to be true that ...) (Usually there is an implication that the notion is mistaken – except when expressing one's own current opinion.)",
+      "hanviet": "dĩ vi",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0265.mp3",
+      "chars": [
+        {
+          "char": "以",
+          "hanviet": "dĩ"
+        },
+        {
+          "char": "为",
+          "hanviet": "vi"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0266",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "音乐",
+      "reading": "yīn yuè",
+      "meaning_vi": "âm nhạc",
+      "meaning_en": "music",
+      "hanviet": "âm nhạc",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0266.mp3",
+      "chars": [
+        {
+          "char": "音",
+          "hanviet": "âm"
+        },
+        {
+          "char": "乐",
+          "hanviet": "nhạc"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0267",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "银行",
+      "reading": "yín háng",
+      "meaning_vi": "ngân hàng",
+      "meaning_en": "bank",
+      "hanviet": "ngân hạnh",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0267.mp3",
+      "chars": [
+        {
+          "char": "银",
+          "hanviet": "ngân"
+        },
+        {
+          "char": "行",
+          "hanviet": "hạnh"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0268",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "应该",
+      "reading": "yīng gāi",
+      "meaning_vi": "nên; phải; cần",
+      "meaning_en": "ought to; should; must",
+      "hanviet": "ưng cai",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0268.mp3",
+      "chars": [
+        {
+          "char": "应",
+          "hanviet": "ưng"
+        },
+        {
+          "char": "该",
+          "hanviet": "cai"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0269",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "影响",
+      "reading": "yǐng xiǎng",
+      "meaning_vi": "ảnh hưởng; tác động; ảnh hưởng đến; tác động đến (thường là tiêu cực); làm phiền",
+      "meaning_en": "influence; effect; to influence; to affect (usually adversely); to disturb",
+      "hanviet": "ảnh hưởng",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0269.mp3",
+      "chars": [
+        {
+          "char": "影",
+          "hanviet": "ảnh"
+        },
+        {
+          "char": "响",
+          "hanviet": "hưởng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0270",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "用",
+      "reading": "yòng",
+      "meaning_vi": "sử dụng; tận dụng; phải; ăn hoặc uống; chi phí hoặc tiêu dùng; tính hữu ích; vì vậy; do đó",
+      "meaning_en": "to use; to employ; to have to; to eat or drink; expense or outlay; usefulness; hence; therefore",
+      "hanviet": "dụng",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0270.mp3"
+    },
+    {
+      "id": "hsk3-0271",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "游戏",
+      "reading": "yóu xì",
+      "meaning_vi": "trò chơi; chơi",
+      "meaning_en": "game; to play",
+      "hanviet": "du hí",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0271.mp3",
+      "chars": [
+        {
+          "char": "游",
+          "hanviet": "du"
+        },
+        {
+          "char": "戏",
+          "hanviet": "hí"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0272",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "有名",
+      "reading": "yǒu míng",
+      "meaning_vi": "nổi tiếng; được biết đến",
+      "meaning_en": "famous; well-known",
+      "hanviet": "hữu danh",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0272.mp3",
+      "chars": [
+        {
+          "char": "有",
+          "hanviet": "hữu"
+        },
+        {
+          "char": "名",
+          "hanviet": "danh"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0273",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "又",
+      "reading": "yòu",
+      "meaning_vi": "(một lần) nữa; cũng; vừa... vừa...; thế nhưng; (dùng để nhấn mạnh) dù sao đi nữa",
+      "meaning_en": "(once) again; also; both... and...; and yet; (used for emphasis) anyway",
+      "hanviet": "hựu",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0273.mp3"
+    },
+    {
+      "id": "hsk3-0274",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "遇到",
+      "reading": "yù dào",
+      "meaning_vi": "gặp; tình cờ gặp; bắt gặp",
+      "meaning_en": "to meet; to run into; to come across",
+      "hanviet": "ngộ đáo",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0274.mp3",
+      "chars": [
+        {
+          "char": "遇",
+          "hanviet": "ngộ"
+        },
+        {
+          "char": "到",
+          "hanviet": "đáo"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0275",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "愿意",
+      "reading": "yuàn yì",
+      "meaning_vi": "muốn; nguyện; sẵn sàng; tự nguyện (làm gì đó)",
+      "meaning_en": "to wish; to want; ready; willing (to do sth)",
+      "hanviet": "nguyện ý",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0275.mp3",
+      "chars": [
+        {
+          "char": "愿",
+          "hanviet": "nguyện"
+        },
+        {
+          "char": "意",
+          "hanviet": "ý"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0276",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "月亮",
+      "reading": "yuè liang",
+      "meaning_vi": "mặt trăng",
+      "meaning_en": "the moon",
+      "hanviet": "nguyệt lượng",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0276.mp3",
+      "chars": [
+        {
+          "char": "月",
+          "hanviet": "nguyệt"
+        },
+        {
+          "char": "亮",
+          "hanviet": "lượng"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0277",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "越",
+      "reading": "Yuè",
+      "meaning_vi": "vượt; vượt qua; vượt hơn; càng... càng...",
+      "meaning_en": "generic word for peoples or states of south China or south Asia at different historical periods; abbr. for Vietnam 越南",
+      "hanviet": "việt",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0277.mp3"
+    },
+    {
+      "id": "hsk3-0278",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "云",
+      "reading": "yún",
+      "meaning_vi": "mây",
+      "meaning_en": "(classical) to say",
+      "hanviet": "vân",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0278.mp3"
+    },
+    {
+      "id": "hsk3-0279",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "站",
+      "reading": "zhàn",
+      "meaning_vi": "trạm; đứng; dừng; tạm dừng; chi nhánh của một công ty hoặc tổ chức; trang web",
+      "meaning_en": "station; to stand; to halt; to stop; branch of a company or organization; website",
+      "hanviet": "trạm",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0279.mp3"
+    },
+    {
+      "id": "hsk3-0280",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 14,
+      "version": 1,
+      "verified": false,
+      "target": "照顾",
+      "reading": "zhào gu",
+      "meaning_vi": "chăm sóc; quan tâm; chú ý đến; trông nom",
+      "meaning_en": "to take care of; to show consideration; to attend to; to look after",
+      "hanviet": "chiếu cố",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0280.mp3",
+      "chars": [
+        {
+          "char": "照",
+          "hanviet": "chiếu"
+        },
+        {
+          "char": "顾",
+          "hanviet": "cố"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0281",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "照片",
+      "reading": "zhào piàn",
+      "meaning_vi": "bức ảnh; hình ảnh",
+      "meaning_en": "photograph; picture",
+      "hanviet": "chiếu phiến",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0281.mp3",
+      "chars": [
+        {
+          "char": "照",
+          "hanviet": "chiếu"
+        },
+        {
+          "char": "片",
+          "hanviet": "phiến"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0282",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "照相机",
+      "reading": "zhào xiàng jī",
+      "meaning_vi": "máy ảnh; Lượng từ: 個|个[ge4], 架[jia4], 部[bu4], 台[tai2], 隻|只[zhi1]",
+      "meaning_en": "camera",
+      "hanviet": "chiếu tướng cơ",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0282.mp3",
+      "chars": [
+        {
+          "char": "照",
+          "hanviet": "chiếu"
+        },
+        {
+          "char": "相",
+          "hanviet": "tướng"
+        },
+        {
+          "char": "机",
+          "hanviet": "cơ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0283",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "着急",
+      "reading": "zháo jí",
+      "meaning_vi": "lo lắng; cảm thấy lo âu; cảm thấy gấp gáp; đang vội; phát âm ở Đài Loan: [zhao1 ji2]",
+      "meaning_en": "to worry; to feel anxious; to feel a sense of urgency; to be in a hurry; Taiwan pr. [zhāo jí]",
+      "hanviet": "trước cấp",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0283.mp3",
+      "chars": [
+        {
+          "char": "着",
+          "hanviet": "trước"
+        },
+        {
+          "char": "急",
+          "hanviet": "cấp"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0284",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "只",
+      "reading": "zhǐ",
+      "meaning_vi": "biến thể của 只[zhi3]",
+      "meaning_en": "only; merely; just; but",
+      "hanviet": "chỉ",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0284.mp3"
+    },
+    {
+      "id": "hsk3-0285",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "中间",
+      "reading": "zhōng jiān",
+      "meaning_vi": "ở giữa; bên trong; ở giữa; trong; giữa; trong số; trong lúc; trong khi đó",
+      "meaning_en": "the middle; the inside; in the middle; within; between; among; during; in the meantime",
+      "hanviet": "trung gian",
+      "distractor_group": "other",
+      "audio": "hsk3/hsk3-0285.mp3",
+      "chars": [
+        {
+          "char": "中",
+          "hanviet": "trung"
+        },
+        {
+          "char": "间",
+          "hanviet": "gian"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0286",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "终于",
+      "reading": "zhōng yú",
+      "meaning_vi": "cuối cùng; rốt cuộc; sau cùng; rốt cuộc thì",
+      "meaning_en": "at last; in the end; finally; eventually",
+      "hanviet": "chung ư",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0286.mp3",
+      "chars": [
+        {
+          "char": "终",
+          "hanviet": "chung"
+        },
+        {
+          "char": "于",
+          "hanviet": "ư"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0287",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "种",
+      "reading": "zhǒng",
+      "meaning_vi": "hạt; loài; loại; kiểu; lượng từ cho loại, kiểu, dạng",
+      "meaning_en": "seed; species; kind; type; classifier for types, kinds, sorts",
+      "hanviet": "chủng",
+      "distractor_group": "measure",
+      "audio": "hsk3/hsk3-0287.mp3"
+    },
+    {
+      "id": "hsk3-0288",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "重要",
+      "reading": "zhòng yào",
+      "meaning_vi": "quan trọng; đáng kể; chính yếu",
+      "meaning_en": "important; significant; major",
+      "hanviet": "trọng yếu",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0288.mp3",
+      "chars": [
+        {
+          "char": "重",
+          "hanviet": "trọng"
+        },
+        {
+          "char": "要",
+          "hanviet": "yếu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0289",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "周末",
+      "reading": "zhōu mò",
+      "meaning_vi": "cuối tuần",
+      "meaning_en": "weekend",
+      "hanviet": "chu mạt",
+      "distractor_group": "time",
+      "audio": "hsk3/hsk3-0289.mp3",
+      "chars": [
+        {
+          "char": "周",
+          "hanviet": "chu"
+        },
+        {
+          "char": "末",
+          "hanviet": "mạt"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0290",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "主要",
+      "reading": "zhǔ yào",
+      "meaning_vi": "chính; chủ yếu; quan trọng; hàng đầu",
+      "meaning_en": "main; principal; major; primary",
+      "hanviet": "chúa yếu",
+      "distractor_group": "adj",
+      "audio": "hsk3/hsk3-0290.mp3",
+      "chars": [
+        {
+          "char": "主",
+          "hanviet": "chúa"
+        },
+        {
+          "char": "要",
+          "hanviet": "yếu"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0291",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "注意",
+      "reading": "zhù yì",
+      "meaning_vi": "chú ý đến; quan tâm đến",
+      "meaning_en": "to take note of; to pay attention to",
+      "hanviet": "chú ý",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0291.mp3",
+      "chars": [
+        {
+          "char": "注",
+          "hanviet": "chú"
+        },
+        {
+          "char": "意",
+          "hanviet": "ý"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0292",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "祝",
+      "reading": "Zhù",
+      "meaning_vi": "cầu nguyện; chúc (ai đó thượng lộ bình an, sinh nhật vui vẻ, v.v.); người cầu khấn thần linh trong các nghi lễ tế tự",
+      "meaning_en": "surname Zhu",
+      "hanviet": "chúc",
+      "distractor_group": "verb",
+      "audio": "hsk3/hsk3-0292.mp3"
+    },
+    {
+      "id": "hsk3-0293",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "字典",
+      "reading": "zì diǎn",
+      "meaning_vi": "Từ điển chữ Hán (chứa mục từ cho từng chữ đơn, khác với 詞典|词典[ci2 dian3], chứa mục từ cho từ gồm một hoặc nhiều chữ); (thông tục) từ điển; Lượng từ: 本[ben3]",
+      "meaning_en": "Chinese character dictionary (containing entries for single characters, contrasted with a 词典, which has entries for words of one or more characters); (coll.) dictionary",
+      "hanviet": "tự điển",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0293.mp3",
+      "chars": [
+        {
+          "char": "字",
+          "hanviet": "tự"
+        },
+        {
+          "char": "典",
+          "hanviet": "điển"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0294",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "自己",
+      "reading": "zì jǐ",
+      "meaning_vi": "bản thân; tự mình",
+      "meaning_en": "oneself; one's own",
+      "hanviet": "tự kỷ",
+      "distractor_group": "pronoun",
+      "audio": "hsk3/hsk3-0294.mp3",
+      "chars": [
+        {
+          "char": "自",
+          "hanviet": "tự"
+        },
+        {
+          "char": "己",
+          "hanviet": "kỷ"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0295",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "总是",
+      "reading": "zǒng shì",
+      "meaning_vi": "luôn luôn",
+      "meaning_en": "always",
+      "hanviet": "tổng thị",
+      "distractor_group": "adverb",
+      "audio": "hsk3/hsk3-0295.mp3",
+      "chars": [
+        {
+          "char": "总",
+          "hanviet": "tổng"
+        },
+        {
+          "char": "是",
+          "hanviet": "thị"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0296",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "最近",
+      "reading": "zuì jìn",
+      "meaning_vi": "gần đây; sắp; tới nhất",
+      "meaning_en": "recently; soon; nearest",
+      "hanviet": "tối cận",
+      "distractor_group": "time",
+      "audio": "hsk3/hsk3-0296.mp3",
+      "chars": [
+        {
+          "char": "最",
+          "hanviet": "tối"
+        },
+        {
+          "char": "近",
+          "hanviet": "cận"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0297",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "作业",
+      "reading": "zuò yè",
+      "meaning_vi": "bài tập về nhà; bài tập; công việc; nhiệm vụ; vận hành; thao tác",
+      "meaning_en": "school assignment; homework; work; task; operation; to operate",
+      "hanviet": "tác nghiệp",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0297.mp3",
+      "chars": [
+        {
+          "char": "作",
+          "hanviet": "tác"
+        },
+        {
+          "char": "业",
+          "hanviet": "nghiệp"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-0298",
+      "type": "vocab",
+      "level": "HSK3",
+      "lesson": 15,
+      "version": 1,
+      "verified": false,
+      "target": "作用",
+      "reading": "zuò yòng",
+      "meaning_vi": "tác động đến; ảnh hưởng; hành động; chức năng; hoạt động; tác động; kết quả; hiệu quả; mục đích; ý định; hậu tố -ation, -tion, v.v., như trong 抑制作用[yi4 zhi4 zuo4 yong4], ức chế",
+      "meaning_en": "to act on; to affect; action; function; activity; impact; result; effect; purpose; intent; (suffix) -ation, -tion etc, as in 用, inhibition",
+      "hanviet": "tác dụng",
+      "distractor_group": "noun",
+      "audio": "hsk3/hsk3-0298.mp3",
+      "chars": [
+        {
+          "char": "作",
+          "hanviet": "tác"
+        },
+        {
+          "char": "用",
+          "hanviet": "dụng"
+        }
+      ]
+    }
+  ]
+}

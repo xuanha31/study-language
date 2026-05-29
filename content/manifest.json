@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "generatedNote": "Du lieu noi dung hoc. Xem README.md va CREDITS.md. CANH BAO: chua kiem chung, verified=false.",
+  "courses": [
+    { "code": "HSK1", "title_vi": "HSK 1 - Cơ bản",  "version": 1, "url": "hsk1.json", "vocabCount": 150,  "dialogueCount": 0, "lessonSize": 20 },
+    { "code": "HSK2", "title_vi": "HSK 2 - Sơ cấp",   "version": 1, "url": "hsk2.json", "vocabCount": 150,  "dialogueCount": 0, "lessonSize": 20 },
+    { "code": "HSK3", "title_vi": "HSK 3 - Sơ trung cấp", "version": 1, "url": "hsk3.json", "vocabCount": 298,  "dialogueCount": 0, "lessonSize": 20 },
+    { "code": "HSK4", "title_vi": "HSK 4 - Trung cấp", "version": 1, "url": "hsk4.json", "vocabCount": 598,  "dialogueCount": 0, "lessonSize": 20 },
+    { "code": "HSK5", "title_vi": "HSK 5 - Cao trung cấp", "version": 1, "url": "hsk5.json", "vocabCount": 1298, "dialogueCount": 0, "lessonSize": 20 },
+    { "code": "HSK6", "title_vi": "HSK 6 - Cao cấp",  "version": 1, "url": "hsk6.json", "vocabCount": 2500, "dialogueCount": 0, "lessonSize": 20 }
+  ]
+}

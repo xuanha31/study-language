@@ -1,0 +1,16 @@
+# Nguồn dữ liệu tải về (lớn, có license riêng, tái tạo bằng tools/fetch-sources.sh)
+tools/_src/
+
+# Flutter / Dart (khi khởi tạo project)
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
