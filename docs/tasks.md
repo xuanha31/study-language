@@ -17,6 +17,7 @@
 | E0-4 | Thiết kế đồng bộ Google Drive (snapshot, tùy chọn) | ☑ DONE |
 | E0-5 | Viết design doc ([design.md](design.md)) | ☑ DONE |
 | E0-6 | Viết task board (file này) | ☑ DONE |
+| E0-7 | CI/CD GitHub Actions (analyze + test + build APK) | ☑ DONE |
 
 ## E1 — Dữ liệu nội dung (content)
 
