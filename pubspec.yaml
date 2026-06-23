@@ -4,7 +4,8 @@ publish_to: 'none'
 version: 0.1.0+1
 
 environment:
-  sdk: ^3.11.4
+  # Hạ trần SDK để verify được trên Flutter local (Dart 3.9.x) lẫn CI (3.11.x).
+  sdk: '>=3.9.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -15,9 +16,25 @@ dependencies:
   equatable: ^2.0.5
   # Game engine (platformer hướng A)
   flame: ^1.18.0
-  # Local storage (tiến độ học + SRS)
+  # Local storage (tiến độ học + SRS + cài đặt)
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  # Font CJK (tải + cache runtime, fallback font hệ thống)
+  google_fonts: ^6.1.0
+  # Audio / TTS tiếng Trung
+  flutter_tts: ^4.0.2
+  # Nhắc học (local notification)
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+  # Tải nội dung online (E7) + backup file (E6)
+  http: ^1.2.0
+  path_provider: ^2.1.0
+  file_picker: ^8.0.0
+  share_plus: ^10.0.0
+  # Đồng bộ Google Drive (E6) — cần OAuth client ID + SHA-1 do người dùng cấp
+  google_sign_in: ^6.2.0
+  googleapis: ^13.2.0
+  extension_google_sign_in_as_googleapis_auth: ^2.0.12
 
 dev_dependencies:
   flutter_test:

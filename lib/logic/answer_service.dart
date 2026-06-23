@@ -1,12 +1,9 @@
 import 'dart:math';
 
 import '../data/models/vocab_card.dart';
+import 'question_type.dart';
 
-/// Các dạng câu hỏi (đảo chiều để học sâu — xem design.md §4).
-enum QuestionType {
-  hanziToMeaning, // hiện chữ Hán -> chọn nghĩa Việt
-  meaningToHanzi, // hiện nghĩa Việt -> chọn chữ Hán
-}
+export 'question_type.dart';
 
 /// Một câu hỏi 4 đáp án đã dựng sẵn.
 class Question {
