@@ -39,4 +39,20 @@ class ContentRepository {
     final cards = await loadCards(course);
     return cards.where((c) => c.lesson == lesson).toList();
   }
+
+  /// Toàn bộ thẻ của mọi khóa (cho Ôn tập / Thống kê). Cache theo khóa nên rẻ ở lần sau.
+  Future<List<VocabCard>> loadAllCards() async {
+    final courses = await loadCourses();
+    final all = <VocabCard>[];
+    for (final c in courses) {
+      all.addAll(await loadCards(c));
+    }
+    return all;
+  }
+
+  /// Map id -> thẻ (cho tra cứu nhanh khi ôn theo SRS).
+  Future<Map<String, VocabCard>> loadIndex() async {
+    final all = await loadAllCards();
+    return {for (final c in all) c.id: c};
+  }
 }

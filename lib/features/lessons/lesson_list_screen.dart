@@ -1,36 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../data/content_repository.dart';
 import '../../data/models/course.dart';
 import '../../data/models/vocab_card.dart';
-import '../../logic/answer_service.dart';
-import '../../logic/game/game_bloc.dart';
-import '../../logic/settings/settings_cubit.dart';
-import '../game/game_screen.dart';
+import 'preview_screen.dart';
 
-/// Màn chọn bài trong một khóa (E9-1).
+/// Màn chọn bài trong một khóa (E9-1). Bấm bài -> xem trước (E4-6) -> vào vòng.
 class LessonListScreen extends StatelessWidget {
   final Course course;
   const LessonListScreen({super.key, required this.course});
 
-  Future<void> _startLesson(BuildContext context, int lesson) async {
-    final repo = context.read<ContentRepository>();
-    final pool = await repo.loadCards(course); // toàn khóa -> distractor
-    final lessonCards = pool.where((c) => c.lesson == lesson).toList();
-    if (lessonCards.isEmpty || !context.mounted) return;
-
-    final settings = context.read<SettingsCubit>().state;
-    final answerService = AnswerService();
-    final questions = lessonCards
-        .map((c) => answerService.build(c, pool, allowed: settings.enabledTypes))
-        .toList();
-
-    await Navigator.of(context).push(MaterialPageRoute(
-      builder: (_) => BlocProvider(
-        create: (_) => GameBloc(GameState(questions: questions, speed: settings.speed)),
-        child: GameScreen(title: '${course.code} · Bài $lesson'),
-      ),
+  void _openPreview(BuildContext context, int lesson) {
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (_) => PreviewScreen(course: course, lesson: lesson),
     ));
   }
 
@@ -49,7 +30,7 @@ class LessonListScreen extends StatelessWidget {
         itemBuilder: (context, i) {
           final lesson = i + 1;
           return InkWell(
-            onTap: () => _startLesson(context, lesson),
+            onTap: () => _openPreview(context, lesson),
             child: Card(
               color: Theme.of(context).colorScheme.primaryContainer,
               child: Center(
