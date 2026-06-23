@@ -20,14 +20,15 @@ class LessonListScreen extends StatelessWidget {
     final lessonCards = pool.where((c) => c.lesson == lesson).toList();
     if (lessonCards.isEmpty || !context.mounted) return;
 
-    final allowed = context.read<SettingsCubit>().state.enabledTypes;
+    final settings = context.read<SettingsCubit>().state;
     final answerService = AnswerService();
-    final questions =
-        lessonCards.map((c) => answerService.build(c, pool, allowed: allowed)).toList();
+    final questions = lessonCards
+        .map((c) => answerService.build(c, pool, allowed: settings.enabledTypes))
+        .toList();
 
     await Navigator.of(context).push(MaterialPageRoute(
       builder: (_) => BlocProvider(
-        create: (_) => GameBloc(GameState(questions: questions)),
+        create: (_) => GameBloc(GameState(questions: questions, speed: settings.speed)),
         child: GameScreen(title: '${course.code} · Bài $lesson'),
       ),
     ));

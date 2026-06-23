@@ -18,3 +18,26 @@ class AnswerPicked extends GameEvent {
 class NextQuestion extends GameEvent {
   const NextQuestion();
 }
+
+/// Đồng hồ boss đếm ngược [dtMs] mili-giây (do màn hình bơm vào).
+class TimeTick extends GameEvent {
+  final int dtMs;
+  const TimeTick(this.dtMs);
+  @override
+  List<Object?> get props => [dtMs];
+}
+
+/// Power-up: ẩn 1 đáp án sai (tốn nấm).
+class UseHint extends GameEvent {
+  const UseHint();
+}
+
+/// Power-up: đóng băng đồng hồ boss (tốn nấm).
+class UseFreeze extends GameEvent {
+  const UseFreeze();
+}
+
+/// Power-up: hồi 1 mạng (tốn nấm).
+class UseExtraLife extends GameEvent {
+  const UseExtraLife();
+}

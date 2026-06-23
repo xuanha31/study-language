@@ -5,7 +5,6 @@ import 'package:study_language/data/models/char_info.dart';
 import 'package:study_language/data/models/vocab_card.dart';
 import 'package:study_language/logic/answer_service.dart';
 import 'package:study_language/logic/pinyin_util.dart';
-import 'package:study_language/logic/question_type.dart';
 
 VocabCard card(String id, String target, String reading, String hanviet,
         {String meaning = 'x', String group = 'g'}) =>

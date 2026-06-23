@@ -4,6 +4,7 @@ enum GameStatus { playing, won, lost }
 
 class GameState extends Equatable {
   final List<Question> questions;
+  final GameSpeed speed;
   final int index;
   final int lives;
   final int mushrooms;
@@ -14,9 +15,12 @@ class GameState extends Equatable {
   final bool? lastCorrect;
   final bool gainedLife; // vừa được thưởng mạng (để hiệu ứng)
   final Set<int> hiddenOptions; // đáp án bị ẩn bởi power-up "gợi ý"
+  final int timeLeftMs; // đồng hồ boss còn lại (chỉ dùng ở câu boss)
+  final bool frozen; // đồng hồ boss đang bị đóng băng (power-up)
 
   const GameState({
     required this.questions,
+    this.speed = GameSpeed.medium,
     this.index = 0,
     this.lives = 3,
     this.mushrooms = 0,
@@ -27,10 +31,16 @@ class GameState extends Equatable {
     this.lastCorrect,
     this.gainedLife = false,
     this.hiddenOptions = const {},
+    this.timeLeftMs = 0,
+    this.frozen = false,
   });
 
   Question get current => questions[index];
   int get total => questions.length;
+
+  /// Câu cuối (câu 20) là câu boss — khó hơn, có đếm giờ (E3-5).
+  bool get isBoss => index == total - 1;
+  int get bossTotalMs => speed.bossSeconds * 1000;
 
   GameState copyWith({
     int? index,
@@ -43,10 +53,13 @@ class GameState extends Equatable {
     bool? lastCorrect,
     bool? gainedLife,
     Set<int>? hiddenOptions,
+    int? timeLeftMs,
+    bool? frozen,
     bool clearSelection = false,
   }) =>
       GameState(
         questions: questions,
+        speed: speed,
         index: index ?? this.index,
         lives: lives ?? this.lives,
         mushrooms: mushrooms ?? this.mushrooms,
@@ -57,6 +70,8 @@ class GameState extends Equatable {
         lastCorrect: clearSelection ? null : (lastCorrect ?? this.lastCorrect),
         gainedLife: gainedLife ?? this.gainedLife,
         hiddenOptions: clearSelection ? const {} : (hiddenOptions ?? this.hiddenOptions),
+        timeLeftMs: timeLeftMs ?? this.timeLeftMs,
+        frozen: frozen ?? this.frozen,
       );
 
   @override
@@ -71,5 +86,7 @@ class GameState extends Equatable {
         lastCorrect,
         gainedLife,
         hiddenOptions,
+        timeLeftMs,
+        frozen,
       ];
 }

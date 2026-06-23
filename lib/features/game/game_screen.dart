@@ -4,6 +4,7 @@ import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../core/game_speed.dart';
 import '../../data/progress_repository.dart';
 import '../../logic/answer_service.dart';
 import '../../logic/audio_service.dart';
@@ -24,15 +25,38 @@ class _GameScreenState extends State<GameScreen> {
   final QuizGame _game = QuizGame();
   final SrsService _srs = SrsService();
   final Stopwatch _watch = Stopwatch()..start();
-  static const _maxAnswerMs = 8000; // mốc đo tốc độ TƯƠNG ĐỐI
+  Timer? _bossTimer;
 
   @override
   void initState() {
     super.initState();
-    // Phát audio cho câu đầu tiên (không có transition nào kích hoạt listener).
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _maybeSpeakPrompt(context.read<GameBloc>().state);
+      if (!mounted) return;
+      final s = context.read<GameBloc>().state;
+      _maybeSpeakPrompt(s);
+      if (s.isBoss && s.status == GameStatus.playing) {
+        _game.showBoss();
+        _startBossTimer();
+      }
     });
+  }
+
+  @override
+  void dispose() {
+    _bossTimer?.cancel();
+    super.dispose();
+  }
+
+  void _startBossTimer() {
+    _bossTimer?.cancel();
+    _bossTimer = Timer.periodic(const Duration(milliseconds: 200), (_) {
+      if (mounted) context.read<GameBloc>().add(const TimeTick(200));
+    });
+  }
+
+  void _stopBossTimer() {
+    _bossTimer?.cancel();
+    _bossTimer = null;
   }
 
   void _maybeSpeakPrompt(GameState state) {
@@ -50,7 +74,8 @@ class _GameScreenState extends State<GameScreen> {
     _recordSrs(context, state);
 
     if (state.status == GameStatus.playing) {
-      Timer(const Duration(milliseconds: 950), () {
+      _game.runToNext();
+      Timer(Duration(milliseconds: state.speed.autoNextMs), () {
         if (mounted) context.read<GameBloc>().add(const NextQuestion());
       });
     }
@@ -59,8 +84,9 @@ class _GameScreenState extends State<GameScreen> {
   void _recordSrs(BuildContext context, GameState state) {
     final repo = context.read<ProgressRepository>();
     final card = state.current.card;
-    // Đọc thời gian TRƯỚC khi câu mới reset đồng hồ.
-    final speed = (1 - _watch.elapsedMilliseconds / _maxAnswerMs).clamp(0.0, 1.0);
+    // Đọc thời gian TRƯỚC khi câu mới reset đồng hồ; mốc theo tốc độ vòng (E3-7).
+    final speed =
+        (1 - _watch.elapsedMilliseconds / state.speed.maxAnswerMs).clamp(0.0, 1.0);
     final now = DateTime.now().millisecondsSinceEpoch;
     final updated = _srs.review(
       repo.get(card.id),
@@ -80,13 +106,17 @@ class _GameScreenState extends State<GameScreen> {
               prev.answered != curr.answered || prev.index != curr.index,
           listener: (context, state) {
             if (state.answered) {
+              _stopBossTimer();
               _onAnswered(context, state);
             } else {
-              // Câu mới hiển thị: bắt đầu đo giờ + phát audio nếu cần.
               _watch
                 ..reset()
                 ..start();
               _maybeSpeakPrompt(state);
+              if (state.isBoss && state.status == GameStatus.playing) {
+                _game.showBoss();
+                _startBossTimer();
+              }
             }
           },
           builder: (context, state) {
@@ -160,6 +190,7 @@ class _QuestionPanel extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            if (state.isBoss) _BossBanner(state: state),
             Text('Câu ${state.index + 1}/${state.total}'
                 '${state.combo >= 2 ? '   🔥 x${state.combo}' : ''}'),
             const SizedBox(height: 8),
@@ -176,9 +207,109 @@ class _QuestionPanel extends StatelessWidget {
                 return _OptionButton(state: state, index: i);
               }),
             ),
+            const SizedBox(height: 10),
+            _PowerUps(state: state),
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Băng-rôn boss + đồng hồ đếm ngược (E3-5).
+class _BossBanner extends StatelessWidget {
+  final GameState state;
+  const _BossBanner({required this.state});
+
+  @override
+  Widget build(BuildContext context) {
+    final ratio = state.bossTotalMs == 0
+        ? 0.0
+        : (state.timeLeftMs / state.bossTotalMs).clamp(0.0, 1.0);
+    final secs = (state.timeLeftMs / 1000).ceil();
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('👹 BOSS',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              const SizedBox(width: 10),
+              Text(state.frozen ? '❄️ $secs' : '⏱️ $secs',
+                  style: const TextStyle(fontSize: 16)),
+            ],
+          ),
+          const SizedBox(height: 4),
+          LinearProgressIndicator(
+            value: ratio,
+            minHeight: 6,
+            color: state.frozen ? Colors.lightBlue : Colors.red,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Hàng nút power-up: gợi ý / đóng băng (chỉ boss) / hồi mạng.
+class _PowerUps extends StatelessWidget {
+  final GameState state;
+  const _PowerUps({required this.state});
+
+  @override
+  Widget build(BuildContext context) {
+    final q = state.current;
+    final wrongLeft = (q.options.length - 1) - state.hiddenOptions.length;
+    final canAct = !state.answered && state.status == GameStatus.playing;
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        _PuButton(
+          label: '💡 Gợi ý',
+          cost: GameBloc.hintCost,
+          enabled: canAct && wrongLeft > 0 && state.mushrooms >= GameBloc.hintCost,
+          onTap: () => context.read<GameBloc>().add(const UseHint()),
+        ),
+        if (state.isBoss)
+          _PuButton(
+            label: '❄️ Đóng băng',
+            cost: GameBloc.freezeCost,
+            enabled: canAct && !state.frozen && state.mushrooms >= GameBloc.freezeCost,
+            onTap: () => context.read<GameBloc>().add(const UseFreeze()),
+          ),
+        _PuButton(
+          label: '❤️ Hồi mạng',
+          cost: GameBloc.extraLifeCost,
+          enabled: canAct && state.mushrooms >= GameBloc.extraLifeCost,
+          onTap: () => context.read<GameBloc>().add(const UseExtraLife()),
+        ),
+      ],
+    );
+  }
+}
+
+class _PuButton extends StatelessWidget {
+  final String label;
+  final int cost;
+  final bool enabled;
+  final VoidCallback onTap;
+  const _PuButton({
+    required this.label,
+    required this.cost,
+    required this.enabled,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton(
+      onPressed: enabled ? onTap : null,
+      style: OutlinedButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      ),
+      child: Text('$label  $cost🍄', style: const TextStyle(fontSize: 12)),
     );
   }
 }
