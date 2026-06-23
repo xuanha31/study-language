@@ -8,6 +8,7 @@ import 'data/settings_repository.dart';
 import 'features/home/home_screen.dart';
 import 'logic/audio_service.dart';
 import 'logic/content/content_cubit.dart';
+import 'logic/notification_service.dart';
 import 'logic/settings/settings_cubit.dart';
 
 class App extends StatelessWidget {
@@ -15,6 +16,7 @@ class App extends StatelessWidget {
   final ProgressRepository progressRepository;
   final SettingsRepository settingsRepository;
   final AudioService audioService;
+  final NotificationService notificationService;
 
   const App({
     super.key,
@@ -22,6 +24,7 @@ class App extends StatelessWidget {
     required this.progressRepository,
     required this.settingsRepository,
     required this.audioService,
+    required this.notificationService,
   });
 
   @override
@@ -32,6 +35,7 @@ class App extends StatelessWidget {
         RepositoryProvider.value(value: progressRepository),
         RepositoryProvider.value(value: settingsRepository),
         RepositoryProvider.value(value: audioService),
+        RepositoryProvider.value(value: notificationService),
       ],
       child: MultiBlocProvider(
         providers: [

@@ -36,4 +36,14 @@ class ProgressRepository {
     }
     return result;
   }
+
+  /// Toàn bộ tiến độ đã lưu (cho màn thống kê).
+  List<ProgressEntry> all() {
+    final result = <ProgressEntry>[];
+    for (final key in _box.keys) {
+      final raw = _box.get(key);
+      if (raw is Map) result.add(ProgressEntry.fromMap(key as String, raw));
+    }
+    return result;
+  }
 }
