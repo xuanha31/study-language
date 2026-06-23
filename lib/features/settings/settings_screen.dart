@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../core/game_speed.dart';
+import '../../data/content_repository.dart';
 import '../../data/settings_repository.dart';
 import '../../logic/audio_service.dart';
 import '../../logic/notification_service.dart';
 import '../../logic/question_type.dart';
 import '../../logic/settings/settings_cubit.dart';
+import 'backup_screen.dart';
 
 /// Màn cài đặt (E9-2): tốc độ, dạng câu hỏi (gồm chiều Việt↔Trung), âm thanh, nhắc học.
 class SettingsScreen extends StatelessWidget {
@@ -76,11 +78,43 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 onTap: s.reminderEnabled ? () => _pickTime(context, s) : null,
               ),
+              const Divider(),
+              const _SectionTitle('Dữ liệu'),
+              ListTile(
+                leading: const Icon(Icons.backup),
+                title: const Text('Sao lưu & khôi phục'),
+                subtitle: const Text('Snapshot tiến độ, chia sẻ/nhập file, Google Drive'),
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const BackupScreen()),
+                ),
+              ),
+              ListTile(
+                leading: const Icon(Icons.cloud_download),
+                title: const Text('Cập nhật nội dung'),
+                subtitle: const Text('Tải bản nội dung mới từ server (nếu đã cấu hình)'),
+                onTap: () => _updateContent(context),
+              ),
             ],
           );
         },
       ),
     );
+  }
+
+  Future<void> _updateContent(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    final repo = context.read<ContentRepository>();
+    messenger.showSnackBar(const SnackBar(content: Text('Đang kiểm tra cập nhật...')));
+    try {
+      final n = await repo.checkAndUpdate();
+      messenger.showSnackBar(SnackBar(
+        content: Text(n > 0
+            ? 'Đã cập nhật $n khóa nội dung'
+            : 'Nội dung đã mới nhất (hoặc chưa cấu hình server)'),
+      ));
+    } catch (e) {
+      messenger.showSnackBar(SnackBar(content: Text('Lỗi cập nhật: $e')));
+    }
   }
 
   Future<void> _prepareVoices(BuildContext context) async {

@@ -24,6 +24,9 @@ class ProgressRepository {
   Future<void> put(ProgressEntry entry) =>
       _box.put(entry.cardId, entry.toMap());
 
+  /// Xóa toàn bộ tiến độ (dùng trước khi khôi phục từ bản sao lưu).
+  Future<void> clear() => _box.clear();
+
   /// Danh sách cardId đến hạn ôn (nextReviewMs <= now).
   List<String> dueCardIds(int nowMs) {
     final result = <String>[];
