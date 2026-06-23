@@ -45,7 +45,7 @@
 | E2-2 | Model Dart cho Card / CharInfo / Course (parse JSON) | ☑ DONE |
 | E2-3 | ContentRepository: load manifest + hskN.json từ assets (bundle `content/`) | ☑ DONE |
 | E2-4 | State management → **Bloc** (GameBloc) + Cubit (ContentCubit) | ☑ DONE |
-| E2-5 | Nhúng font CJK (Noto Sans SC) — hiện dùng font hệ thống | ☐ TODO |
+| E2-5 | Nhúng font CJK (Noto Sans SC) qua google_fonts (tải+cache runtime) | ☑ DONE |
 
 ## E3 — Engine game (gameplay hướng A)
 
@@ -55,45 +55,45 @@
 | E3-2 | Màn chơi: nhân vật + mặt đất, nhảy ăn nấm khi đúng (hướng A) | ☑ DONE |
 | E3-3 | UI câu hỏi 4 đáp án (overlay) + hiệu ứng đúng/sai | ☑ DONE |
 | E3-4 | Hệ thống mạng (3 mặc định) + nấm + combo + thưởng mạng mỗi 5 combo | ☑ DONE |
-| E3-5 | Boss câu 20 + power-up (gợi ý/đóng băng/hồi mạng) | ☐ TODO |
-| E3-6 | Sinh màn tự động/scroll theo 20 câu (hiện cảnh tĩnh 1 màn) | ☐ TODO |
-| E3-7 | Điều chỉnh tốc độ chơi (chậm/vừa/nhanh) | ☐ TODO |
-| E3-8 | **Verify**: chạy app trên emulator/thiết bị (mới analyze+test, chưa chạy GUI) | ☐ TODO |
+| E3-5 | Boss câu 20 (đồng hồ đếm ngược) + power-up (gợi ý/đóng băng/hồi mạng) | ☑ DONE |
+| E3-6 | Cảnh cuộn parallax + nhân vật chạy tới trạm kế + boss xuất hiện | ☑ DONE |
+| E3-7 | Điều chỉnh tốc độ chơi (chậm/vừa/nhanh) | ☑ DONE |
+| E3-8 | **Verify**: analyze+test (18 pass) + build APK debug; chưa chạy GUI tương tác | ◐ DOING |
 
 ## E4 — Học tập (chọn câu, SRS, ôn tập)
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
 | E4-1 | Sinh 4 đáp án từ `distractor_group` (AnswerService) | ☑ DONE |
-| E4-2 | Dạng câu hỏi đảo chiều: Hán→nghĩa, nghĩa→Hán (nghe/thanh điệu/Hán Việt chưa) | ◐ DOING |
+| E4-2 | Đủ dạng câu hỏi: Hán↔nghĩa, **nghe, thanh điệu, Hán Việt** (chọn trong cài đặt) | ☑ DONE |
 | E4-3 | Lưu tiến độ học từng từ (level, nextReviewMs) — Hive | ☑ DONE |
 | E4-4 | Thuật toán SRS (lên/xuống bậc, đo thời gian tương đối) | ☑ DONE |
-| E4-5 | Màn ôn tập (trộn vào vòng / phần riêng) | ☐ TODO |
-| E4-6 | Preview từ vựng trước vòng + gợi ý tốc độ | ☐ TODO |
+| E4-5 | Màn ôn tập (gom thẻ đến hạn SRS → 1 vòng) | ☑ DONE |
+| E4-6 | Preview từ vựng trước vòng + gợi ý tốc độ | ☑ DONE |
 
 ## E5 — Audio & TTS
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
-| E5-1 | Spike: kiểm tra `flutter_tts` đọc tiếng Trung trên máy thật | ☐ TODO |
-| E5-2 | Pre-cache TTS lần đầu (`synthesizeToFile`) + màn loading | ☐ TODO |
-| E5-3 | Phát audio trong câu hỏi nghe + nút loa trên card | ☐ TODO |
+| E5-1 | `flutter_tts` (zh-CN) + "chuẩn bị giọng đọc" kiểm tra engine | ☑ DONE |
+| E5-2 | Pre-cache `synthesizeToFile` + màn loading (hiện đọc lazy, đủ dùng) | ◐ DOING |
+| E5-3 | Phát audio câu hỏi nghe/thanh điệu + nút loa (preview/câu hỏi) | ☑ DONE |
 
 ## E6 — Đồng bộ & lưu trữ
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
 | E6-1 | Lưu tiến độ local → **Hive** (ProgressRepository) | ☑ DONE |
-| E6-2 | Google Sign-In + Drive AppData | ☐ TODO |
-| E6-3 | Tạo/liệt kê/restore/xóa snapshot, giới hạn ~10 bản | ☐ TODO |
-| E6-4 | Cảnh báo khi restore đè tiến độ | ☐ TODO |
+| E6-2 | Google Sign-In + Drive AppData (code đủ, chờ cờ `kDriveConfigured` + OAuth) | ◐ DOING |
+| E6-3 | Tạo/liệt kê/restore/xóa snapshot, giới hạn ~10 bản (local + Drive) + chia sẻ/nhập file | ☑ DONE |
+| E6-4 | Cảnh báo khi restore đè tiến độ | ☑ DONE |
 
 ## E7 — Tải/cập nhật nội dung
 
 | Mã | Task | Trạng thái |
 |----|------|-----------|
-| E7-1 | Tải content lần đầu (cần mạng) + màn loading | ☐ TODO |
-| E7-2 | Cập nhật theo manifest + version per-card (giữ tiến độ) | ☐ TODO |
+| E7-1 | Offline-first: bản đã tải > bundle; tải khi có `CONTENT_BASE_URL` | ◐ DOING |
+| E7-2 | `checkAndUpdate`: so version từng khóa qua manifest, giữ id → giữ tiến độ | ☑ DONE |
 
 ## E8 — Tài nguyên (assets)
 
@@ -108,6 +108,6 @@
 | Mã | Task | Trạng thái |
 |----|------|-----------|
 | E9-1 | Màn chọn khóa HSK → bài → vòng | ☑ DONE |
-| E9-2 | Màn cài đặt (tốc độ, chiều Việt↔Trung, âm thanh) | ☐ TODO |
-| E9-3 | Màn thống kê tiến độ / từ đã thuộc | ☐ TODO |
-| E9-4 | Daily streak + local notification nhắc học | ☐ TODO |
+| E9-2 | Màn cài đặt (tốc độ, dạng câu hỏi/chiều, âm thanh, nhắc học, dữ liệu) | ☑ DONE |
+| E9-3 | Màn thống kê tiến độ / từ đã thuộc / độ chính xác / theo khóa | ☑ DONE |
+| E9-4 | Daily streak + local notification nhắc học | ☑ DONE |
