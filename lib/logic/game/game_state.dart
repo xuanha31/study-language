@@ -13,6 +13,7 @@ class GameState extends Equatable {
   final int? selectedIndex;
   final bool? lastCorrect;
   final bool gainedLife; // vừa được thưởng mạng (để hiệu ứng)
+  final Set<int> hiddenOptions; // đáp án bị ẩn bởi power-up "gợi ý"
 
   const GameState({
     required this.questions,
@@ -25,6 +26,7 @@ class GameState extends Equatable {
     this.selectedIndex,
     this.lastCorrect,
     this.gainedLife = false,
+    this.hiddenOptions = const {},
   });
 
   Question get current => questions[index];
@@ -40,6 +42,7 @@ class GameState extends Equatable {
     int? selectedIndex,
     bool? lastCorrect,
     bool? gainedLife,
+    Set<int>? hiddenOptions,
     bool clearSelection = false,
   }) =>
       GameState(
@@ -53,9 +56,20 @@ class GameState extends Equatable {
         selectedIndex: clearSelection ? null : (selectedIndex ?? this.selectedIndex),
         lastCorrect: clearSelection ? null : (lastCorrect ?? this.lastCorrect),
         gainedLife: gainedLife ?? this.gainedLife,
+        hiddenOptions: clearSelection ? const {} : (hiddenOptions ?? this.hiddenOptions),
       );
 
   @override
-  List<Object?> get props =>
-      [index, lives, mushrooms, combo, status, answered, selectedIndex, lastCorrect, gainedLife];
+  List<Object?> get props => [
+        index,
+        lives,
+        mushrooms,
+        combo,
+        status,
+        answered,
+        selectedIndex,
+        lastCorrect,
+        gainedLife,
+        hiddenOptions,
+      ];
 }

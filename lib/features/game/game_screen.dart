@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../data/progress_repository.dart';
 import '../../logic/answer_service.dart';
+import '../../logic/audio_service.dart';
 import '../../logic/game/game_bloc.dart';
 import '../../logic/srs_service.dart';
 import 'flame/quiz_game.dart';
@@ -25,8 +26,22 @@ class _GameScreenState extends State<GameScreen> {
   final Stopwatch _watch = Stopwatch()..start();
   static const _maxAnswerMs = 8000; // mốc đo tốc độ TƯƠNG ĐỐI
 
+  @override
+  void initState() {
+    super.initState();
+    // Phát audio cho câu đầu tiên (không có transition nào kích hoạt listener).
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _maybeSpeakPrompt(context.read<GameBloc>().state);
+    });
+  }
+
+  void _maybeSpeakPrompt(GameState state) {
+    if (state.status == GameStatus.playing && state.current.isAudioPrompt) {
+      context.read<AudioService>().speak(state.current.audioText);
+    }
+  }
+
   void _onAnswered(BuildContext context, GameState state) {
-    // hiệu ứng game
     if (state.lastCorrect == true) {
       _game.onCorrect();
     } else {
@@ -44,6 +59,7 @@ class _GameScreenState extends State<GameScreen> {
   void _recordSrs(BuildContext context, GameState state) {
     final repo = context.read<ProgressRepository>();
     final card = state.current.card;
+    // Đọc thời gian TRƯỚC khi câu mới reset đồng hồ.
     final speed = (1 - _watch.elapsedMilliseconds / _maxAnswerMs).clamp(0.0, 1.0);
     final now = DateTime.now().millisecondsSinceEpoch;
     final updated = _srs.review(
@@ -60,11 +76,18 @@ class _GameScreenState extends State<GameScreen> {
     return Scaffold(
       body: SafeArea(
         child: BlocConsumer<GameBloc, GameState>(
-          listenWhen: (prev, curr) => !prev.answered && curr.answered,
+          listenWhen: (prev, curr) =>
+              prev.answered != curr.answered || prev.index != curr.index,
           listener: (context, state) {
-            _watch.reset();
-            _watch.start();
-            _onAnswered(context, state);
+            if (state.answered) {
+              _onAnswered(context, state);
+            } else {
+              // Câu mới hiển thị: bắt đầu đo giờ + phát audio nếu cần.
+              _watch
+                ..reset()
+                ..start();
+              _maybeSpeakPrompt(state);
+            }
           },
           builder: (context, state) {
             return Stack(
@@ -124,6 +147,7 @@ class _QuestionPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final q = state.current;
+    final audio = context.read<AudioService>();
     return Align(
       alignment: Alignment.bottomCenter,
       child: Container(
@@ -139,10 +163,7 @@ class _QuestionPanel extends StatelessWidget {
             Text('Câu ${state.index + 1}/${state.total}'
                 '${state.combo >= 2 ? '   🔥 x${state.combo}' : ''}'),
             const SizedBox(height: 8),
-            Text(q.promptMain,
-                style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
-            if (q.promptSub.isNotEmpty)
-              Text(q.promptSub, style: const TextStyle(fontSize: 18, color: Colors.black54)),
+            _Prompt(q: q, audio: audio),
             const SizedBox(height: 16),
             GridView.count(
               shrinkWrap: true,
@@ -162,6 +183,56 @@ class _QuestionPanel extends StatelessWidget {
   }
 }
 
+/// Phần đề bài: dạng nghe -> nút loa lớn; dạng khác -> chữ + nút loa nhỏ.
+class _Prompt extends StatelessWidget {
+  final Question q;
+  final AudioService audio;
+  const _Prompt({required this.q, required this.audio});
+
+  @override
+  Widget build(BuildContext context) {
+    if (q.isAudioPrompt) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          IconButton.filled(
+            iconSize: 44,
+            onPressed: () => audio.speak(q.audioText),
+            icon: const Icon(Icons.volume_up),
+          ),
+          if (q.promptMain.isNotEmpty && q.promptMain != '🔊')
+            Text(q.promptMain,
+                style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
+          if (q.promptSub.isNotEmpty)
+            Text(q.promptSub, style: const TextStyle(fontSize: 16, color: Colors.black54)),
+        ],
+      );
+    }
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Flexible(
+              child: Text(q.promptMain,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
+            ),
+            IconButton(
+              onPressed: () => audio.speak(q.audioText),
+              icon: const Icon(Icons.volume_up, size: 22),
+              tooltip: 'Nghe',
+            ),
+          ],
+        ),
+        if (q.promptSub.isNotEmpty)
+          Text(q.promptSub, style: const TextStyle(fontSize: 18, color: Colors.black54)),
+      ],
+    );
+  }
+}
+
 class _OptionButton extends StatelessWidget {
   final GameState state;
   final int index;
@@ -171,6 +242,7 @@ class _OptionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final q = state.current;
     final answered = state.answered;
+    final hidden = state.hiddenOptions.contains(index); // power-up gợi ý
     Color? bg;
     if (answered) {
       if (index == q.correctIndex) {
@@ -179,18 +251,24 @@ class _OptionButton extends StatelessWidget {
         bg = Colors.red.shade300;
       }
     }
-    final isHanzi = q.type == QuestionType.meaningToHanzi;
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: bg,
-        disabledBackgroundColor: bg, // nút disabled vẫn giữ màu đúng/sai
-        disabledForegroundColor: bg != null ? Colors.white : null,
-      ),
-      onPressed: answered ? null : () => context.read<GameBloc>().add(AnswerPicked(index)),
-      child: Text(
-        q.options[index],
-        textAlign: TextAlign.center,
-        style: TextStyle(fontSize: isHanzi ? 24 : 15),
+    final isHanzi = q.type == QuestionType.meaningToHanzi ||
+        q.type == QuestionType.listening;
+    return Opacity(
+      opacity: hidden ? 0.25 : 1,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: bg,
+          disabledBackgroundColor: bg,
+          disabledForegroundColor: bg != null ? Colors.white : null,
+        ),
+        onPressed: (answered || hidden)
+            ? null
+            : () => context.read<GameBloc>().add(AnswerPicked(index)),
+        child: Text(
+          q.options[index],
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: isHanzi ? 24 : 15),
+        ),
       ),
     );
   }

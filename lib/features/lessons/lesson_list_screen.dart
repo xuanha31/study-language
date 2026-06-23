@@ -6,6 +6,7 @@ import '../../data/models/course.dart';
 import '../../data/models/vocab_card.dart';
 import '../../logic/answer_service.dart';
 import '../../logic/game/game_bloc.dart';
+import '../../logic/settings/settings_cubit.dart';
 import '../game/game_screen.dart';
 
 /// Màn chọn bài trong một khóa (E9-1).
@@ -19,8 +20,10 @@ class LessonListScreen extends StatelessWidget {
     final lessonCards = pool.where((c) => c.lesson == lesson).toList();
     if (lessonCards.isEmpty || !context.mounted) return;
 
+    final allowed = context.read<SettingsCubit>().state.enabledTypes;
     final answerService = AnswerService();
-    final questions = lessonCards.map((c) => answerService.build(c, pool)).toList();
+    final questions =
+        lessonCards.map((c) => answerService.build(c, pool, allowed: allowed)).toList();
 
     await Navigator.of(context).push(MaterialPageRoute(
       builder: (_) => BlocProvider(
