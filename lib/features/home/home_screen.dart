@@ -7,6 +7,7 @@ import '../../logic/content/content_cubit.dart';
 import '../../logic/settings/settings_cubit.dart';
 import '../lessons/lesson_list_screen.dart';
 import '../review/review_screen.dart';
+import '../settings/settings_screen.dart';
 import '../stats/stats_screen.dart';
 
 /// Màn chính: danh sách khóa HSK 1-6 (E9-1) + lối vào Ôn tập (E4-5).
@@ -35,6 +36,13 @@ class HomeScreen extends StatelessWidget {
             tooltip: 'Thống kê',
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (_) => const StatsScreen()),
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.settings),
+            tooltip: 'Cài đặt',
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const SettingsScreen()),
             ),
           ),
         ],
