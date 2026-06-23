@@ -26,16 +26,16 @@
 | E1-1 | Schema card + manifest + README | ☑ DONE |
 | E1-2 | Tạo HSK 1 (150 từ) | ☑ DONE · 🔍 REVIEW (chưa kiểm chứng) |
 | E1-3 | Tạo HSK 2 (150 từ) | ☑ DONE · 🔍 REVIEW (chưa kiểm chứng) |
-| E1-4 | **Rà soát** HSK 1+2 bởi người rành tiếng Trung (đặt `verified:true`) | ☐ TODO |
+| E1-4 | **Rà soát** HSK 1+2 bởi người rành tiếng Trung (đặt `verified:true`) — có công cụ `tools/validate-content.js` + [báo cáo](content-review.md) | ☐ TODO |
 | E1-5 | Chốt phương án data HSK 3→6 → chọn **A: pipeline nguồn mở** | ☑ DONE |
 | E1-6 | Pipeline build (`tools/build-hsk.js` + fetch) — tái lập được | ☑ DONE |
 | E1-7 | Sinh HSK 3 (298), HSK 4 (598), HSK 5 (1298), HSK 6 (2500) | ☑ DONE · 🔍 REVIEW |
 | E1-8 | Ghi công + license nguồn ([../content/CREDITS.md](../content/CREDITS.md)) | ☑ DONE |
-| E1-9 | **Rà soát** HSK 3→6 (meaning_vi AI-dịch, hanviet chọn âm tự động) | ☐ TODO |
+| E1-9 | **Rà soát** HSK 3→6: đã **dọn nghĩa** (152 thẻ, bỏ rác Hán/`[pinyin]` bằng `tools/clean-meanings.js`); xác minh ngôn ngữ vẫn cần người | ◐ DOING |
 | E1-9b | Sửa pipeline chọn nhầm form chữ đa âm + làm sạch nghĩa + per-char + audio HSK1/2 | ☑ DONE |
 | E1-10 | Soạn hội thoại (`type:dialogue`) — tự viết, tránh bản quyền | ☐ TODO |
-| E1-11 | Xử lý ràng buộc CC-BY-SA 4.0 của `meaning_vi` (ghi công trong app / cân nhắc nguồn) | ☐ TODO |
-| E1-12 | Bổ sung ~2 từ/level thiếu so chuẩn (HSK3/4/5: 298/598/1298 vs 300/600/1300) | ☐ TODO |
+| E1-11 | Ghi công + ràng buộc CC-BY-SA 4.0 của `meaning_vi`: màn **Giới thiệu & nguồn dữ liệu** trong app | ☑ DONE |
+| E1-12 | Bổ sung ~2 từ/level thiếu so chuẩn (validator xác nhận HSK3/4/5 thiếu 2) — cần nguồn HSK chính thức | ☐ TODO |
 
 ## E2 — Khung dự án Flutter
 

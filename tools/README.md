@@ -9,6 +9,20 @@ bash tools/fetch-sources.sh   # tải nguồn về tools/_src/ (cần curl + unz
 node tools/build-hsk.js       # build -> content/hsk3..6.json
 ```
 
+## Công cụ rà soát/dọn nội dung (E1-4/9/12)
+
+```bash
+node tools/validate-content.js       # rà soát -> in tóm tắt + ghi docs/content-review.md
+node tools/clean-meanings.js          # dry-run: xem trước thay đổi nghĩa
+node tools/clean-meanings.js --write  # dọn rác Hán/[pinyin] trong meaning_vi + bump version
+```
+
+- `validate-content.js`: **gắn cờ thẻ nghi vấn** (id trùng, thiếu trường, pinyin sai
+  định dạng/nghi thiếu thanh, lệch số âm tiết Hán Việt, nghĩa lẫn chữ Hán, nhóm
+  distractor < 4, số từ thiếu so chuẩn). **Không** kết luận đúng/sai ngôn ngữ.
+- `clean-meanings.js`: chỉ **bỏ rác** (chữ Hán, `[pinyin]`, tham chiếu cụt) khỏi
+  `meaning_vi`, **giữ nguyên** phần tiếng Việt; vẫn `verified:false`.
+
 > `tools/_src/` chứa file nguồn tải về (lớn, có license riêng) — **đã .gitignore**, không commit.
 
 ## Nguồn dữ liệu (xem ghi công đầy đủ ở [../content/CREDITS.md](../content/CREDITS.md))

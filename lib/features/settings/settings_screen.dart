@@ -9,6 +9,7 @@ import '../../logic/notification_service.dart';
 import '../../logic/question_type.dart';
 import '../../logic/settings/settings_cubit.dart';
 import 'backup_screen.dart';
+import 'credits_screen.dart';
 
 /// Màn cài đặt (E9-2): tốc độ, dạng câu hỏi (gồm chiều Việt↔Trung), âm thanh, nhắc học.
 class SettingsScreen extends StatelessWidget {
@@ -93,6 +94,15 @@ class SettingsScreen extends StatelessWidget {
                 title: const Text('Cập nhật nội dung'),
                 subtitle: const Text('Tải bản nội dung mới từ server (nếu đã cấu hình)'),
                 onTap: () => _updateContent(context),
+              ),
+              const Divider(),
+              ListTile(
+                leading: const Icon(Icons.info_outline),
+                title: const Text('Giới thiệu & nguồn dữ liệu'),
+                subtitle: const Text('Ghi công + giấy phép (CC-BY-SA cho nghĩa tiếng Việt)'),
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const CreditsScreen()),
+                ),
               ),
             ],
           );
