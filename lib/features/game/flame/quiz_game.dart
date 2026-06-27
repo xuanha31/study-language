@@ -12,6 +12,7 @@ class QuizGame extends FlameGame {
   late final Player player;
 
   double scroll = 0; // tổng quãng nền đã cuộn (px)
+  double speedFactor = 1.0; // nhịp cảnh theo tốc độ chơi (E3-7)
   double _runRemaining = 0; // thời gian còn đang "chạy tới trạm kế"
   Boss? _boss;
 
@@ -33,12 +34,12 @@ class QuizGame extends FlameGame {
   void update(double dt) {
     super.update(dt);
     if (_runRemaining > 0) _runRemaining -= dt;
-    final speed = running ? 420.0 : 36.0; // px/s: chạy nhanh / trôi nhẹ
+    final speed = (running ? 420.0 : 36.0) * speedFactor; // px/s: chạy nhanh / trôi nhẹ
     scroll += speed * dt;
   }
 
-  /// Chạy tới trạm câu hỏi kế (gọi khi chuyển câu).
-  void runToNext() => _runRemaining = 0.7;
+  /// Chạy tới trạm câu hỏi kế (gọi khi chuyển câu). Nhanh hơn -> chạy ngắn hơn.
+  void runToNext() => _runRemaining = 0.7 / speedFactor;
 
   /// Trả lời đúng: nhân vật nhảy ăn nấm.
   void onCorrect() {

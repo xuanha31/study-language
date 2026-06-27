@@ -33,6 +33,7 @@ class _GameScreenState extends State<GameScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       final s = context.read<GameBloc>().state;
+      _game.speedFactor = s.speed.sceneFactor; // nhịp cảnh theo tốc độ
       _maybeSpeakPrompt(s);
       if (s.isBoss && s.status == GameStatus.playing) {
         _game.showBoss();
@@ -120,14 +121,20 @@ class _GameScreenState extends State<GameScreen> {
             }
           },
           builder: (context, state) {
-            return Stack(
+            // Tách 2 vùng: trên = cảnh game (luôn nhìn thấy), dưới = câu hỏi.
+            return Column(
               children: [
-                Positioned.fill(child: GameWidget(game: _game)),
-                _Hud(state: state, title: widget.title),
-                if (state.status == GameStatus.playing)
-                  _QuestionPanel(state: state)
-                else
-                  _ResultPanel(state: state),
+                Expanded(
+                  child: Stack(
+                    children: [
+                      Positioned.fill(child: GameWidget(game: _game)),
+                      _Hud(state: state, title: widget.title),
+                      if (state.status != GameStatus.playing)
+                        _ResultPanel(state: state),
+                    ],
+                  ),
+                ),
+                if (state.status == GameStatus.playing) _QuestionPanel(state: state),
               ],
             );
           },
@@ -178,38 +185,43 @@ class _QuestionPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     final q = state.current;
     final audio = context.read<AudioService>();
-    return Align(
-      alignment: Alignment.bottomCenter,
-      child: Container(
-        margin: const EdgeInsets.all(12),
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.95),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (state.isBoss) _BossBanner(state: state),
-            Text('Câu ${state.index + 1}/${state.total}'
-                '${state.combo >= 2 ? '   🔥 x${state.combo}' : ''}'),
-            const SizedBox(height: 8),
-            _Prompt(q: q, audio: audio),
-            const SizedBox(height: 16),
-            GridView.count(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              crossAxisCount: 2,
-              childAspectRatio: 3,
-              mainAxisSpacing: 10,
-              crossAxisSpacing: 10,
-              children: List.generate(q.options.length, (i) {
-                return _OptionButton(state: state, index: i);
-              }),
-            ),
-            const SizedBox(height: 10),
-            _PowerUps(state: state),
-          ],
+    // Giới hạn chiều cao panel để cảnh game phía trên luôn nhìn thấy được.
+    final maxH = MediaQuery.of(context).size.height * 0.55;
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.fromLTRB(12, 8, 12, 12),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.96),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxHeight: maxH),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (state.isBoss) _BossBanner(state: state),
+              Text('Câu ${state.index + 1}/${state.total} · ${state.speed.labelVi}'
+                  '${state.combo >= 2 ? '   🔥 x${state.combo}' : ''}'),
+              const SizedBox(height: 8),
+              _Prompt(q: q, audio: audio),
+              const SizedBox(height: 16),
+              GridView.count(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                crossAxisCount: 2,
+                childAspectRatio: 3,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+                children: List.generate(q.options.length, (i) {
+                  return _OptionButton(state: state, index: i);
+                }),
+              ),
+              const SizedBox(height: 10),
+              _PowerUps(state: state),
+            ],
+          ),
         ),
       ),
     );

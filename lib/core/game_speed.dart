@@ -30,4 +30,11 @@ extension GameSpeedX on GameSpeed {
         GameSpeed.medium => 15,
         GameSpeed.fast => 10,
       };
+
+  /// Hệ số nhịp cảnh (chạy/cuộn) — để tốc độ cảm nhận được rõ.
+  double get sceneFactor => switch (this) {
+        GameSpeed.slow => 0.6,
+        GameSpeed.medium => 1.0,
+        GameSpeed.fast => 1.7,
+      };
 }
