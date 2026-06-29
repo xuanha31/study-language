@@ -130,7 +130,7 @@ enum _PlayerState { idle, eat, ko }
 
 class Player extends PositionComponent with HasGameReference<QuizGame> {
   static const _gravity = 2600.0;
-  static const _eatV = -1050.0;
+  static const _eatV = -880.0;
   double _vy = 0, _vx = 0;
   double _t = 0;
   _PlayerState _state = _PlayerState.idle;
@@ -181,13 +181,17 @@ class Player extends PositionComponent with HasGameReference<QuizGame> {
       case _PlayerState.eat:
         _vy += _gravity * dt;
         position.y += _vy * dt;
-        // chạm nấm -> ăn
-        if (!_ate && (position.y - size.y) <= game.mushroom.position.y + 6) {
-          _ate = true;
+        // nhảy vòng cung: đi lên thì tiến tới nấm, rơi xuống thì về chỗ cũ
+        final ascending = _vy < 0;
+        final tx = ascending ? game.mushroom.position.x : game.playerX;
+        position.x += (tx - position.x) * min(1.0, dt * 8);
+        if (!_ate && !ascending) {
+          _ate = true; // tới đỉnh = chạm nấm
           game.mushroom.consume();
         }
         if (position.y >= _restY) {
           position.y = _restY;
+          position.x = game.playerX;
           _state = _PlayerState.idle;
         }
         break;
@@ -226,19 +230,21 @@ class Mushroom extends PositionComponent with HasGameReference<QuizGame> {
   bool _alive = true;
   double _pop = 0; // hiệu ứng khi bị ăn
 
-  double get _headY => game.groundLevel - 60 - 52; // trên đầu nhân vật
+  // Vị trí CỐ ĐỊNH trong cảnh (lơ lửng phía trước-trên nhân vật) — không bám theo.
+  double get _baseX => game.size.x * 0.52;
+  double get _baseY => game.groundLevel - 180;
 
   @override
   Future<void> onLoad() async {
     size = Vector2(36, 34);
     anchor = Anchor.center;
-    position = Vector2(game.playerX, _headY);
+    position = Vector2(_baseX, _baseY);
   }
 
   void reset() {
     _alive = true;
     _pop = 0;
-    position = Vector2(game.playerX, _headY);
+    position = Vector2(_baseX, _baseY);
   }
 
   void consume() {
@@ -252,8 +258,8 @@ class Mushroom extends PositionComponent with HasGameReference<QuizGame> {
     super.update(dt);
     _t += dt;
     if (_alive) {
-      position.x = game.playerX;
-      position.y = _headY + sin(_t * 3) * 4; // bồng bềnh
+      position.x = _baseX; // cố định, chỉ bồng bềnh dọc nhẹ
+      position.y = _baseY + sin(_t * 3) * 4;
     } else if (_pop > 0) {
       _pop -= dt;
       position.y -= 80 * dt; // bắn lên khi bị ăn
