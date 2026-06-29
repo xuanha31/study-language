@@ -4,23 +4,25 @@ import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 
-/// Cảnh platformer cho gameplay HƯỚNG A (dừng để hỏi) — E3-6.
-/// Nền cuộn parallax (mây/đồi/mặt đất); giữa các câu nhân vật chạy tới "trạm" kế
-/// (`runToNext`); câu boss có quái xuất hiện (`showBoss`). Vẽ canvas (placeholder
-/// thay sprite CC0 ở E8). Quiz UI là overlay Flutter phía trên (xem GameScreen).
+/// Cảnh gameplay kiểu Mario (E3): nấm lơ lửng trên đầu nhân vật, quái tiến tới từ
+/// bên phải (chính là "đồng hồ" của câu — tốc độ = nhịp quái tới).
+/// - Đúng  -> nhân vật **nhảy lên ăn nấm**, quái bỏ chạy.
+/// - Sai/hết giờ -> **quái lao tới, nhân vật văng khỏi màn hình** (-1 mạng).
+/// Vẽ canvas (placeholder thay sprite CC0 ở E8). Quiz UI là overlay Flutter.
 class QuizGame extends FlameGame {
   late final Player player;
+  late final Mushroom mushroom;
+  Monster? monster;
 
-  double scroll = 0; // tổng quãng nền đã cuộn (px)
-  double speedFactor = 1.0; // nhịp cảnh theo tốc độ chơi (E3-7)
-  double _runRemaining = 0; // thời gian còn đang "chạy tới trạm kế"
-  Boss? _boss;
+  double speedFactor = 1.0; // nhịp nền theo tốc độ chơi
+  double scroll = 0;
+  bool _bossNext = false;
 
-  double get groundLevel => size.y * 0.74;
-  bool get running => _runRemaining > 0;
+  double get groundLevel => size.y * 0.82;
+  double get playerX => size.x * 0.30;
 
   @override
-  Color backgroundColor() => const Color(0xFF9BD2F5); // trời xanh
+  Color backgroundColor() => const Color(0xFF9BD2F5);
 
   @override
   Future<void> onLoad() async {
@@ -28,38 +30,51 @@ class QuizGame extends FlameGame {
     add(_Clouds());
     add(_Ground());
     add(player = Player());
+    add(mushroom = Mushroom());
+    _spawnMonster();
   }
 
   @override
   void update(double dt) {
     super.update(dt);
-    if (_runRemaining > 0) _runRemaining -= dt;
-    final speed = (running ? 420.0 : 36.0) * speedFactor; // px/s: chạy nhanh / trôi nhẹ
-    scroll += speed * dt;
+    scroll += 40 * speedFactor * dt; // nền trôi nhẹ
   }
 
-  /// Chạy tới trạm câu hỏi kế (gọi khi chuyển câu). Nhanh hơn -> chạy ngắn hơn.
-  void runToNext() => _runRemaining = 0.7 / speedFactor;
+  /// Vị trí quái theo thời gian còn lại (1 = vừa xuất hiện ở xa, 0 = tới nơi).
+  void setTimeRatio(double remaining01) {
+    monster?.approach = (1 - remaining01).clamp(0.0, 1.0);
+  }
 
-  /// Trả lời đúng: nhân vật nhảy ăn nấm.
+  /// Câu mới: đặt lại nhân vật + nấm + quái mới (to hơn nếu là boss).
+  void newQuestion({bool boss = false}) {
+    _bossNext = boss;
+    player.reset();
+    mushroom.reset();
+    _spawnMonster();
+  }
+
+  /// Trả lời đúng: nhảy lên ăn nấm, quái bỏ chạy.
   void onCorrect() {
-    player.jump();
-    add(_Mushroom(Vector2(player.position.x + 60, groundLevel - 90)));
+    player.eat();
+    monster?.flee();
   }
 
-  /// Trả lời sai: nhân vật giật/đỏ mặt.
-  void onWrong() => player.hit();
+  /// Trả lời sai / hết giờ: quái lao tới, nhân vật văng khỏi màn hình.
+  void onWrong() {
+    monster?.lunge();
+    player.knockOut();
+  }
 
-  /// Câu boss: cho quái xuất hiện từ bên phải.
-  void showBoss() {
-    if (_boss != null) return;
-    add(_boss = Boss());
+  void _spawnMonster() {
+    monster?.removeFromParent();
+    add(monster = Monster(boss: _bossNext));
   }
 }
 
+// ───────────────────────── Nền parallax ─────────────────────────
+
 class _Hills extends PositionComponent with HasGameReference<QuizGame> {
   final _paint = Paint()..color = const Color(0xFF7FC47F);
-
   @override
   void render(Canvas canvas) {
     const wave = 220.0;
@@ -73,28 +88,22 @@ class _Hills extends PositionComponent with HasGameReference<QuizGame> {
 
 class _Clouds extends PositionComponent with HasGameReference<QuizGame> {
   final _paint = Paint()..color = Colors.white.withValues(alpha: 0.9);
-  // vị trí gốc (x theo tỉ lệ rộng, y tuyệt đối)
   static const _base = [
-    [0.15, 70.0],
-    [0.55, 40.0],
-    [0.85, 100.0],
+    [0.15, 50.0],
+    [0.55, 28.0],
+    [0.85, 70.0],
   ];
-
   @override
   void render(Canvas canvas) {
     final span = game.size.x + 160;
     for (final c in _base) {
-      final bx = c[0] * game.size.x;
-      var x = (bx - game.scroll * 0.15) % span;
+      var x = (c[0] * game.size.x - game.scroll * 0.15) % span;
       if (x < -80) x += span;
-      _cloud(canvas, Offset(x, c[1]));
+      final o = Offset(x, c[1]);
+      canvas.drawCircle(o, 20, _paint);
+      canvas.drawCircle(o + const Offset(22, 6), 16, _paint);
+      canvas.drawCircle(o + const Offset(-20, 6), 14, _paint);
     }
-  }
-
-  void _cloud(Canvas canvas, Offset o) {
-    canvas.drawCircle(o, 20, _paint);
-    canvas.drawCircle(o + const Offset(22, 6), 16, _paint);
-    canvas.drawCircle(o + const Offset(-20, 6), 14, _paint);
   }
 }
 
@@ -102,13 +111,11 @@ class _Ground extends PositionComponent with HasGameReference<QuizGame> {
   final _grass = Paint()..color = const Color(0xFF6AbE4F);
   final _soil = Paint()..color = const Color(0xFF8D6E3A);
   final _tile = Paint()..color = const Color(0x22000000);
-
   @override
   void render(Canvas canvas) {
     final y = game.groundLevel;
     canvas.drawRect(Rect.fromLTWH(0, y, game.size.x, 14), _grass);
     canvas.drawRect(Rect.fromLTWH(0, y + 14, game.size.x, game.size.y - y), _soil);
-    // vạch gạch chạy theo scroll cho cảm giác chuyển động
     const tile = 48.0;
     final off = -(game.scroll % tile);
     for (double x = off; x < game.size.x; x += tile) {
@@ -117,98 +124,224 @@ class _Ground extends PositionComponent with HasGameReference<QuizGame> {
   }
 }
 
+// ───────────────────────── Nhân vật ─────────────────────────
+
+enum _PlayerState { idle, eat, ko }
+
 class Player extends PositionComponent with HasGameReference<QuizGame> {
-  static const _gravity = 2400.0;
-  static const _jumpV = -900.0;
-  double _vy = 0;
-  bool _onGround = true;
+  static const _gravity = 2600.0;
+  static const _eatV = -1050.0;
+  double _vy = 0, _vx = 0;
   double _t = 0;
-  double _hitFlash = 0;
+  _PlayerState _state = _PlayerState.idle;
+  bool _ate = false;
 
   final _body = Paint()..color = const Color(0xFFE53935);
   final _leg = Paint()..color = const Color(0xFF7A1F1C);
 
+  double get _restY => game.groundLevel;
+
   @override
   Future<void> onLoad() async {
-    size = Vector2(44, 56);
+    size = Vector2(44, 60);
     anchor = Anchor.bottomCenter;
+    position = Vector2(game.playerX, _restY);
+  }
+
+  void reset() {
+    _state = _PlayerState.idle;
+    _vy = 0;
+    _vx = 0;
+    _ate = false;
+    position = Vector2(game.playerX, _restY);
+  }
+
+  void eat() {
+    if (_state == _PlayerState.ko) return;
+    _state = _PlayerState.eat;
+    _ate = false;
+    _vy = _eatV;
+  }
+
+  void knockOut() {
+    _state = _PlayerState.ko;
+    _vy = -1300;
+    _vx = -260;
   }
 
   @override
   void update(double dt) {
     super.update(dt);
     _t += dt;
-    if (_hitFlash > 0) _hitFlash -= dt;
-
-    position.x = game.size.x * 0.32;
-    final rest = game.groundLevel;
-    if (!_onGround) {
-      _vy += _gravity * dt;
-      position.y += _vy * dt;
-      if (position.y >= rest) {
-        position.y = rest;
-        _vy = 0;
-        _onGround = true;
-      }
-    } else {
-      position.y = rest + sin(_t * 6) * 2; // nhún nhẹ khi đứng
+    switch (_state) {
+      case _PlayerState.idle:
+        position.x = game.playerX;
+        position.y = _restY + sin(_t * 6) * 2;
+        break;
+      case _PlayerState.eat:
+        _vy += _gravity * dt;
+        position.y += _vy * dt;
+        // chạm nấm -> ăn
+        if (!_ate && (position.y - size.y) <= game.mushroom.position.y + 6) {
+          _ate = true;
+          game.mushroom.consume();
+        }
+        if (position.y >= _restY) {
+          position.y = _restY;
+          _state = _PlayerState.idle;
+        }
+        break;
+      case _PlayerState.ko:
+        _vy += _gravity * dt;
+        position.x += _vx * dt;
+        position.y += _vy * dt; // không chặn đất -> văng ra ngoài
+        break;
     }
   }
-
-  void jump() {
-    if (_onGround) {
-      _vy = _jumpV;
-      _onGround = false;
-    }
-  }
-
-  void hit() => _hitFlash = 0.4;
 
   @override
   void render(Canvas canvas) {
-    // chân chạy (đung đưa khi đang chạy)
-    if (game.running && _onGround) {
-      final swing = sin(_t * 22) * 6;
-      canvas.drawRect(Rect.fromLTWH(size.x * 0.28 + swing, size.y - 10, 8, 12), _leg);
-      canvas.drawRect(Rect.fromLTWH(size.x * 0.58 - swing, size.y - 10, 8, 12), _leg);
+    if (_state == _PlayerState.idle) {
+      // chân nhún nhẹ
+      canvas.drawRect(Rect.fromLTWH(size.x * 0.26, size.y - 10, 8, 12), _leg);
+      canvas.drawRect(Rect.fromLTWH(size.x * 0.60, size.y - 10, 8, 12), _leg);
     }
-    final paint = _hitFlash > 0 ? (Paint()..color = const Color(0xFFB71C1C)) : _body;
     final rect = RRect.fromRectAndRadius(
         Rect.fromLTWH(0, 0, size.x, size.y), const Radius.circular(10));
-    canvas.drawRRect(rect, paint);
+    canvas.drawRRect(rect, _body);
     final eye = Paint()..color = Colors.white;
-    canvas.drawCircle(Offset(size.x * 0.34, size.y * 0.34), 5, eye);
-    canvas.drawCircle(Offset(size.x * 0.66, size.y * 0.34), 5, eye);
+    final scared = _state == _PlayerState.ko;
+    canvas.drawCircle(Offset(size.x * 0.34, size.y * 0.34), scared ? 7 : 5, eye);
+    canvas.drawCircle(Offset(size.x * 0.66, size.y * 0.34), scared ? 7 : 5, eye);
+    final pupil = Paint()..color = Colors.black;
+    canvas.drawCircle(Offset(size.x * 0.34, size.y * 0.34), 2.5, pupil);
+    canvas.drawCircle(Offset(size.x * 0.66, size.y * 0.34), 2.5, pupil);
   }
 }
 
-/// Quái boss (câu 20): trượt vào từ bên phải rồi đứng đối diện nhân vật.
-class Boss extends PositionComponent with HasGameReference<QuizGame> {
+// ───────────────────────── Nấm (trên đầu) ─────────────────────────
+
+class Mushroom extends PositionComponent with HasGameReference<QuizGame> {
   double _t = 0;
-  final _body = Paint()..color = const Color(0xFF4A148C);
-  final _spike = Paint()..color = const Color(0xFF311B92);
+  bool _alive = true;
+  double _pop = 0; // hiệu ứng khi bị ăn
+
+  double get _headY => game.groundLevel - 60 - 52; // trên đầu nhân vật
 
   @override
   Future<void> onLoad() async {
-    size = Vector2(90, 96);
-    anchor = Anchor.bottomCenter;
-    position = Vector2(game.size.x + 80, game.groundLevel);
+    size = Vector2(36, 34);
+    anchor = Anchor.center;
+    position = Vector2(game.playerX, _headY);
+  }
+
+  void reset() {
+    _alive = true;
+    _pop = 0;
+    position = Vector2(game.playerX, _headY);
+  }
+
+  void consume() {
+    if (!_alive) return;
+    _alive = false;
+    _pop = 0.3;
   }
 
   @override
   void update(double dt) {
     super.update(dt);
     _t += dt;
-    final target = game.size.x * 0.78;
-    if (position.x > target) {
-      position.x = max(target, position.x - 240 * dt);
+    if (_alive) {
+      position.x = game.playerX;
+      position.y = _headY + sin(_t * 3) * 4; // bồng bềnh
+    } else if (_pop > 0) {
+      _pop -= dt;
+      position.y -= 80 * dt; // bắn lên khi bị ăn
     }
-    position.y = game.groundLevel + sin(_t * 3) * 4;
   }
 
   @override
   void render(Canvas canvas) {
-    // gai trên đầu
+    if (!_alive && _pop <= 0) return; // đã ăn xong -> ẩn
+    final opacity = _alive ? 1.0 : (_pop / 0.3).clamp(0.0, 1.0);
+    final cap = Paint()..color = const Color(0xFFD32F2F).withValues(alpha: opacity);
+    final stem = Paint()..color = const Color(0xFFFFF3E0).withValues(alpha: opacity);
+    final spot = Paint()..color = Colors.white.withValues(alpha: opacity);
+    // thân
+    canvas.drawRect(Rect.fromLTWH(size.x * 0.3, size.y * 0.5, size.x * 0.4, size.y * 0.5), stem);
+    // mũ
+    canvas.drawArc(Rect.fromLTWH(0, 0, size.x, size.y), pi, pi, true, cap);
+    // chấm trắng
+    canvas.drawCircle(Offset(size.x * 0.35, size.y * 0.3), 3, spot);
+    canvas.drawCircle(Offset(size.x * 0.62, size.y * 0.34), 2.5, spot);
+  }
+}
+
+// ───────────────────────── Quái (đồng hồ) ─────────────────────────
+
+enum _MonsterState { walk, flee, lunge }
+
+class Monster extends PositionComponent with HasGameReference<QuizGame> {
+  final bool boss;
+  double approach = 0; // 0 = ở xa bên phải, 1 = tới sát nhân vật
+  double _t = 0;
+  _MonsterState _state = _MonsterState.walk;
+
+  Monster({this.boss = false});
+
+  final _body = Paint()..color = const Color(0xFF4A148C);
+  final _spike = Paint()..color = const Color(0xFF311B92);
+
+  double get _spawnX => game.size.x + 70;
+  double get _reachX => game.playerX + size.x * 0.75; // dừng sát nhân vật
+
+  @override
+  Future<void> onLoad() async {
+    final s = boss ? 1.6 : 1.0;
+    size = Vector2(64 * s, 70 * s);
+    anchor = Anchor.bottomCenter;
+    position = Vector2(_spawnX, game.groundLevel);
+  }
+
+  @override
+  void update(double dt) {
+    super.update(dt);
+    _t += dt;
+    switch (_state) {
+      case _MonsterState.walk:
+        final target = _spawnX + (_reachX - _spawnX) * approach;
+        position.x += (target - position.x) * min(1, dt * 8); // bám mượt
+        position.y = game.groundLevel + sin(_t * 8) * 3; // lạch bạch
+        break;
+      case _MonsterState.flee:
+        position.x += 520 * dt; // chạy ra phải
+        if (position.x > game.size.x + 120) removeFromParent();
+        break;
+      case _MonsterState.lunge:
+        position.x += (game.playerX - position.x) * min(1, dt * 12);
+        position.y = game.groundLevel;
+        if ((position.x - game.playerX).abs() < 6) {
+          opacity_ -= dt * 3;
+          if (opacity_ <= 0) removeFromParent();
+        }
+        break;
+    }
+  }
+
+  double opacity_ = 1.0;
+
+  void flee() => _state = _MonsterState.flee;
+  void lunge() => _state = _MonsterState.lunge;
+
+  @override
+  void render(Canvas canvas) {
+    final body = _state == _MonsterState.lunge
+        ? (Paint()..color = _body.color.withValues(alpha: opacity_.clamp(0.0, 1.0)))
+        : _body;
+    final spike = _state == _MonsterState.lunge
+        ? (Paint()..color = _spike.color.withValues(alpha: opacity_.clamp(0.0, 1.0)))
+        : _spike;
+    // gai
     for (var i = 0; i < 5; i++) {
       final x = size.x * (0.12 + i * 0.18);
       final path = Path()
@@ -216,43 +349,20 @@ class Boss extends PositionComponent with HasGameReference<QuizGame> {
         ..lineTo(x, -12)
         ..lineTo(x + 8, 6)
         ..close();
-      canvas.drawPath(path, _spike);
+      canvas.drawPath(path, spike);
     }
     final rect = RRect.fromRectAndRadius(
         Rect.fromLTWH(0, 0, size.x, size.y), const Radius.circular(14));
-    canvas.drawRRect(rect, _body);
-    // mắt giận dữ
-    final eye = Paint()..color = const Color(0xFFFFEB3B);
-    canvas.drawCircle(Offset(size.x * 0.32, size.y * 0.32), 8, eye);
-    canvas.drawCircle(Offset(size.x * 0.68, size.y * 0.32), 8, eye);
-    final pupil = Paint()..color = Colors.black;
-    canvas.drawCircle(Offset(size.x * 0.32, size.y * 0.34), 4, pupil);
-    canvas.drawCircle(Offset(size.x * 0.68, size.y * 0.34), 4, pupil);
-  }
-}
-
-class _Mushroom extends PositionComponent {
-  double _life = 0.9;
-  _Mushroom(Vector2 pos) {
-    position = pos;
-    size = Vector2(28, 26);
-    anchor = Anchor.center;
-  }
-
-  @override
-  void update(double dt) {
-    super.update(dt);
-    _life -= dt;
-    position.y -= 60 * dt; // bay lên
-    if (_life <= 0) removeFromParent();
-  }
-
-  @override
-  void render(Canvas canvas) {
-    final opacity = (_life / 0.9).clamp(0.0, 1.0);
-    final cap = Paint()..color = const Color(0xFFD32F2F).withValues(alpha: opacity);
-    final stem = Paint()..color = const Color(0xFFFFF3E0).withValues(alpha: opacity);
-    canvas.drawRect(Rect.fromLTWH(size.x * 0.3, size.y * 0.5, size.x * 0.4, size.y * 0.5), stem);
-    canvas.drawArc(Rect.fromLTWH(0, 0, size.x, size.y), pi, pi, true, cap);
+    canvas.drawRRect(rect, body);
+    // mắt giận + răng
+    final eye = Paint()..color = const Color(0xFFFFEB3B).withValues(alpha: opacity_.clamp(0.0, 1.0));
+    canvas.drawCircle(Offset(size.x * 0.30, size.y * 0.34), size.x * 0.10, eye);
+    canvas.drawCircle(Offset(size.x * 0.70, size.y * 0.34), size.x * 0.10, eye);
+    final mouth = Paint()..color = Colors.white.withValues(alpha: opacity_.clamp(0.0, 1.0));
+    for (var i = 0; i < 4; i++) {
+      canvas.drawRect(
+          Rect.fromLTWH(size.x * (0.28 + i * 0.13), size.y * 0.62, size.x * 0.07, size.y * 0.1),
+          mouth);
+    }
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../core/game_speed.dart';
 import '../../data/content_repository.dart';
 import '../../data/models/vocab_card.dart';
 import '../../data/progress_repository.dart';
@@ -61,7 +62,11 @@ class _ReviewScreenState extends State<ReviewScreen> {
 
     await Navigator.of(context).push(MaterialPageRoute(
       builder: (_) => BlocProvider(
-        create: (_) => GameBloc(GameState(questions: questions, speed: settings.state.speed)),
+        create: (_) => GameBloc(GameState(
+          questions: questions,
+          speed: settings.state.speed,
+          timeLeftMs: settings.state.speed.answerSeconds * 1000,
+        )),
         child: const GameScreen(title: 'Ôn tập'),
       ),
     ));

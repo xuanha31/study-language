@@ -38,9 +38,12 @@ class GameState extends Equatable {
   Question get current => questions[index];
   int get total => questions.length;
 
-  /// Câu cuối (câu 20) là câu boss — khó hơn, có đếm giờ (E3-5).
+  /// Câu cuối (câu 20) là câu boss — quái to hơn, đếm giờ gắt hơn (E3-5).
   bool get isBoss => index == total - 1;
-  int get bossTotalMs => speed.bossSeconds * 1000;
+
+  /// Cửa sổ thời gian của câu hiện tại (ms) = nhịp quái tiến tới nhân vật.
+  /// Mọi câu đều có đồng hồ; tốc độ nhanh -> cửa sổ ngắn.
+  int get windowMs => (isBoss ? speed.bossSeconds : speed.answerSeconds) * 1000;
 
   GameState copyWith({
     int? index,

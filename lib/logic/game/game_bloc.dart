@@ -65,23 +65,21 @@ class GameBloc extends Bloc<GameEvent, GameState> {
           status: GameStatus.won, answered: false, clearSelection: true, gainedLife: false));
     } else {
       final boss = nextIndex == state.total - 1;
+      final win = (boss ? state.speed.bossSeconds : state.speed.answerSeconds) * 1000;
       emit(state.copyWith(
         index: nextIndex,
         answered: false,
         clearSelection: true,
         gainedLife: false,
         frozen: false,
-        timeLeftMs: boss ? state.bossTotalMs : 0,
+        timeLeftMs: win,
       ));
     }
   }
 
-  /// Đồng hồ boss chạy; hết giờ -> tính như trả lời sai.
+  /// Đồng hồ mỗi câu (quái tiến tới) chạy; hết giờ -> quái ăn = trả lời sai.
   void _onTick(TimeTick e, Emitter<GameState> emit) {
-    if (!state.isBoss ||
-        state.answered ||
-        state.frozen ||
-        state.status != GameStatus.playing) {
+    if (state.answered || state.frozen || state.status != GameStatus.playing) {
       return;
     }
     final left = state.timeLeftMs - e.dtMs;
@@ -121,8 +119,7 @@ class GameBloc extends Bloc<GameEvent, GameState> {
   }
 
   void _onFreeze(UseFreeze e, Emitter<GameState> emit) {
-    if (!state.isBoss ||
-        state.frozen ||
+    if (state.frozen ||
         state.answered ||
         state.status != GameStatus.playing ||
         state.mushrooms < freezeCost) {

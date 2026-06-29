@@ -25,7 +25,7 @@ class _GameScreenState extends State<GameScreen> {
   final QuizGame _game = QuizGame();
   final SrsService _srs = SrsService();
   final Stopwatch _watch = Stopwatch()..start();
-  Timer? _bossTimer;
+  Timer? _timer;
 
   @override
   void initState() {
@@ -34,30 +34,31 @@ class _GameScreenState extends State<GameScreen> {
       if (!mounted) return;
       final s = context.read<GameBloc>().state;
       _game.speedFactor = s.speed.sceneFactor; // nhịp cảnh theo tốc độ
-      _maybeSpeakPrompt(s);
-      if (s.isBoss && s.status == GameStatus.playing) {
-        _game.showBoss();
-        _startBossTimer();
+      if (s.status == GameStatus.playing) {
+        _game.newQuestion(boss: s.isBoss);
+        _maybeSpeakPrompt(s);
+        _startQuestionTimer();
       }
     });
   }
 
   @override
   void dispose() {
-    _bossTimer?.cancel();
+    _timer?.cancel();
     super.dispose();
   }
 
-  void _startBossTimer() {
-    _bossTimer?.cancel();
-    _bossTimer = Timer.periodic(const Duration(milliseconds: 200), (_) {
-      if (mounted) context.read<GameBloc>().add(const TimeTick(200));
+  // Mọi câu đều có đồng hồ (quái tiến tới). Tick 100ms cho quái di chuyển mượt.
+  void _startQuestionTimer() {
+    _timer?.cancel();
+    _timer = Timer.periodic(const Duration(milliseconds: 100), (_) {
+      if (mounted) context.read<GameBloc>().add(const TimeTick(100));
     });
   }
 
-  void _stopBossTimer() {
-    _bossTimer?.cancel();
-    _bossTimer = null;
+  void _stopQuestionTimer() {
+    _timer?.cancel();
+    _timer = null;
   }
 
   void _maybeSpeakPrompt(GameState state) {
@@ -75,7 +76,6 @@ class _GameScreenState extends State<GameScreen> {
     _recordSrs(context, state);
 
     if (state.status == GameStatus.playing) {
-      _game.runToNext();
       Timer(Duration(milliseconds: state.speed.autoNextMs), () {
         if (mounted) context.read<GameBloc>().add(const NextQuestion());
       });
@@ -107,20 +107,23 @@ class _GameScreenState extends State<GameScreen> {
               prev.answered != curr.answered || prev.index != curr.index,
           listener: (context, state) {
             if (state.answered) {
-              _stopBossTimer();
+              _stopQuestionTimer();
               _onAnswered(context, state);
-            } else {
+            } else if (state.status == GameStatus.playing) {
+              // Câu mới: nhân vật + nấm + quái mới, bắt đầu đếm giờ.
               _watch
                 ..reset()
                 ..start();
+              _game.newQuestion(boss: state.isBoss);
               _maybeSpeakPrompt(state);
-              if (state.isBoss && state.status == GameStatus.playing) {
-                _game.showBoss();
-                _startBossTimer();
-              }
+              _startQuestionTimer();
             }
           },
           builder: (context, state) {
+            // Đồng bộ vị trí quái theo thời gian còn lại (quái = đồng hồ).
+            if (state.status == GameStatus.playing) {
+              _game.setTimeRatio((state.timeLeftMs / state.windowMs).clamp(0.0, 1.0));
+            }
             // Tách 2 vùng: trên = cảnh game (luôn nhìn thấy), dưới = câu hỏi.
             return Column(
               children: [
@@ -201,7 +204,7 @@ class _QuestionPanel extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              if (state.isBoss) _BossBanner(state: state),
+              _TimerBar(state: state),
               Text('Câu ${state.index + 1}/${state.total} · ${state.speed.labelVi}'
                   '${state.combo >= 2 ? '   🔥 x${state.combo}' : ''}'),
               const SizedBox(height: 8),
@@ -228,17 +231,21 @@ class _QuestionPanel extends StatelessWidget {
   }
 }
 
-/// Băng-rôn boss + đồng hồ đếm ngược (E3-5).
-class _BossBanner extends StatelessWidget {
+/// Đồng hồ mỗi câu (= quái tiến tới); câu boss có nhãn riêng (E3-5).
+class _TimerBar extends StatelessWidget {
   final GameState state;
-  const _BossBanner({required this.state});
+  const _TimerBar({required this.state});
 
   @override
   Widget build(BuildContext context) {
-    final ratio = state.bossTotalMs == 0
+    final ratio = state.windowMs == 0
         ? 0.0
-        : (state.timeLeftMs / state.bossTotalMs).clamp(0.0, 1.0);
+        : (state.timeLeftMs / state.windowMs).clamp(0.0, 1.0);
     final secs = (state.timeLeftMs / 1000).ceil();
+    final danger = ratio < 0.34;
+    final color = state.frozen
+        ? Colors.lightBlue
+        : (danger ? Colors.red : Colors.orange);
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Column(
@@ -246,10 +253,10 @@ class _BossBanner extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('👹 BOSS',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-              const SizedBox(width: 10),
-              Text(state.frozen ? '❄️ $secs' : '⏱️ $secs',
+              if (state.isBoss)
+                const Text('👹 BOSS  ',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              Text(state.frozen ? '❄️ $secs' : '👾 $secs',
                   style: const TextStyle(fontSize: 16)),
             ],
           ),
@@ -257,7 +264,7 @@ class _BossBanner extends StatelessWidget {
           LinearProgressIndicator(
             value: ratio,
             minHeight: 6,
-            color: state.frozen ? Colors.lightBlue : Colors.red,
+            color: color,
           ),
         ],
       ),

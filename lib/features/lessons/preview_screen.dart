@@ -74,7 +74,11 @@ class _PreviewScreenState extends State<PreviewScreen> {
     if (!mounted) return;
     await Navigator.of(context).push(MaterialPageRoute(
       builder: (_) => BlocProvider(
-        create: (_) => GameBloc(GameState(questions: questions, speed: _speed)),
+        create: (_) => GameBloc(GameState(
+          questions: questions,
+          speed: _speed,
+          timeLeftMs: _speed.answerSeconds * 1000,
+        )),
         child: GameScreen(title: '${widget.course.code} · Bài ${widget.lesson}'),
       ),
     ));

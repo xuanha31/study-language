@@ -24,11 +24,19 @@ extension GameSpeedX on GameSpeed {
         GameSpeed.fast => 5000,
       };
 
-  /// Thời lượng đếm ngược cho câu boss (câu 20) — giây.
+  /// Thời gian trả lời mỗi câu (giây) = nhịp quái tiến tới nhân vật.
+  /// Nhanh -> quái tới nhanh -> phải trả lời gấp.
+  int get answerSeconds => switch (this) {
+        GameSpeed.slow => 14,
+        GameSpeed.medium => 9,
+        GameSpeed.fast => 6,
+      };
+
+  /// Thời lượng đếm ngược cho câu boss (câu 20) — giây (gắt hơn câu thường).
   int get bossSeconds => switch (this) {
-        GameSpeed.slow => 25,
-        GameSpeed.medium => 15,
-        GameSpeed.fast => 10,
+        GameSpeed.slow => 12,
+        GameSpeed.medium => 8,
+        GameSpeed.fast => 5,
       };
 
   /// Hệ số nhịp cảnh (chạy/cuộn) — để tốc độ cảm nhận được rõ.
