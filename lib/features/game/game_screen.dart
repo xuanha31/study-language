@@ -339,6 +339,17 @@ class _Prompt extends StatelessWidget {
   final AudioService audio;
   const _Prompt({required this.q, required this.audio});
 
+  Future<void> _speak(BuildContext context) async {
+    final ok = await audio.speak(q.audioText);
+    if (!ok && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('Chưa phát được — máy cần cài giọng tiếng Trung '
+            '(Cài đặt hệ thống → Text-to-speech → tải Chinese)'),
+        duration: Duration(seconds: 4),
+      ));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     if (q.isAudioPrompt) {
@@ -347,7 +358,7 @@ class _Prompt extends StatelessWidget {
         children: [
           IconButton.filled(
             iconSize: 44,
-            onPressed: () => audio.speak(q.audioText),
+            onPressed: () => _speak(context),
             icon: const Icon(Icons.volume_up),
           ),
           if (q.promptMain.isNotEmpty && q.promptMain != '🔊')
@@ -370,7 +381,7 @@ class _Prompt extends StatelessWidget {
                   style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
             ),
             IconButton(
-              onPressed: () => audio.speak(q.audioText),
+              onPressed: () => _speak(context),
               icon: const Icon(Icons.volume_up, size: 22),
               tooltip: 'Nghe',
             ),

@@ -109,7 +109,16 @@ class _PreviewScreenState extends State<PreviewScreen> {
                         subtitle: Text(c.meaningVi),
                         trailing: IconButton(
                           icon: const Icon(Icons.volume_up),
-                          onPressed: () => audio.speak(c.target),
+                          onPressed: () async {
+                            final ok = await audio.speak(c.target);
+                            if (!ok && context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                                content: Text('Chưa phát được — máy cần cài giọng tiếng Trung '
+                                    '(Cài đặt hệ thống → Text-to-speech → tải Chinese)'),
+                                duration: Duration(seconds: 4),
+                              ));
+                            }
+                          },
                         ),
                       );
                     },
