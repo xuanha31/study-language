@@ -4,6 +4,8 @@ import '../data/models/progress_entry.dart';
 /// - Đúng + nhanh  -> lên bậc, giãn khoảng ôn.
 /// - Đúng + chậm   -> lên 0/1 bậc.
 /// - Sai           -> rớt về bậc 1, ôn lại sớm.
+/// - Thẻ mới (chưa gặp lần nào) đúng -> tối đa lên 1 bậc: lần đầu có 25% đoán mò.
+/// - Đúng nhờ power-up gợi ý -> giữ bậc (không thưởng), tối thiểu bậc 1.
 ///
 /// "Nhanh/chậm" đo TƯƠNG ĐỐI so với thời lượng tối đa của câu (do người gọi tính),
 /// KHÔNG theo giây tuyệt đối — vì chế độ tốc độ nhanh ép mọi người chọn nhanh.
@@ -20,12 +22,16 @@ class SrsService {
     required bool correct,
     required double relativeSpeed,
     required int nowMs,
+    bool hinted = false,
   }) {
+    final isNew = prev.correct + prev.wrong == 0;
     int level;
     if (!correct) {
       level = 1; // rớt bậc, ôn sớm
+    } else if (hinted) {
+      level = prev.level.clamp(1, intervalsDays.length - 1);
     } else {
-      final step = relativeSpeed >= 0.5 ? 2 : 1; // nhanh -> nhảy 2 bậc
+      final step = (relativeSpeed >= 0.5 && !isNew) ? 2 : 1; // nhanh -> nhảy 2 bậc
       level = (prev.level + step).clamp(1, intervalsDays.length - 1);
     }
     final days = intervalsDays[level];

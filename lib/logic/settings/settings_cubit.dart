@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../core/game_speed.dart';
 import '../../data/settings_repository.dart';
 import '../question_type.dart';
+import '../shop/shop_catalog.dart';
 
 /// Quản lý cài đặt + streak, phát [AppSettings] cho UI và lưu xuống Hive.
 class SettingsCubit extends Cubit<AppSettings> {
@@ -31,6 +32,41 @@ class SettingsCubit extends Cubit<AppSettings> {
   }
 
   Future<void> setAudioEnabled(bool v) => _update(state.copyWith(audioEnabled: v));
+
+  Future<void> setSfxEnabled(bool v) => _update(state.copyWith(sfxEnabled: v));
+
+  bool owns(ShopItem item) => item.price == 0 || state.ownedItems.contains(item.key);
+
+  bool isEquipped(ShopItem item) => switch (item.kind) {
+        ShopKind.character => state.character == item.id,
+        ShopKind.scene => state.scene == item.id,
+      };
+
+  /// Mua bằng nấm trong ví rồi dùng luôn. Trả về false nếu không đủ nấm / đã có.
+  Future<bool> buy(ShopItem item) async {
+    if (owns(item) || state.mushroomBank < item.price) return false;
+    await _update(_equipped(state, item).copyWith(
+      mushroomBank: state.mushroomBank - item.price,
+      ownedItems: {...state.ownedItems, item.key},
+    ));
+    return true;
+  }
+
+  Future<void> equip(ShopItem item) {
+    if (!owns(item)) return Future.value();
+    return _update(_equipped(state, item));
+  }
+
+  static AppSettings _equipped(AppSettings s, ShopItem item) => switch (item.kind) {
+        ShopKind.character => s.copyWith(character: item.id),
+        ShopKind.scene => s.copyWith(scene: item.id),
+      };
+
+  /// Cộng nấm còn lại cuối vòng vào ví (đã trừ phần tiêu cho power-up).
+  Future<void> depositMushrooms(int n) {
+    if (n <= 0) return Future.value();
+    return _update(state.copyWith(mushroomBank: state.mushroomBank + n));
+  }
 
   Future<void> setReminder({required bool enabled, int? hour, int? minute}) =>
       _update(state.copyWith(

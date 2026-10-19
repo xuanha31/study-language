@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../core/game_speed.dart';
+import '../../core/theme.dart';
+import '../../core/widgets.dart';
 import '../../data/content_repository.dart';
 import '../../data/settings_repository.dart';
 import '../../logic/audio_service.dart';
@@ -23,87 +24,119 @@ class SettingsScreen extends StatelessWidget {
         builder: (context, s) {
           final cubit = context.read<SettingsCubit>();
           return ListView(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
             children: [
-              const _SectionTitle('Tốc độ chơi'),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: SegmentedButton<GameSpeed>(
-                  segments: const [
-                    ButtonSegment(value: GameSpeed.slow, label: Text('Chậm')),
-                    ButtonSegment(value: GameSpeed.medium, label: Text('Vừa')),
-                    ButtonSegment(value: GameSpeed.fast, label: Text('Nhanh')),
-                  ],
-                  selected: {s.speed},
-                  onSelectionChanged: (sel) => cubit.setSpeed(sel.first),
+              const SectionLabel('Vòng chơi'),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      const Text('Tốc độ mặc định',
+                          style: TextStyle(fontWeight: FontWeight.w600)),
+                      const SizedBox(height: 12),
+                      SpeedSelector(value: s.speed, onChanged: cubit.setSpeed),
+                    ],
+                  ),
                 ),
               ),
-              const Divider(),
-              const _SectionTitle('Dạng câu hỏi'),
-              for (final t in QuestionType.values)
+              const SectionLabel('Dạng câu hỏi'),
+              _Group(children: [
+                for (final t in QuestionType.values)
+                  SwitchListTile(
+                    title: Text(t.labelVi, style: const TextStyle(fontWeight: FontWeight.w500)),
+                    subtitle: t.needsAudio
+                        ? const Text('Cần giọng đọc (TTS) tiếng Trung')
+                        : null,
+                    value: s.enabledTypes.contains(t),
+                    onChanged: (v) => cubit.toggleType(t, v),
+                  ),
+              ]),
+              const SectionLabel('Âm thanh & nhắc học'),
+              _Group(children: [
                 SwitchListTile(
-                  title: Text(t.labelVi),
-                  subtitle: t.needsAudio
-                      ? const Text('Cần giọng đọc (TTS) tiếng Trung')
-                      : null,
-                  value: s.enabledTypes.contains(t),
-                  onChanged: (v) => cubit.toggleType(t, v),
+                  secondary: const Icon(Icons.volume_up_outlined),
+                  title: const Text('Phát âm (TTS)', style: TextStyle(fontWeight: FontWeight.w500)),
+                  value: s.audioEnabled,
+                  onChanged: (v) => cubit.setAudioEnabled(v),
                 ),
-              const Divider(),
-              const _SectionTitle('Âm thanh'),
-              SwitchListTile(
-                title: const Text('Phát âm (TTS)'),
-                value: s.audioEnabled,
-                onChanged: (v) => cubit.setAudioEnabled(v),
-              ),
-              ListTile(
-                leading: const Icon(Icons.record_voice_over),
-                title: const Text('Chuẩn bị giọng đọc'),
-                subtitle: const Text('Kiểm tra máy có giọng tiếng Trung'),
-                onTap: () => _prepareVoices(context),
-              ),
-              const Divider(),
-              const _SectionTitle('Nhắc học'),
-              SwitchListTile(
-                title: const Text('Nhắc học hằng ngày'),
-                value: s.reminderEnabled,
-                onChanged: (v) => _toggleReminder(context, v),
-              ),
-              ListTile(
-                enabled: s.reminderEnabled,
-                leading: const Icon(Icons.schedule),
-                title: const Text('Giờ nhắc'),
-                trailing: Text(
-                  '${s.reminderHour.toString().padLeft(2, '0')}:'
-                  '${s.reminderMinute.toString().padLeft(2, '0')}',
-                  style: const TextStyle(fontSize: 16),
+                SwitchListTile(
+                  secondary: const Icon(Icons.music_note_outlined),
+                  title: const Text('Hiệu ứng âm thanh & rung',
+                      style: TextStyle(fontWeight: FontWeight.w500)),
+                  value: s.sfxEnabled,
+                  onChanged: (v) => cubit.setSfxEnabled(v),
                 ),
-                onTap: s.reminderEnabled ? () => _pickTime(context, s) : null,
-              ),
-              const Divider(),
-              const _SectionTitle('Dữ liệu'),
-              ListTile(
-                leading: const Icon(Icons.backup),
-                title: const Text('Sao lưu & khôi phục'),
-                subtitle: const Text('Snapshot tiến độ, chia sẻ/nhập file, Google Drive'),
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const BackupScreen()),
+                ListTile(
+                  leading: const Icon(Icons.mic_none_rounded),
+                  title: const Text('Chuẩn bị giọng đọc',
+                      style: TextStyle(fontWeight: FontWeight.w500)),
+                  subtitle: const Text('Kiểm tra máy có giọng tiếng Trung'),
+                  trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted),
+                  onTap: () => _prepareVoices(context),
                 ),
-              ),
-              ListTile(
-                leading: const Icon(Icons.cloud_download),
-                title: const Text('Cập nhật nội dung'),
-                subtitle: const Text('Tải bản nội dung mới từ server (nếu đã cấu hình)'),
-                onTap: () => _updateContent(context),
-              ),
-              const Divider(),
-              ListTile(
-                leading: const Icon(Icons.info_outline),
-                title: const Text('Giới thiệu & nguồn dữ liệu'),
-                subtitle: const Text('Ghi công + giấy phép (CC-BY-SA cho nghĩa tiếng Việt)'),
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const CreditsScreen()),
+                SwitchListTile(
+                  secondary: const Icon(Icons.notifications_none_rounded),
+                  title: const Text('Nhắc học hằng ngày',
+                      style: TextStyle(fontWeight: FontWeight.w500)),
+                  value: s.reminderEnabled,
+                  onChanged: (v) => _toggleReminder(context, v),
                 ),
-              ),
+                ListTile(
+                  enabled: s.reminderEnabled,
+                  leading: const Icon(Icons.schedule_rounded),
+                  title: const Text('Giờ nhắc', style: TextStyle(fontWeight: FontWeight.w500)),
+                  trailing: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: s.reminderEnabled ? AppColors.cinnabarSoft : AppColors.track,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      '${s.reminderHour.toString().padLeft(2, '0')}:'
+                      '${s.reminderMinute.toString().padLeft(2, '0')}',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                        color: s.reminderEnabled ? AppColors.cinnabarDeep : AppColors.inkMuted,
+                      ),
+                    ),
+                  ),
+                  onTap: s.reminderEnabled ? () => _pickTime(context, s) : null,
+                ),
+              ]),
+              const SectionLabel('Dữ liệu'),
+              _Group(children: [
+                ListTile(
+                  leading: const Icon(Icons.inventory_2_outlined),
+                  title: const Text('Sao lưu & khôi phục',
+                      style: TextStyle(fontWeight: FontWeight.w500)),
+                  subtitle: const Text('Snapshot tiến độ, chia sẻ/nhập file, Google Drive'),
+                  trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted),
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const BackupScreen()),
+                  ),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.cloud_download_outlined),
+                  title: const Text('Cập nhật nội dung',
+                      style: TextStyle(fontWeight: FontWeight.w500)),
+                  subtitle: const Text('Tải bản nội dung mới từ server (nếu đã cấu hình)'),
+                  trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted),
+                  onTap: () => _updateContent(context),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.info_outline_rounded),
+                  title: const Text('Giới thiệu & nguồn dữ liệu',
+                      style: TextStyle(fontWeight: FontWeight.w500)),
+                  subtitle: const Text('Ghi công + giấy phép (CC-BY-SA cho nghĩa tiếng Việt)'),
+                  trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted),
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const CreditsScreen()),
+                  ),
+                ),
+              ]),
             ],
           );
         },
@@ -132,7 +165,7 @@ class SettingsScreen extends StatelessWidget {
     final ok = await context.read<AudioService>().prepareVoices();
     messenger.showSnackBar(SnackBar(
       content: Text(ok
-          ? 'Đã sẵn sàng giọng tiếng Trung 🔊'
+          ? 'Đã sẵn sàng giọng tiếng Trung'
           : 'Máy chưa có giọng tiếng Trung — hãy cài TTS tiếng Trung trong cài đặt hệ thống'),
     ));
   }
@@ -170,20 +203,21 @@ class SettingsScreen extends StatelessWidget {
   }
 }
 
-class _SectionTitle extends StatelessWidget {
-  final String text;
-  const _SectionTitle(this.text);
+/// Nhóm các dòng cài đặt trong một thẻ, có đường kẻ mảnh giữa các dòng.
+class _Group extends StatelessWidget {
+  final List<Widget> children;
+  const _Group({required this.children});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
-      child: Text(
-        text,
-        style: TextStyle(
-          fontWeight: FontWeight.bold,
-          color: Theme.of(context).colorScheme.primary,
-        ),
+    return Card(
+      child: Column(
+        children: [
+          for (var i = 0; i < children.length; i++) ...[
+            if (i > 0) const Divider(indent: 16, endIndent: 16),
+            children[i],
+          ],
+        ],
       ),
     );
   }

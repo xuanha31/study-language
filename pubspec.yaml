@@ -23,6 +23,8 @@ dependencies:
   google_fonts: ^6.1.0
   # Audio / TTS tiếng Trung
   flutter_tts: ^4.0.2
+  # Hiệu ứng âm thanh vòng chơi (assets/sfx — sinh bằng tools/make_sfx.py)
+  audioplayers: ^6.1.0
   # Nhắc học (local notification)
   flutter_local_notifications: ^17.2.3
   timezone: ^0.9.4
@@ -57,3 +59,9 @@ flutter:
   # Nội dung học (HSK 1-6) bundle sẵn cho bản dev (sau sẽ tải từ server).
   assets:
     - content/
+    - assets/sfx/
+    # Sprite Kenney "New Platformer Pack" (CC0) — nhập bằng tools/import_kenney.py
+    - assets/images/kenney/characters/
+    - assets/images/kenney/enemies/
+    - assets/images/kenney/backgrounds/
+    - assets/images/kenney/tiles/

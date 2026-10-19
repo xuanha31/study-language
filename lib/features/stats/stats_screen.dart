@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../core/theme.dart';
+import '../../core/widgets.dart';
 import '../../data/content_repository.dart';
 import '../../data/models/course.dart';
 import '../../data/progress_repository.dart';
@@ -70,25 +72,62 @@ class _StatsScreenState extends State<StatsScreen> {
       body: _loading
           ? const Center(child: CircularProgressIndicator())
           : ListView(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
               children: [
                 _StreakCard(
                   current: cubit.displayStreak,
                   longest: cubit.state.longestStreak,
                 ),
-                const SizedBox(height: 12),
-                _SummaryCard(
-                  studied: _studied,
-                  mastered: _mastered,
-                  due: _due,
-                  accuracy: acc,
-                  attempts: attempts,
+                const SizedBox(height: 16),
+                GridView.count(
+                  crossAxisCount: 2,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  mainAxisSpacing: 10,
+                  crossAxisSpacing: 10,
+                  childAspectRatio: 1.45,
+                  children: [
+                    _StatTile(
+                      icon: Icons.menu_book_rounded,
+                      color: AppColors.cinnabar,
+                      value: fmtNum(_studied),
+                      label: 'từ đã học',
+                    ),
+                    _StatTile(
+                      icon: Icons.check_rounded,
+                      color: AppColors.jade,
+                      value: fmtNum(_mastered),
+                      label: 'từ đã thuộc',
+                    ),
+                    _StatTile(
+                      icon: Icons.schedule_rounded,
+                      color: AppColors.goldInk,
+                      value: fmtNum(_due),
+                      label: 'từ đến hạn ôn',
+                    ),
+                    _StatTile(
+                      icon: Icons.track_changes_rounded,
+                      color: AppColors.ink,
+                      value: attempts == 0 ? '—' : '$acc%',
+                      label: attempts == 0 ? 'chưa có lượt' : 'chính xác · ${fmtNum(attempts)} lượt',
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 12),
-                Text('Tiến độ theo khóa',
-                    style: Theme.of(context).textTheme.titleMedium),
-                const SizedBox(height: 8),
-                ..._perCourse.map((e) => _CourseProgress(course: e.$1, studied: e.$2)),
+                const SizedBox(height: 16),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text('Tiến độ theo khóa',
+                            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+                        const SizedBox(height: 4),
+                        ..._perCourse.map((e) => _CourseProgress(course: e.$1, studied: e.$2)),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
     );
@@ -102,67 +141,72 @@ class _StreakCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: Theme.of(context).colorScheme.tertiaryContainer,
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Column(children: [
-              Text('🔥 $current', style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
-              const Text('chuỗi hiện tại (ngày)'),
-            ]),
-            Column(children: [
-              Text('🏅 $longest', style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
-              const Text('kỷ lục'),
-            ]),
-          ],
-        ),
+    return Container(
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        color: AppColors.goldSoft,
+        borderRadius: BorderRadius.circular(22),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 60,
+            height: 60,
+            decoration: const BoxDecoration(color: AppColors.card, shape: BoxShape.circle),
+            child: const Icon(Icons.local_fire_department_rounded, size: 34, color: AppColors.gold),
+          ),
+          const SizedBox(width: 16),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('$current ngày liên tiếp',
+                    style: AppText.display(26, color: const Color(0xFF5E400C))),
+                const SizedBox(height: 2),
+                Text('Kỷ lục: $longest ngày',
+                    style: const TextStyle(fontSize: 13, color: AppColors.goldInk)),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
 }
 
-class _SummaryCard extends StatelessWidget {
-  final int studied;
-  final int mastered;
-  final int due;
-  final int accuracy;
-  final int attempts;
-  const _SummaryCard({
-    required this.studied,
-    required this.mastered,
-    required this.due,
-    required this.accuracy,
-    required this.attempts,
+class _StatTile extends StatelessWidget {
+  final IconData icon;
+  final Color color;
+  final String value;
+  final String label;
+  const _StatTile({
+    required this.icon,
+    required this.color,
+    required this.value,
+    required this.label,
   });
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(14),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _row('📚 Đã học', '$studied từ'),
-            _row('✅ Đã thuộc', '$mastered từ'),
-            _row('⏰ Đến hạn ôn', '$due từ'),
-            _row('🎯 Độ chính xác', attempts == 0 ? '—' : '$accuracy% ($attempts lượt)'),
+            Icon(icon, size: 22, color: color),
+            const Spacer(),
+            Text(value, style: AppText.display(26)),
+            const SizedBox(height: 2),
+            Text(label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
           ],
         ),
       ),
     );
   }
-
-  Widget _row(String label, String value) => Padding(
-        padding: const EdgeInsets.symmetric(vertical: 4),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [Text(label), Text(value, style: const TextStyle(fontWeight: FontWeight.bold))],
-        ),
-      );
 }
 
 class _CourseProgress extends StatelessWidget {
@@ -173,24 +217,24 @@ class _CourseProgress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final total = course.vocabCount;
-    final ratio = total == 0 ? 0.0 : (studied / total).clamp(0.0, 1.0);
+    final ratio = total == 0 ? 0.0 : studied / total;
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6),
+      padding: const EdgeInsets.only(top: 12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold)),
-              Text('$studied / $total'),
+              Expanded(
+                child: Text(course.code.replaceAll('HSK', 'HSK '),
+                    style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700)),
+              ),
+              Text('${fmtNum(studied)} / ${fmtNum(total)}',
+                  style: const TextStyle(fontSize: 13, color: AppColors.inkSoft)),
             ],
           ),
-          const SizedBox(height: 4),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(6),
-            child: LinearProgressIndicator(value: ratio, minHeight: 10),
-          ),
+          const SizedBox(height: 6),
+          ProgressTrack(value: ratio, height: 8),
         ],
       ),
     );

@@ -8,6 +8,11 @@ class AppSettings {
   final GameSpeed speed;
   final Set<QuestionType> enabledTypes; // dạng câu hỏi đang bật
   final bool audioEnabled; // bật phát âm (TTS)
+  final bool sfxEnabled; // hiệu ứng âm thanh + rung trong vòng chơi
+  final int mushroomBank; // ví nấm tích lũy qua các vòng
+  final Set<String> ownedItems; // id vật phẩm đã mua ở cửa hàng ("character:green"...)
+  final String character; // nhân vật đang dùng
+  final String scene; // phong cảnh đang dùng
   final bool reminderEnabled; // nhắc học hằng ngày
   final int reminderHour;
   final int reminderMinute;
@@ -24,6 +29,11 @@ class AppSettings {
       QuestionType.hanviet,
     },
     this.audioEnabled = true,
+    this.sfxEnabled = true,
+    this.mushroomBank = 0,
+    this.ownedItems = const {},
+    this.character = 'beige',
+    this.scene = 'hills',
     this.reminderEnabled = false,
     this.reminderHour = 20,
     this.reminderMinute = 0,
@@ -36,6 +46,11 @@ class AppSettings {
     GameSpeed? speed,
     Set<QuestionType>? enabledTypes,
     bool? audioEnabled,
+    bool? sfxEnabled,
+    int? mushroomBank,
+    Set<String>? ownedItems,
+    String? character,
+    String? scene,
     bool? reminderEnabled,
     int? reminderHour,
     int? reminderMinute,
@@ -47,6 +62,11 @@ class AppSettings {
         speed: speed ?? this.speed,
         enabledTypes: enabledTypes ?? this.enabledTypes,
         audioEnabled: audioEnabled ?? this.audioEnabled,
+        sfxEnabled: sfxEnabled ?? this.sfxEnabled,
+        mushroomBank: mushroomBank ?? this.mushroomBank,
+        ownedItems: ownedItems ?? this.ownedItems,
+        character: character ?? this.character,
+        scene: scene ?? this.scene,
         reminderEnabled: reminderEnabled ?? this.reminderEnabled,
         reminderHour: reminderHour ?? this.reminderHour,
         reminderMinute: reminderMinute ?? this.reminderMinute,
@@ -59,6 +79,11 @@ class AppSettings {
         'speed': speed.name,
         'enabledTypes': enabledTypes.map((e) => e.name).toList(),
         'audioEnabled': audioEnabled,
+        'sfxEnabled': sfxEnabled,
+        'mushroomBank': mushroomBank,
+        'ownedItems': ownedItems.toList(),
+        'character': character,
+        'scene': scene,
         'reminderEnabled': reminderEnabled,
         'reminderHour': reminderHour,
         'reminderMinute': reminderMinute,
@@ -84,6 +109,15 @@ class AppSettings {
       speed: parseSpeed(map['speed']),
       enabledTypes: parseTypes(map['enabledTypes']),
       audioEnabled: map['audioEnabled'] as bool? ?? true,
+      sfxEnabled: map['sfxEnabled'] as bool? ?? true,
+      mushroomBank: (map['mushroomBank'] as num?)?.toInt() ?? 0,
+      ownedItems: {
+        if (map['ownedItems'] is List)
+          for (final e in map['ownedItems'] as List)
+            if (e is String) e,
+      },
+      character: map['character'] as String? ?? 'beige',
+      scene: map['scene'] as String? ?? 'hills',
       reminderEnabled: map['reminderEnabled'] as bool? ?? false,
       reminderHour: (map['reminderHour'] as num?)?.toInt() ?? 20,
       reminderMinute: (map['reminderMinute'] as num?)?.toInt() ?? 0,

@@ -32,7 +32,7 @@ class UseHint extends GameEvent {
   const UseHint();
 }
 
-/// Power-up: đóng băng đồng hồ boss (tốn nấm).
+/// Power-up: đóng băng đồng hồ boss 5 giây (tốn nấm).
 class UseFreeze extends GameEvent {
   const UseFreeze();
 }
@@ -40,4 +40,13 @@ class UseFreeze extends GameEvent {
 /// Power-up: hồi 1 mạng (tốn nấm).
 class UseExtraLife extends GameEvent {
   const UseExtraLife();
+}
+
+/// Tạm dừng (nút pause / app chạy nền): đồng hồ đứng, không trả lời được.
+class PauseGame extends GameEvent {
+  const PauseGame();
+}
+
+class ResumeGame extends GameEvent {
+  const ResumeGame();
 }

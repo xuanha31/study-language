@@ -11,6 +11,7 @@ class CreditsScreen extends StatelessWidget {
     ('Âm Hán Việt (hanviet)', 'hanviet-pinyin-wordlist — Phong Phan', 'MIT'),
     ('Hán Việt (dự phòng)', 'Unihan Database (kVietnamese) — Unicode, Inc.', 'Unicode License'),
     ('Nghĩa Anh gốc', 'CC-CEDICT — MDBG', 'CC-BY-SA 3.0'),
+    ('Hình nhân vật, quái, phong cảnh', 'New Platformer Pack — Kenney (kenney.nl)', 'CC0'),
   ];
 
   @override

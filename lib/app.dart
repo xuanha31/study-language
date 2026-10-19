@@ -10,12 +10,14 @@ import 'logic/audio_service.dart';
 import 'logic/content/content_cubit.dart';
 import 'logic/notification_service.dart';
 import 'logic/settings/settings_cubit.dart';
+import 'logic/sfx_service.dart';
 
 class App extends StatelessWidget {
   final ContentRepository contentRepository;
   final ProgressRepository progressRepository;
   final SettingsRepository settingsRepository;
   final AudioService audioService;
+  final SfxService sfxService;
   final NotificationService notificationService;
 
   const App({
@@ -24,6 +26,7 @@ class App extends StatelessWidget {
     required this.progressRepository,
     required this.settingsRepository,
     required this.audioService,
+    required this.sfxService,
     required this.notificationService,
   });
 
@@ -35,6 +38,7 @@ class App extends StatelessWidget {
         RepositoryProvider.value(value: progressRepository),
         RepositoryProvider.value(value: settingsRepository),
         RepositoryProvider.value(value: audioService),
+        RepositoryProvider.value(value: sfxService),
         RepositoryProvider.value(value: notificationService),
       ],
       child: MultiBlocProvider(
@@ -43,8 +47,12 @@ class App extends StatelessWidget {
           BlocProvider(create: (_) => SettingsCubit(settingsRepository)),
         ],
         child: BlocListener<SettingsCubit, AppSettings>(
-          listenWhen: (p, c) => p.audioEnabled != c.audioEnabled,
-          listener: (_, s) => audioService.enabled = s.audioEnabled,
+          listenWhen: (p, c) =>
+              p.audioEnabled != c.audioEnabled || p.sfxEnabled != c.sfxEnabled,
+          listener: (_, s) {
+            audioService.enabled = s.audioEnabled;
+            sfxService.enabled = s.sfxEnabled;
+          },
           child: MaterialApp(
             title: 'Học tiếng Trung',
             debugShowCheckedModeBanner: false,
